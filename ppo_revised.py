@@ -342,26 +342,43 @@ class PPO(BaseAgent):
 
                 # Get minibatch data
                 mb_obs = batch["obs"][mb_indices]
-                mb_actions = batch["actions"][mb_indices]
-                mb_old_values = batch["values"][mb_indices]
-                mb_old_log_probs = batch["log_probs"][mb_indices]
+                mb_actions_env_scale = batch["actions"][mb_indices] # Actions on env scale [low, high]
+                mb_old_log_probs = batch["log_probs"][mb_indices]   # LogProbs of actions on [-1, 1] scale
                 mb_advantages = batch["advantages"][mb_indices]
                 mb_returns = batch["returns"][mb_indices]
 
+                # --- Transform actions from env scale [low, high] back to [-1, 1] ---
+                # This is the inverse of the postprocessor used during action selection.
+                action_space_low_t = utils.to_tensor(self.action_space.low, self.device, dtype=mb_actions_env_scale.dtype)
+                action_space_high_t = utils.to_tensor(self.action_space.high, self.device, dtype=mb_actions_env_scale.dtype)
+
+                action_bias_t = (action_space_low_t + action_space_high_t) / 2.0
+                action_scale_factor_t = (action_space_high_t - action_space_low_t) / 2.0
+                action_scale_factor_t = torch.max(
+                    action_scale_factor_t,
+                    torch.tensor(1e-8, device=action_scale_factor_t.device, dtype=action_scale_factor_t.dtype)
+                )
+
+                actions_minus1_1 = (mb_actions_env_scale - action_bias_t) / action_scale_factor_t
+
+                # CRITICAL: Clamp actions_minus1_1 to be strictly within (-1, 1).
+                # The log_prob of TanhTransform is undefined (or -inf) at the boundaries y = +/-1
+                # due to the log(1 - y^2) term in its Jacobian.
+                eps = 1e-6
+                actions_minus1_1_clamped = torch.clamp(actions_minus1_1, -1.0 + eps, 1.0 - eps)
+
                 # --- Calculate current policy distribution and values ---
+                # dist is now Independent(TransformedDistribution(Normal, TanhTransform))
+                # It expects actions in [-1, 1] for log_prob calculation.
                 dist, _ = self._get_distribution(mb_obs)
                 current_values = self._get_value(mb_obs)
-                current_log_probs = dist.log_prob(mb_actions)
-                entropy = dist.entropy().mean()
 
-                # Ensure log_probs have the correct shape (minibatch_size,)
-                # For Independent(Normal), log_prob sums over action dim automatically.
-                # For Beta, need to sum manually if action_dim > 1. Check _get_distribution.
-                # For Categorical, log_prob is already correct shape.
-                if current_log_probs.ndim > 1 and self.is_continuous:
-                    # This might happen if Independent wasn't used correctly
-                    current_log_probs = current_log_probs.sum(dim=-1)
-
+                # Calculate log_prob using actions scaled to [-1, 1]
+                current_log_probs = dist.log_prob(actions_minus1_1_clamped)
+                
+                
+                base_dist = dist.base_dist.base_dist # Access Normal from Independent(Transformed(Normal))
+                entropy = base_dist.entropy().sum(dim=-1).mean() # Sum over action dim, then mean over batch
 
                 # --- Policy Loss (Clipped Surrogate Objective) ---
                 log_ratio = current_log_probs - mb_old_log_probs

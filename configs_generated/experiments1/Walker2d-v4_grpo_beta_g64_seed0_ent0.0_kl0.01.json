@@ -1,0 +1,32 @@
+{
+    "algo": "grpo",
+    "checkpoint_interval": 100000,
+    "env_id": "Walker2d-v4",
+    "gamma": 0.99,
+    "grpo_config": {
+        "distribution_type": "beta",
+        "entropy_coef": 0.0,
+        "group_size": 64,
+        "kl_coef": 0.01,
+        "lr": 0.0001,
+        "max_grad_norm": 0.5,
+        "minibatch_size": 256,
+        "ref_update_interval": 10000,
+        "rollout_steps_per_trajectory": 1000,
+        "update_epochs": 10
+    },
+    "log_interval": 10000,
+    "max_episode_steps": 1000,
+    "network_config": {
+        "cnn_output_features": 256,
+        "mlp_hidden_dims": [
+            64,
+            64
+        ],
+        "network_type": "mlp"
+    },
+    "seed": 0,
+    "total_steps": 1000000,
+    "verbose": false,
+    "video_interval": 250000
+}

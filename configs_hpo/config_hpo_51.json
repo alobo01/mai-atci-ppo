@@ -1,0 +1,14 @@
+{
+    "env_id": "HalfCheetah-v4",
+    "algo": "grpo",
+    "seed": 0,
+    "total_steps": 10000,
+    "grpo_config": {
+        "lr": 0.0001,
+        "entropy_coef": 1e-05,
+        "kl_coef": 0.0001,
+        "group_size": 32,
+        "ref_update_interval": 100000
+    },
+    "run_name": "HalfCheetah-v4_grpo_hpo51_lr0p0001_ent1e-05_kl_0p0001_gro32"
+}

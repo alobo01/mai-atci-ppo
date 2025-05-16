@@ -80,8 +80,11 @@ class GRPO_NoCritic(BaseAgent):
             self.logger.info("Initialized GRPO MLP actor and reference.")
 
         elif self.network_type == "cnn":
+            obs_shape = self.obs_shape
+            if len(obs_shape) != 3:
+                raise ValueError(f"Expected 3D observation shape for CNN, got {obs_shape}.")
             self.cnn_feature_extractor = CNNFeatureExtractor(
-                obs_shape=self.obs_shape,
+                obs_shape=(obs_shape[-1],obs_shape[0], obs_shape[1]), # Transpose to (C, H, W) format
                 output_features=self.cnn_output_features
             ).to(self.device)
             self.actor_head = FeedForwardNN(
@@ -114,8 +117,9 @@ class GRPO_NoCritic(BaseAgent):
                  raise RuntimeError("GRPO CNN actor not initialized correctly.")
             cnn_base = network[0] # Access the CNNFeatureExtractor part
             timer_key = "ref_cnn_feature_pass" if use_reference else "cnn_feature_pass"
+            img = obs.permute(0, 3, 1, 2)      # -> [B, 3, 96, 96]
             with torch.no_grad() if use_reference else torch.enable_grad(), self.timer(timer_key):
-                 features = cnn_base(obs)
+                features = cnn_base(img)
             return features
         else:
             return obs # No feature extraction for MLP
@@ -235,7 +239,7 @@ class GRPO_NoCritic(BaseAgent):
         # More complex weighting (e.g., discounted) could be used.
         adv_list: List[float] = []
         for traj_idx, length in enumerate(len_list):
-            step_advantage = adv_per_traj[traj_idx] # Could divide by length: / length
+            step_advantage = adv_per_traj[traj_idx] / length
             adv_list.extend([step_advantage] * length)
 
         if len(adv_list) != total_steps_collected:
@@ -316,9 +320,23 @@ class GRPO_NoCritic(BaseAgent):
                 mb_advantages = batch["advantages"][mb_indices]
 
                 # --- Get current policy distribution ---
-                dist, _ = self._get_distribution(mb_obs, use_reference=False)
-                current_log_probs = dist.log_prob(mb_actions)
-                entropy = dist.entropy().mean()
+                dist, postprocessor = self._get_distribution(mb_obs, use_reference=False)
+                low  = torch.as_tensor(self.action_space.low,  device=mb_actions.device, dtype=mb_actions.dtype)
+                high = torch.as_tensor(self.action_space.high, device=mb_actions.device, dtype=mb_actions.dtype)
+                bias  = (low + high) / 2.0
+                scale = (high - low) / 2.0
+                raw_actions = (mb_actions - bias) / scale
+                # clamp just inside (-1,1) for numerical safety
+                eps = 1e-6
+                safe_raw = raw_actions.clamp(-1 + eps, 1 - eps)
+
+                # now compute log‐probs on the “raw” distribution in [-1,1] space
+                current_log_probs = dist.log_prob(safe_raw)
+                    
+
+
+                base_dist = dist.base_dist.base_dist
+                entropy = base_dist.entropy().sum(dim=-1).mean()
 
                 # Sum log_probs if needed (like in PPO Beta)
                 if current_log_probs.ndim > 1 and self.is_continuous:
@@ -353,6 +371,8 @@ class GRPO_NoCritic(BaseAgent):
                 with self.timer("optimizer_step"):
                     self.actor_optimizer.step()
 
+                if torch.isnan(self.actor.network[0].weight).any():
+                     self.logger.warning("NaN detected in actor weights after update.")
                 # --- Track Losses ---
                 all_losses["policy_loss"].append(policy_loss.item())
                 all_losses["kl_loss"].append(kl_div.item())

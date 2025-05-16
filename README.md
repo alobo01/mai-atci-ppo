@@ -1,152 +1,141 @@
 # Refactored RL Experiments Framework
 
-This repository provides a refactored framework for running Reinforcement Learning experiments using PPO (Gaussian and Beta policies) and GRPO agents. It emphasizes best practices like strong typing, code reuse through inheritance, modular utilities, efficient performance measurement, and concurrent experiment execution.
+This repository provides a refactored framework for running Reinforcement Learning experiments using PPO and GRPO agents. It supports both Normal and Beta distributions for continuous action spaces in PPO, and Normal/Beta for GRPO. The framework emphasizes modularity, type safety with Pydantic, and concurrent experiment execution.
 
-**Author:** Antonio Lobo
+**Author:** Antonio Lobo (Refactored Version)
 
 ## Features
 
-*   **Modular Agents:** PPO (Gaussian), PPO (Beta), and GRPO (no critic) implementations inheriting from a common `BaseAgent`.
-*   **Flexible Configuration:** Experiments are defined using JSON configuration files, easily generated via a script.
-*   **Concurrent Execution:** Run multiple experiments in parallel using threading via the `--workers` argument.
-*   **Network Options:** Supports MLP (`FeedForwardNN`) by default. For image-based environments specify `network_type: "cnn"` in the config to use a `CNNFeatureExtractor` followed by separate `FeedForwardNN` heads.
-*   **Utilities:** Comprehensive `utils.py` module for logging, seeding, environment creation, tensor handling, action distributions, timing, checkpointing, and video saving.
-*   **Performance Measurement:** Built-in timing for key operations (rollout, update, env steps, network forwards) logged to `timings.jsonl`.
+*   **Modular Agents:**
+    *   `PPO`: Supports Normal or Beta distributions for continuous actions, configurable via `distribution_type`.
+    *   `GRPO_NoCritic`: GRPO variant without a critic, also supports Normal or Beta distributions.
+    *   Inheritance from a common `BaseAgent`.
+*   **Flexible Configuration:** Experiments defined using JSON configuration files, validated by Pydantic models (`utils/pydantic_models.py`).
+*   **Concurrent Execution:** Run multiple experiments in parallel using threading (`--workers` argument).
+*   **Network Architectures:**
+    *   `FeedForwardNN` (MLP) in `networks/mlp.py`.
+    *   `CNNFeatureExtractor` in `networks/cnn.py` for image-based inputs, followed by MLP heads.
+    *   Configurable via `network_config` in the experiment JSON.
+*   **Rollout Buffer:** Centralized `RolloutBuffer` (`algorithms/buffer.py`) for PPO data collection and GAE computation. GRPO uses a simplified path through the buffer.
+*   **Utilities (Refactored into `utils/` submodules):**
+    *   Logging, seeding, environment creation.
+    *   Tensor handling, action distribution creation (Normal, Beta, Categorical without Tanh squashing for Normal).
+    *   Performance timing, checkpointing, video recording, metrics saving/loading.
 *   **Logging & Checkpointing:** Robust logging to console and file, automatic checkpoint saving and resuming.
-*   **Evaluation & Video:** Periodic evaluation episodes with video recording of the best performing episode.
-*   **Plotting & Analysis Scripts:** Scripts provided for generating learning curve plots (mean/std/min/max over seeds) and analyzing the GRPO `group_size` hyperparameter.
-*   **Typing:** Strong type hinting used throughout the codebase.
+*   **Evaluation & Video:** Periodic evaluation with video recording of the best-performing episode.
+*   **Plotting & Analysis Scripts:** (Assumed to be adapted or provided separately by the user, `run_experiment.py` includes a basic plotting function).
 
 ## Project Structure
 
 ```
 .
-├── experiment_runs/        # Default output directory for logs, models, videos, plots
-│   └── <env_id>_<algo>[_g<G>]_seed<N>/ # Subdirectory for each experiment run
-│       ├── checkpoints/      # Saved network/optimizer states
-│       ├── logs/             # Log files (.log)
-│       ├── videos/           # Evaluation videos (.mp4)
-│       ├── metrics.json      # Training metrics (rewards, lengths)
-│       └── timings.jsonl     # Performance timings per step
-│   └── _plots_learning_curves/ # Generated learning curve plots (.png)
-│   └── _plots_grpo_g_analysis/ # Generated GRPO G analysis plots (.png)
-├── configs/                # Generated configuration files
-│   └── ...
-├── config_examples/        # Example JSON configuration files (Optional)
-│   └── ...
-├── scripts/                # Scripts for generation and analysis
-│   ├── generate_configs.py
-│   ├── plot_learning_curves.py
-│   └── plot_grpo_g_analysis.py
-├── base_agent.py           # Abstract Base Class for agents
-├── grpo.py                 # GRPO (no critic) implementation
-├── networks.py             # Network definitions (MLP, CNN)
-├── ppo_beta.py             # PPO with Beta distribution
-├── ppo_revised.py          # PPO with Gaussian distribution (base PPO)
+├── algorithms/             # Agent implementations and buffer
+│   ├── __init__.py
+│   ├── base_agent.py
+│   ├── buffer.py
+│   ├── ppo.py
+│   └── grpo.py
+├── configs/                # Experiment configuration files (.json)
+├── networks/               # Neural network modules
+│   ├── __init__.py
+│   ├── mlp.py
+│   └── cnn.py
+├── scripts/                # Helper scripts (e.g., config generation, plotting)
+│   └── generate_configs.py # (Example, needs to be updated for Pydantic models)
+│   └── (plotting scripts)
+├── utils/                  # Utility modules
+│   ├── __init__.py
+│   ├── checkpoint_utils.py
+│   ├── distribution_utils.py
+│   ├── env_utils.py
+│   ├── logging_utils.py
+│   ├── pydantic_models.py
+│   ├── reproducibility_utils.py
+│   ├── timing_utils.py
+│   ├── torch_utils.py
+│   └── video_plot_utils.py
+├── experiment_runs/        # Default output directory for all runs
+│   └── <run_name>/         # Subdirectory for each experiment run
+│       ├── checkpoints/
+│       ├── logs/
+│       ├── videos/
+│       ├── metrics.json
+│       └── timings.jsonl
+│   └── _plots_learning_curves/ # Generated learning curve plots
 ├── run_experiment.py       # Main script to launch experiments
-├── utils.py                # Shared utility functions
 ├── README.md               # This file
 └── requirements.txt        # Python dependencies
 ```
 
 ## Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
-
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
+1.  **Clone the repository.**
+2.  **Create a virtual environment (recommended).**
 3.  **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-    *   **MuJoCo:** If you plan to use MuJoCo environments (HalfCheetah, Hopper, etc.), make sure you have MuJoCo installed correctly and install the extra dependencies:
-        ```bash
-        pip install gymnasium[mujoco]
-        ```
-    *   **CarRacing/Box2D:** For CarRacing, install the Box2D extras:
-        ```bash
-        pip install gymnasium[box2d]
-        # You might need system dependencies like swig:
-        # sudo apt-get update && sudo apt-get install swig # Debian/Ubuntu
-        # brew install swig # macOS
-        ```
-        Accept the Atari ROM license during installation if prompted, or run `ale-import-roms`.
+    *   Ensure you have the necessary extras for `gymnasium` depending on the environments you plan to use (e.g., `gymnasium[mujoco]`, `gymnasium[box2d]`).
 
 ## Workflow
 
-### 1. Generate Configuration Files (Optional but Recommended)
+### 1. Generate Configuration Files
 
-Use the provided script to generate JSON configuration files for all desired combinations of environments, algorithms, seeds, and GRPO G-values.
+Use or adapt `scripts/generate_configs.py` to create JSON configuration files. Ensure they conform to the Pydantic models in `utils/pydantic_models.py`.
 
-```bash
-python scripts/generate_configs.py
+**Key configuration fields in JSON:**
+*   `env_id`: e.g., "CartPole-v1", "Pendulum-v1", "CarRacing-v0".
+*   `algo`: "ppo" or "grpo".
+*   `seed`: Integer.
+*   `network_config`: Dict with `network_type` ("mlp" or "cnn"), `mlp_hidden_dims`, `cnn_output_features`.
+*   `ppo_config` (if `algo` is "ppo"): Dict with PPO hyperparameters like `distribution_type` ("normal" or "beta"), `lr`, `clip_eps`, etc.
+*   `grpo_config` (if `algo` is "grpo"): Dict with GRPO hyperparameters like `distribution_type`, `group_size`, `lr`, etc.
+*   Other general parameters like `total_steps`, `gamma`, etc.
+
+Example `ppo_pendulum_beta.json`:
+```json
+{
+  "env_id": "Pendulum-v1",
+  "algo": "ppo",
+  "seed": 0,
+  "total_steps": 200000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [64, 64]
+  },
+  "ppo_config": {
+    "distribution_type": "beta",
+    "lr": 0.0003,
+    "rollout_steps": 2048,
+    "num_minibatches": 32,
+    "ppo_epochs": 10,
+    "clip_eps": 0.2,
+    "entropy_coef": 0.005, // Beta entropy can be tricky, adjust carefully
+    "value_coef": 0.5
+  }
+}
 ```
 
-This will create a `configs/` directory (by default) containing the `.json` files. Review the script (`scripts/generate_configs.py`) to customize environments, seeds, hyperparameters, or the output directory.
-
 ### 2. Run Experiments
-
-Use the `run_experiment.py` script, pointing it to the directory containing your configuration files (e.g., the `configs/` directory created in the previous step).
 
 ```bash
 python run_experiment.py --config-dir configs/ --workers 4 --device cuda
 ```
-
-**Key Arguments:**
-*   `--config-dir` (`-cd`): **Required.** Path to the directory containing your `.json` config files.
-*   `--workers` (`-w`): Number of experiments to run in parallel (default: 1). Adjust based on your CPU cores and GPU memory.
-*   `--device` (`-d`): Device to use (`cpu` or `cuda`). Defaults to `cuda` if available, otherwise `cpu`.
-*   `--base-log-dir` (`-ld`): Base directory for saving all outputs (default: `experiment_runs/`).
-*   `--deterministic`: Use deterministic PyTorch algorithms (slower, for reproducibility checks).
-*   `--skip-plots`: Disable automatic plot generation *by the main runner* (you can still run analysis scripts manually).
-
-Experiments will run, saving logs, checkpoints, videos, metrics, and timings into subdirectories within the specified `--base-log-dir`.
+*   `--config-dir`: Path to your JSON config files.
+*   `--workers`: Number of parallel experiments.
+*   `--device`: `cpu` or `cuda`.
+*   `--base-log-dir`: Where to save `experiment_runs`.
 
 ### 3. Analyze Results
 
-After experiments have finished (or partially completed), use the analysis scripts:
+The `run_experiment.py` script includes a basic plotting function `plot_all_learning_curves`. You can expand this or use separate analysis scripts (like those previously in `scripts/`) by adapting them to read from the `metrics.json` files in each run's directory.
 
-*   **Plot General Learning Curves:**
-    ```bash
-    python scripts/plot_learning_curves.py experiment_runs/
-    ```
-    (Replace `experiment_runs/` if you used a different `--base-log-dir`). This script aggregates results across seeds for each (environment, algorithm) pair and plots the mean reward curve with standard deviation and min/max ranges. Plots are saved to `experiment_runs/_plots_learning_curves/` by default.
+## Notes on Action Distributions
 
-*   **Plot GRPO G-Parameter Analysis:**
-    ```bash
-    python scripts/plot_grpo_g_analysis.py experiment_runs/
-    ```
-    This script focuses specifically on GRPO runs. For each environment, it compares the learning curves (mean over seeds) for different `group_size` (G) values used in the experiments. Plots are saved to `experiment_runs/_plots_grpo_g_analysis/` by default.
+*   **Normal Distribution:** The actor network outputs `mean` and `log_std`. Actions are sampled from `Normal(mean, std)`. **No Tanh squashing is applied.** The model is expected to learn appropriate `mean` and `std` such that samples are generally within the environment's action bounds. Actions are **clipped** to the environment's `action_space.low` and `action_space.high` before being passed to `env.step()`.
+*   **Beta Distribution:** The actor network outputs `raw_alpha` and `raw_beta`, which are transformed (e.g., `softplus(raw) + 1.0`) to get `alpha` and `beta` parameters for the `Beta(alpha, beta)` distribution. This distribution naturally samples actions in the `[0, 1]` range. These samples are then linearly scaled to the environment's `[action_space.low, action_space.high]` range.
+*   **`Independent` Wrapper:** For multi-dimensional continuous action spaces, `torch.distributions.Independent` is used to wrap the base per-dimension distribution (Normal or Beta). This allows treating a batch of independent uni-dimensional distributions as a single multivariate distribution with a diagonal covariance matrix, simplifying log probability calculations by summing log-probs across action dimensions. This is a standard assumption and doesn't inherently affect reproducibility if seeding is correct. If action dimensions are strongly correlated, a `MultivariateNormal` with a learned full covariance matrix would be more expressive but complex.
 
-**Analysis Script Arguments:**
-*   Both plotting scripts accept the results directory as the first positional argument.
-*   `--output-dir` (`-o`): Specify a different directory to save the plots.
-*   `--total-steps` (`-t`): Set the maximum x-axis value (environment steps) for the plots (default: 1,000,000).
+## Reproducibility
 
-## Code Structure Overview
-
-*   **`run_experiment.py`:** Entry point. Parses arguments, finds configs, uses `ThreadPoolExecutor` to run `run_single_experiment` for each config concurrently. Handles overall timing.
-*   **`base_agent.py`:** Defines the `BaseAgent` ABC with common initialization (`__init__`), the main `train()` loop structure, evaluation/video logic, and abstract methods (`_setup_networks_and_optimizers`, `get_action`, `_rollout`, `_update`) that specific algorithms must implement.
-*   **`ppo_revised.py`:** Implements `PPO` inheriting from `BaseAgent`. Handles Gaussian policy logic, GAE calculation, and the PPO clipped surrogate objective update. Supports MLP and CNN+Head architectures.
-*   **`ppo_beta.py`:** Inherits from `PPO`. Overrides distribution-specific methods (`_get_distribution`, `_update`) to handle the Beta distribution and action scaling.
-*   **`grpo.py`:** Implements `GRPO_NoCritic` inheriting from `BaseAgent`. Implements the group rollout (`_rollout`) and the GRPO update rule (`_update`) involving the reference policy and KL penalty. Supports MLP and CNN+Head architectures.
-*   **`networks.py`:** Contains `nn.Module` definitions for `FeedForwardNN` (MLP) and `CNNFeatureExtractor`. Includes a `NETWORK_REGISTRY`.
-*   **`utils.py`:** Contains standalone helper functions for common tasks used across different modules.
-*   **`scripts/`:** Contains helper scripts for configuration generation and results analysis/plotting.
-
-## TODO / Potential Improvements
-
-*   Implement learning rate scheduling.
-*   Add support for vectorized environments (e.g., `gymnasium.vector.AsyncVectorEnv`) for faster rollouts.
-*   More sophisticated advantage normalization options.
-*   More detailed analysis scripts (e.g., final performance tables, hyperparameter sensitivity beyond GRPO-G).
-*   Refine CNN architecture and make it more configurable.
-*   Consider using Hydra or another configuration management library instead of plain JSON/script generation.
+The framework includes `utils/reproducibility_utils.py` to seed random number generators. For full PyTorch determinism (which can be slower), use the `--deterministic` flag. Note that complete determinism in RL can be challenging due to environment stochasticity and subtle GPU behaviors.

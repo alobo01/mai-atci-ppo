@@ -1,0 +1,20 @@
+[
+    {
+        "run_id": "HalfCheetah-v4_ppo_normal_seed0",
+        "status": "completed",
+        "duration_s": 1182.5346250000002,
+        "final_rewards_window": [
+            514.9090326232393,
+            618.5251169829434,
+            615.0936595136511,
+            317.37802867181665,
+            313.51363923249846,
+            657.9379059212907,
+            411.8096509843958,
+            694.1162198482834,
+            425.8041043706841,
+            724.1954722878627
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\experiment_runs\\HalfCheetah-v4_ppo_seed0_normal\\metrics.json"
+    }
+]

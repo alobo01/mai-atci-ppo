@@ -17,7 +17,7 @@ import torch.nn as nn
 from torch.optim import Optimizer
 
 import utils
-from utils import NpArray, Tensor, Device, Loggable, Timing
+from utils import _GLFW_LOCK, NpArray, Tensor, Device, Loggable, Timing
 
 
 class BaseAgent(ABC):
@@ -255,7 +255,12 @@ class BaseAgent(ABC):
                 done = terminated or truncated
                 total_reward += reward
                 ep_steps += 1
-                frame = eval_env.render()
+                with _GLFW_LOCK:
+                    try:
+                        frame = eval_env.render()
+                    except Exception as e:
+                        self.logger.warning(f"Render error: {e}")
+                        frame = None
                 if frame is not None:
                     frames.append(utils.overlay_text(frame, f"Ep: {ep+1} Step: {ep_steps} R: {total_reward:.2f}"))
 

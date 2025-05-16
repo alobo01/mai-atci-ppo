@@ -1,17 +1,16 @@
 """
-Generates JSON configuration files for RL experiments.
+Generates JSON configuration files for RL experiments, compatible with Pydantic models.
 
-Creates configs for specified environments, algorithms (PPO_Gauss, PPO_Beta, GRPO),
-seeds, and GRPO group sizes (G).
+Creates configs for specified environments, algorithms (PPO, GRPO),
+distribution types (normal, beta), seeds, and GRPO group sizes (G).
 """
 import json
-import os
 from pathlib import Path
 from copy import deepcopy
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any
 
 # --- Configuration ---
-OUTPUT_DIR = Path("configs")
+OUTPUT_DIR = Path("configs_generated")  # Avoid overwriting manual ones
 ENVS: List[str] = [
     "HalfCheetah-v4",
     "Hopper-v4",
@@ -21,179 +20,177 @@ ENVS: List[str] = [
     "InvertedDoublePendulum-v4",
     "CarRacing-v3",
 ]
-ALGOS: List[str] = ["ppo_gauss", "ppo_beta", "grpo"]
+ALGOS: List[str] = ["ppo", "grpo"]
+DISTRIBUTION_TYPES: List[str] = ["normal", "beta"]
 SEEDS: List[int] = [0, 1, 2]
-GRPO_G_VALUES: List[int] = [4, 8, 16, 32, 64, 128]
+GRPO_G_VALUES: List[int] = [4, 16, 64]
 
-# --- Base Hyperparameters ---
-BASE_CONFIG: Dict[str, Any] = {
+# --- Hyperparameter grids for testing ---
+ENTROPY_COEFS = [0.0, 0.001, 1e-5]
+KL_COEFS    = [0.001, 0.01, 0.1]
+
+# --- Base Experiment Hyperparameters ---
+BASE_EXPERIMENT_CONFIG: Dict[str, Any] = {
     "total_steps": 1_000_000,
     "gamma": 0.99,
-    "max_episode_steps": 1000, # Default, overridden if needed
-    # Logging/Saving intervals
-    "log_interval": 10000,     # Log more frequently maybe
+    "max_episode_steps": 1000,
+    "log_interval": 10000,
     "checkpoint_interval": 100000,
     "video_interval": 250000,
     "verbose": False,
-    "network_type": "mlp",      # Default network
-    # MLP structure
-    "mlp_hidden_dims": [64, 64],
-    # CNN structure (only used if network_type="cnn")
-    "cnn_output_features": 256,
-    # Default Learning Rate (can be algo/env specific)
-    "lr": 3e-4,
 }
 
-# --- Algorithm Specific Parameters ---
-ALGO_PARAMS: Dict[str, Dict[str, Any]] = {
-    "ppo_gauss": {
-        "rollout_steps": 2048, # Default, overridden by env
-        "num_minibatches": 32, # rollout_steps / num_minibatches = minibatch_size (64)
-        "ppo_epochs": 10,
-        "lam": 0.95,          # GAE lambda
-        "clip_eps": 0.2,
-        "entropy_coef": 0.0,  # Typically 0 for Mujoco PPO
-        "value_coef": 0.5,
-        "max_grad_norm": 0.5,
-        "target_kl": None,    # Optional KL early stopping
-    },
-    "ppo_beta": {
-        "rollout_steps": 2048,
-        "num_minibatches": 32,
-        "ppo_epochs": 10,
-        "lam": 0.95,
-        "clip_eps": 0.2,
-        "entropy_coef": 0.0,
-        "value_coef": 0.5,
-        "max_grad_norm": 0.5,
-        "target_kl": None,
-    },
-    "grpo": {
-        # group_size (G) set dynamically
-        "update_epochs": 10,
-        "max_grad_norm": 0.5,
-        "entropy_coef": 0.001, # Small entropy bonus often helps GRPO/PG
-        "kl_coef": 0.01,       # KL vs reference policy weight
-        "ref_update_interval": 10000, # How often to update reference policy
-        "minibatch_size": 256, # For the update loop over collected steps
-    }
+# --- Base Network Configuration ---
+BASE_NETWORK_CONFIG: Dict[str, Any] = {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [64, 64],
+    "cnn_output_features": 256,
+}
+
+# --- Base PPO Algorithm Parameters ---
+BASE_PPO_PARAMS: Dict[str, Any] = {
+    "lr": 3e-4,
+    "rollout_steps": 2048,
+    "num_minibatches": 32,
+    "lam": 0.95,
+    "clip_eps": 0.2,
+    "ppo_epochs": 10,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": None,
+}
+
+# --- Base GRPO Algorithm Parameters ---
+BASE_GRPO_PARAMS: Dict[str, Any] = {
+    "lr": 1e-4,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "ref_update_interval": 10000,
+    "minibatch_size": 256,
+    "rollout_steps_per_trajectory": 1000,
 }
 
 # --- Environment Specific Overrides ---
-ENV_OVERRIDES: Dict[str, Dict[str, Any]] = {
-    "HalfCheetah-v4": {"rollout_steps": 2048},
-    "Hopper-v4": {"rollout_steps": 2048},
-    "Walker2d-v4": {"rollout_steps": 2048},
-    "Swimmer-v4": {"rollout_steps": 2048}, # PPO paper uses 2048, maybe adjust later
-    "InvertedPendulum-v4": {"rollout_steps": 512, "max_episode_steps": 1000},
-    "InvertedDoublePendulum-v4": {"rollout_steps": 2048, "max_episode_steps": 1000}, # Needs larger rollout?
-    "CarRacing-v3": {
-        "network_type": "cnn",
+ENV_GENERAL_OVERRIDES: Dict[str, Dict[str, Any]] = {
+    "InvertedPendulum-v4": {"max_episode_steps": 1000},
+    "InvertedDoublePendulum-v4": {"max_episode_steps": 1000},
+    "Swimmer-v4": {
         "max_episode_steps": 1000,
-        "gamma": 0.995, # Often higher gamma helps CarRacing
-        # PPO params might need tuning for CarRacing (smaller batches?)
-        "rollout_steps": 1024, # Smaller rollout for memory with CNN
-        "num_minibatches": 16, # -> minibatch_size = 64
-        "lr": 2.5e-4,
-        "clip_eps": 0.1, # From original script
-        "entropy_coef": 0.01, # From original script
-         # GRPO params for CarRacing
-        "grpo": {
-             "minibatch_size": 128, # Adjust for potentially smaller rollouts
-             "lr": 1e-4, # Potentially lower LR for CNN
-        }
-    }
+        "network_config": {
+            "network_type": "mlp",
+            "mlp_hidden_dims": [128, 128],
+            "cnn_output_features": 256,
+        },
+    },
+    "CarRacing-v3": {
+        "gamma": 0.99,
+        "max_episode_steps": 1000,
+        "network_config": {
+            "network_type": "cnn",
+            "mlp_hidden_dims": [256],
+            "cnn_output_features": 256,
+        },
+    },
 }
-# --- Validation Function ---
-def validate_config(config: Dict[str, Any], filename: str) -> bool:
-    """Basic validation for required keys and PPO batch sizes."""
-    required = ["env_id", "algo", "seed", "total_steps"]
-    if not all(k in config for k in required):
-        print(f"Validation FAIL {filename}: Missing one of {required}")
-        return False
 
-    if "ppo" in config["algo"]:
-        if "rollout_steps" not in config or "num_minibatches" not in config:
-            print(f"Validation FAIL {filename}: PPO config missing rollout_steps or num_minibatches")
-            return False
-        if config["rollout_steps"] % config["num_minibatches"] != 0:
-            print(f"Validation FAIL {filename}: PPO rollout_steps ({config['rollout_steps']}) "
-                  f"not divisible by num_minibatches ({config['num_minibatches']})")
-            # You could automatically adjust num_minibatches here if desired
-            # e.g., config["num_minibatches"] = max(1, config["rollout_steps"] // 64) # Aim for mb size ~64
-            return False
-        config["minibatch_size"] = config["rollout_steps"] // config["num_minibatches"]
+# --- Environment Specific Algo Parameter Overrides ---
+ENV_ALGO_OVERRIDES: Dict[str, Dict[str, Dict[str, Any]]] = {
+    "InvertedPendulum-v4": {
+        "ppo": {"rollout_steps": 512, "num_minibatches": 8},
+    },
+    "Swimmer-v4": {
+        "ppo": {"lr": 2e-4, "entropy_coef": 0.01},
+        "grpo": {"lr": 5e-5, "entropy_coef": 0.002},
+    },
+    "CarRacing-v3": {
+        "ppo": {
+            "lr": 2.5e-4,
+            "rollout_steps": 4096,
+            "num_minibatches": 64,
+            "clip_eps": 0.1,
+            "entropy_coef": 0.01,
+        },
+        "grpo": {
+            "lr": 1e-4,
+            "minibatch_size": 128,
+            "rollout_steps_per_trajectory": 512,
+            "entropy_coef": 0.005,
+        },
+    },
+}
 
-    if config["algo"] == "grpo":
-         if "group_size" not in config:
-              print(f"Validation FAIL {filename}: GRPO config missing group_size")
-              return False
-         if "minibatch_size" not in config:
-              print(f"Validation FAIL {filename}: GRPO config missing minibatch_size (for update step)")
-              return False
-
-    return True
-
-# --- Generation Loop ---
 def generate_configs() -> None:
-    """Generates all configuration files."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     count = 0
 
     for env_id in ENVS:
+        is_discrete = "CartPole" in env_id
         for algo in ALGOS:
-             # PPO_Beta only for continuous (Box space) environments
-             if algo == "ppo_beta" and env_id in ["CarRacing-v3"]: # Add others if needed
-                 # Simple check, ideally check env.action_space type
-                 is_discrete = False # Assume Mujoco/CarRacing are continuous
-                 if is_discrete:
-                     print(f"Skipping ppo_beta for discrete env: {env_id}")
-                     continue
+            for dist in DISTRIBUTION_TYPES:
+                if is_discrete and dist == "beta":
+                    continue
+                if is_discrete and dist != "categorical":
+                    continue
 
-             for seed in SEEDS:
-                 # Base config for this combination
-                 cfg = deepcopy(BASE_CONFIG)
-                 cfg["env_id"] = env_id
-                 cfg["algo"] = algo
-                 cfg["seed"] = seed
+                # choose hyper loops
+                param_combinations = []
+                if algo == "ppo":
+                    for ent in ENTROPY_COEFS:
+                        param_combinations.append({"entropy_coef": ent})
+                else:
+                    for ent in ENTROPY_COEFS:
+                        for kl in KL_COEFS:
+                            param_combinations.append({"entropy_coef": ent, "kl_coef": kl})
 
-                 # Apply environment overrides (including nested GRPO overrides)
-                 env_cfg = ENV_OVERRIDES.get(env_id, {})
-                 grpo_env_cfg = env_cfg.pop("grpo", {}) # Extract nested GRPO overrides
-                 cfg.update(env_cfg)
+                for seed in SEEDS:
+                    for params in param_combinations:
+                        exp_cfg = deepcopy(BASE_EXPERIMENT_CONFIG)
+                        exp_cfg.update({"env_id": env_id, "algo": algo, "seed": seed})
+                        exp_cfg.update(ENV_GENERAL_OVERRIDES.get(env_id, {}))
 
-                 # Apply base algorithm parameters
-                 cfg.update(ALGO_PARAMS.get(algo, {}))
+                        net_cfg = deepcopy(BASE_NETWORK_CONFIG)
+                        net_cfg.update(ENV_GENERAL_OVERRIDES.get(env_id, {}).get("network_config", {}))
+                        exp_cfg["network_config"] = net_cfg
 
-                 # Apply specific GRPO env overrides if algo is GRPO
-                 if algo == "grpo":
-                     cfg.update(grpo_env_cfg)
+                        if algo == "ppo":
+                            cfg = deepcopy(BASE_PPO_PARAMS)
+                            cfg["distribution_type"] = ("categorical" if is_discrete else dist)
+                            cfg.update(params)
+                            cfg.update(ENV_ALGO_OVERRIDES.get(env_id, {}).get("ppo", {}))
+                            exp_cfg["ppo_config"] = cfg
+                        else:
+                            cfg = deepcopy(BASE_GRPO_PARAMS)
+                            cfg["distribution_type"] = ("categorical" if is_discrete else dist)
+                            cfg.update(params)
+                            cfg.update(ENV_ALGO_OVERRIDES.get(env_id, {}).get("grpo", {}))
+                            exp_cfg["grpo_config"] = cfg
 
-                 # Handle GRPO G-Values
-                 g_values_for_run = GRPO_G_VALUES if algo == "grpo" else [None] # Use None for non-GRPO algos
+                        g_values = GRPO_G_VALUES if algo == "grpo" else [None]
+                        for g in g_values:
+                            cfg_copy = deepcopy(exp_cfg)
+                            fname_parts = [env_id, algo]
+                            if not is_discrete:
+                                fname_parts.append(dist)
+                            if algo == "grpo" and g is not None:
+                                cfg_copy["grpo_config"]["group_size"] = g
+                                fname_parts.append(f"g{g}")
+                            fname_parts.append(f"seed{seed}")
+                            # include hyperparams in filename
+                            fname_parts.append(f"ent{params['entropy_coef']}")
+                            if algo == "grpo":
+                                fname_parts.append(f"kl{params['kl_coef']}")
+                            fname = "_".join(str(x) for x in fname_parts) + ".json"
+                            fpath = OUTPUT_DIR / fname
 
-                 for g_val in g_values_for_run:
-                     final_cfg = deepcopy(cfg) # Copy before setting G
-                     filename_parts = [env_id, algo]
+                            if algo == "ppo":
+                                pc = cfg_copy["ppo_config"]
+                                if pc["rollout_steps"] % pc["num_minibatches"] != 0:
+                                    continue
 
-                     if g_val is not None: # This is a GRPO run with a specific G
-                         final_cfg["group_size"] = g_val
-                         filename_parts.append(f"g{g_val}")
-
-                     filename_parts.append(f"seed{seed}")
-                     filename = "_".join(filename_parts) + ".json"
-                     filepath = OUTPUT_DIR / filename
-
-                     # Validate before saving
-                     if validate_config(final_cfg, filename):
-                         with open(filepath, 'w') as f:
-                             json.dump(final_cfg, f, indent=4, sort_keys=True)
-                         count += 1
-                     else:
-                         print(f"-> Config generation skipped for {filename}")
-
-
-    print(f"\nGenerated {count} configuration files in '{OUTPUT_DIR}'.")
+                            with open(fpath, 'w') as f:
+                                json.dump(cfg_copy, f, indent=4, sort_keys=True)
+                            count += 1
+    print(f"Generated {count} configuration files in '{OUTPUT_DIR}' with varied entropy/kl.")
 
 if __name__ == "__main__":
     generate_configs()

@@ -1,0 +1,46 @@
+2025-05-16 03:03:45 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Initializing agent for HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal on device cpu
+2025-05-16 03:03:45 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Full Config: {
+  "env_id": "HalfCheetah-v4",
+  "algo": "grpo",
+  "seed": 0,
+  "gamma": 0.99,
+  "total_steps": 10000,
+  "log_interval": 5000,
+  "checkpoint_interval": 50000,
+  "video_interval": 100000,
+  "run_name": "HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64",
+  "base_log_dir": "experiment_runs_hpo",
+  "verbose": false,
+  "max_episode_steps": null,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      64,
+      64
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 64,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.001,
+    "kl_coef": 0.0001,
+    "ref_update_interval": 100000,
+    "minibatch_size": 256,
+    "lr": 0.00005,
+    "rollout_steps_per_trajectory": 1000
+  }
+}
+2025-05-16 03:03:47 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Initialized GRPO actor (type: mlp, dist: normal) and reference.
+2025-05-16 03:03:47 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | No actor checkpoint found at experiment_runs_hpo\HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal\checkpoints\actor.pt, starting fresh.
+2025-05-16 03:03:47 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Starting training from step 0...
+2025-05-16 03:04:50 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Step: 64000/10000 | Avg Reward: -362.00 | Avg Length: 1000.0
+2025-05-16 03:04:50 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Update Info: policy_loss: -0.0035 | kl_loss: 0.0032 | entropy_loss: 8.6402 | total_loss: -0.0122
+2025-05-16 03:04:50 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 49536.34ms | ref_actor_mlp: 0.30ms | backward_pass: 1.49ms | optimizer_step: 0.90ms | update_phase: 13665.51ms
+2025-05-16 03:04:50 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Training finished at step 64000.
+2025-05-16 03:04:50 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Starting evaluation (1 episodes, deterministic=True)...
+2025-05-16 03:05:03 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Evaluation Complete: Avg Reward = -155.65 (over 1 eps)
+2025-05-16 03:05:08 | HalfCheetah-v4_grpo_hpo68_lr5e-05_ent0p001_kl_0p0001_gro64_normal | INFO | Saved best evaluation video: final_step64000_detTrue_bestR-155.6.mp4

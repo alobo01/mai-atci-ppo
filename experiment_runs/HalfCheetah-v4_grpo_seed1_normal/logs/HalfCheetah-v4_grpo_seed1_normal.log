@@ -1,0 +1,42 @@
+2025-05-16 10:56:44 | HalfCheetah-v4_grpo_seed1_normal | INFO | Initializing agent for HalfCheetah-v4_grpo_seed1_normal on device cpu
+2025-05-16 10:56:44 | HalfCheetah-v4_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "HalfCheetah-v4",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 10000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      64,
+      64
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 32,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.0001,
+    "kl_coef": 0.0001,
+    "ref_update_interval": 100000,
+    "minibatch_size": 256,
+    "lr": 0.0003,
+    "rollout_steps_per_trajectory": 1000
+  }
+}
+2025-05-16 10:56:55 | HalfCheetah-v4_grpo_seed1_normal | INFO | Initialized GRPO actor (type: mlp, dist: normal) and reference.
+2025-05-16 10:56:55 | HalfCheetah-v4_grpo_seed1_normal | INFO | No actor checkpoint found at experiment_runs\HalfCheetah-v4_grpo_seed1_normal\checkpoints\actor.pt, starting fresh.
+2025-05-16 10:56:55 | HalfCheetah-v4_grpo_seed1_normal | INFO | Starting training from step 0...
+2025-05-16 10:58:01 | HalfCheetah-v4_grpo_seed1_normal | INFO | Step: 32000/10000000 | Avg Reward: -363.06 | Avg Length: 1000.0
+2025-05-16 10:58:01 | HalfCheetah-v4_grpo_seed1_normal | INFO | Update Info: policy_loss: -0.0077 | kl_loss: 0.0113 | entropy_loss: 8.5000 | total_loss: -0.0086
+2025-05-16 10:58:01 | HalfCheetah-v4_grpo_seed1_normal | INFO | Timings (avg ms): actor_mlp: 0.38ms | rollout_phase: 53311.66ms | ref_actor_mlp: 0.64ms | backward_pass: 2.20ms | optimizer_step: 1.60ms | update_phase: 12222.18ms

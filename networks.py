@@ -109,8 +109,8 @@ class CNNFeatureExtractor(nn.Module): # Renamed from CNNNetwork for clarity
 
         # Permute if needed (e.g., from HWC to CHW if env provides HWC)
         # Assuming input `obs` is already in CHW format (common for PyTorch CNNs)
-        # Example: if obs.shape[-1] == c: obs = obs.permute(0, 3, 1, 2)
-
+        if obs.shape[-1] in [3, 1]: # Check if last dim is channels
+            obs = obs.permute(0, 3, 1, 2)
         features = self.conv(obs)
         features = self.fc(features) # Pass through final linear + activation
         return features

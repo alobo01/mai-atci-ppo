@@ -1,0 +1,30 @@
+{
+    "env_id": "HalfCheetah-v4",
+    "algo": "ppo",
+    "seed": 0,
+    "gamma": 0.99,
+    "total_steps": 300000,
+    "log_interval": 10000,
+    "checkpoint_interval": 100000,
+    "video_interval": 250000,
+    "verbose": false,
+    "max_episode_steps": 1000,
+    "network_config": {
+        "network_type": "mlp",
+        "mlp_hidden_dims": [64, 64],
+        "cnn_output_features": 256
+    },
+    "ppo_config": {
+        "distribution_type": "normal",
+        "lr": 0.0003,
+        "rollout_steps": 2048,
+        "num_minibatches": 32,
+        "lam": 0.95,
+        "clip_eps": 0.2,
+        "ppo_epochs": 10,
+        "entropy_coef": 0.0,
+        "value_coef": 0.5,
+        "max_grad_norm": 1,
+        "target_kl": null
+    }
+}

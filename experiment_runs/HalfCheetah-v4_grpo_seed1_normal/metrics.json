@@ -1,0 +1,11 @@
+{
+    "steps": [
+        32000
+    ],
+    "avg_episodic_reward": [
+        -363.06361085964744
+    ],
+    "avg_episode_length": [
+        1000.0
+    ]
+}

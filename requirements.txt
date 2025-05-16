@@ -1,8 +1,10 @@
-torch>=1.10.0       # Or specify your required version
-gymnasium[accept-rom-license]>=0.28.0 # Includes Atari-py for CarRacing ROMs (accept license during install or manually)
-gymnasium[mujoco]>=0.28.0 # Uncomment if running MuJoCo envs
+torch>=1.10.0
+gymnasium[accept-rom-license]>=0.29.0
+# gymnasium[mujoco]>=0.29.0 # Uncomment if running MuJoCo envs
+# gymnasium[box2d]>=0.29.0  # Uncomment for Box2D envs
 numpy>=1.20.0
 matplotlib>=3.5.0
 imageio>=2.15.0
-imageio-ffmpeg      # Backend for imageio video writing
-opencv-python>=4.5.0 # For cv2 text overlay
+imageio-ffmpeg
+opencv-python>=4.5.0
+pydantic>=2.0.0

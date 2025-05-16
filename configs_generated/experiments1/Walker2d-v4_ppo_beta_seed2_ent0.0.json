@@ -1,0 +1,33 @@
+{
+    "algo": "ppo",
+    "checkpoint_interval": 100000,
+    "env_id": "Walker2d-v4",
+    "gamma": 0.99,
+    "log_interval": 10000,
+    "max_episode_steps": 1000,
+    "network_config": {
+        "cnn_output_features": 256,
+        "mlp_hidden_dims": [
+            64,
+            64
+        ],
+        "network_type": "mlp"
+    },
+    "ppo_config": {
+        "clip_eps": 0.2,
+        "distribution_type": "beta",
+        "entropy_coef": 0.0,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "max_grad_norm": 0.5,
+        "num_minibatches": 32,
+        "ppo_epochs": 10,
+        "rollout_steps": 2048,
+        "target_kl": null,
+        "value_coef": 0.5
+    },
+    "seed": 2,
+    "total_steps": 1000000,
+    "verbose": false,
+    "video_interval": 250000
+}

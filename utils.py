@@ -4,7 +4,7 @@ Shared helpers for RL experiments.
 Author: Antonio Lobo
 """
 from __future__ import annotations
-
+import threading
 import json
 import logging
 import os
@@ -25,6 +25,7 @@ from torch.distributions import (Beta, Categorical, Distribution,
 from torch.distributions.transforms import TanhTransform
 import torch.nn.functional as F
 
+
 if TYPE_CHECKING:
     from .base_agent import BaseAgent # Avoid circular import
 
@@ -34,6 +35,8 @@ Tensor = torch.Tensor
 Device = Union[torch.device, str]
 Loggable = Union[int, float, str, bool]
 
+# a single lock that covers any glfwInit()/RegisterClassEx
+_GLFW_LOCK = threading.Lock()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Logging
@@ -139,19 +142,20 @@ def make_env(
     Returns:
         Initialized Gymnasium environment.
     """
-    try:
-        env = gym.make(env_id, render_mode=render_mode)
-    except Exception as e:
-        print(f"Error creating env '{env_id}': {e}")
-        # Attempt without render_mode if it was the cause
-        if render_mode:
-            try:
-                print(f"Retrying without render_mode...")
-                env = gym.make(env_id)
-            except Exception as e2:
-                 raise RuntimeError(f"Failed to create env '{env_id}' even without render_mode.") from e2
-        else:
-            raise e
+    with _GLFW_LOCK:
+        try:
+            env = gym.make(env_id, render_mode=render_mode)
+        except Exception as e:
+            print(f"Error creating env '{env_id}': {e}")
+            # Attempt without render_mode if it was the cause
+            if render_mode:
+                try:
+                    print(f"Retrying without render_mode...")
+                    env = gym.make(env_id)
+                except Exception as e2:
+                    raise RuntimeError(f"Failed to create env '{env_id}' even without render_mode.") from e2
+            else:
+                raise e
 
 
     # Apply TimeLimit wrapper unless already applied
@@ -228,45 +232,38 @@ def get_action_distribution(
         std = torch.exp(log_std.clamp(min=-20, max=2)) # Clamp for stability
 
         # Use Normal for potentially multi-dimensional actions
-        base_dist = Normal(mean, std)
-        # Use Independent to handle correlations if needed, sums log_prob across dims
-        # For diagonal covariance assumed here, Independent sums log probs.
-        dist = Independent(base_dist, 1) # Sum over the last dim (action dim)
+        base_normal_dist = Normal(mean, std)
 
-        # Tanh squashing for bounded actions [-1, 1] -> [low, high]
-        # Note: Some implementations skip squashing for PPO, relying on clipping.
-        #       Let's include it as it's common, especially with Beta dist.
-        #       If using Beta dist, it handles bounds differently.
-        # This logic assumes Gaussian PPO needs squashing.
-        # If using Beta, the PPO_Beta class will override _dist.
+        # Tanh squashing transformation
+        # cache_size=1 is important for TanhTransform for numerical stability and performance.
+        squash_transform = TanhTransform(cache_size=1)
+        squashed_dist_per_dim = TransformedDistribution(base_normal_dist, squash_transform)
+        # Make it independent over action dimensions.
+        # This sums the log_probs from squashed_dist_per_dim over the action dimensions.
+        # `dist_actions_in_minus_1_to_1` will sample actions in [-1, 1] and its log_prob
+        # will be for actions in this [-1, 1] range.
+        dist_actions_in_minus_1_to_1 = Independent(squashed_dist_per_dim, 1)
 
-        # low/high tensors on the correct device
-        low = torch.as_tensor(action_space.low, device=mean.device, dtype=mean.dtype)
-        high = torch.as_tensor(action_space.high, device=mean.device, dtype=mean.dtype)
-        action_range = high - low
+        # Postprocessor to scale from [-1, 1] to [low, high]
+        low_t = torch.as_tensor(action_space.low, device=mean.device, dtype=mean.dtype)
+        high_t = torch.as_tensor(action_space.high, device=mean.device, dtype=mean.dtype)
 
-        # Use TanhTransform if action bounds are finite and symmetric around 0 often
-        # For general bounds, rescale manually after sampling
-        # Let's provide a manual rescale postprocessor
-        def postprocessor(raw_action: Tensor) -> Tensor:
-            # Assume raw_action comes from Normal dist (unbounded)
-            # Apply tanh to squash to (-1, 1)
-            squashed_action = torch.tanh(raw_action)
-            # Rescale to [low, high]
-            env_action = low + action_range * (squashed_action + 1.0) / 2.0
-            # Clamp for safety, although tanh should prevent exceeding bounds much
-            return torch.clamp(env_action, low, high)
+        # Scaling: env_action = bias + scale_factor * action_minus1_1
+        action_bias_t = (low_t + high_t) / 2.0
+        action_scale_factor_t = (high_t - low_t) / 2.0
+        # Prevent division by zero if low==high (action_scale_factor_t can be 0 for some dims)
+        action_scale_factor_t = torch.max(
+            action_scale_factor_t,
+            torch.tensor(1e-8, device=action_scale_factor_t.device, dtype=action_scale_factor_t.dtype)
+        )
 
-        # If we want a Tanh-squashed *distribution* itself (alters log_prob):
-        # squash_transform = TanhTransform(cache_size=1)
-        # dist = TransformedDistribution(base_dist, squash_transform)
-        # dist = Independent(dist, 1) # Apply independent after transform
-        # def postprocessor_squashed(y: Tensor) -> Tensor: # y is already in [-1, 1]
-        #     return low + action_range * (y + 1.0) / 2.0
-        # return dist, postprocessor_squashed
+        def postprocessor_from_minus1_1(action_minus1_1: Tensor) -> Tensor:
+            # action_minus1_1 is sampled from dist_actions_in_minus_1_to_1, already in [-1, 1]
+            env_action = action_bias_t + action_scale_factor_t * action_minus1_1
+            # Final clamp for safety, though action_minus1_1 should be within bounds.
+            return torch.clamp(env_action, low_t, high_t)
 
-        # Returning the Normal dist + postprocessor applying tanh and rescale
-        return dist, postprocessor
+        return dist_actions_in_minus_1_to_1, postprocessor_from_minus1_1
 
     elif isinstance(action_space, gym.spaces.Discrete):
         # Assumes actor_output contains logits
@@ -436,7 +433,7 @@ def load_checkpoint(agent: 'BaseAgent', dir_path: Path) -> int:
 
     # Ensure networks are in eval/train mode appropriately after loading
     if hasattr(agent, "actor"): agent.actor.train()
-    if hasattr(agent, "critic"): agent.critic.train()
+    if hasattr(agent, "critic") and not agent.critic is None: agent.critic.train()
 
     return start_step
 
