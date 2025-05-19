@@ -4,15 +4,17 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# --- Configuration ---
-EXP_DIR = st.sidebar.text_input("Experiment Logs Directory", "finalLogs")
-
 # Page setup
 st.set_page_config(page_title="RL Experiment Dashboard", layout="wide")
 st.title("📊 Reinforcement Learning Experiment Dashboard")
 st.markdown(
     "Welcome! Use this dashboard to explore your PPO and GRPO experiment runs across different environments."
 )
+
+# --- Configuration ---
+EXP_DIR = st.sidebar.text_input("Experiment Logs Directory", "finalLogs")
+
+
 
 # Sidebar: experiment filtering & selection
 st.sidebar.header("Experiment Selection")
