@@ -6,14 +6,15 @@ from pathlib import Path
 import torch
 import imageio
 import numpy as np
+from pydantic import ValidationError
 
-from algorithms.base_agent import BaseAgent
+import gymnasium as gym
+
 from algorithms.ppo import PPO
 from algorithms.grpo import GRPO_NoCritic
-from utils import env_utils, torch_utils
+from utils import torch_utils
 from utils.pydantic_models import ExperimentConfig
 
-# Algo registry must match what you used during training:
 ALGO_REGISTRY = {
     "ppo": PPO,
     "grpo": GRPO_NoCritic,
@@ -22,74 +23,107 @@ ALGO_REGISTRY = {
 def load_experiment_config(config_path: Path) -> ExperimentConfig:
     with open(config_path, 'r') as f:
         cfg = json.load(f)
-    cfg['_config_file_path'] = str(config_path.resolve())
-    return ExperimentConfig(**cfg)
+
+    algo = cfg.get("algo", "").lower()
+    if algo == "ppo" and "grpo_config" in cfg:
+        cfg.pop("grpo_config", None)
+    elif algo == "grpo" and "ppo_config" in cfg:
+        cfg.pop("ppo_config", None)
+
+    try:
+        return ExperimentConfig(**cfg)
+    except ValidationError as e:
+        print(f"[warning] config validation failed: {e}. Falling back to un‐validated construct().")
+        return ExperimentConfig.construct(**cfg)
 
 def rollout_episode(env, agent, max_steps: int):
-    """Returns list of RGB frames for one episode rollout."""
-    obs = env.reset()
+    """
+    Roll out one episode, collecting frames.
+    Stops when env signals done or when max_steps is reached.
+    """
+    # Gymnasium reset returns (obs, info)
+    obs, _ = env.reset()
+
     frames = []
     for _ in range(max_steps):
-        # render before action so you see initial state
-        frame = env.render(mode='rgb_array')
+        # always returns an RGB array because of render_mode
+        frame = env.render()
         frames.append(frame)
-        with torch.no_grad():
-            action = agent.get_action(obs)  # or agent.act(obs), depending on your API
-        obs, reward, done, _ = env.step(action)
+
+        # agent.get_action may return (action, extras) or action directly
+        out = agent.get_action(obs)
+        action = out[0] if isinstance(out, tuple) else out
+
+        obs, reward, terminated, truncated, _ = env.step(action)
+        done = terminated or truncated
+
         if done:
-            # capture final frame
-            frames.append(env.render(mode='rgb_array'))
+            frames.append(env.render())
             break
+
     return frames
 
 def main():
-    p = argparse.ArgumentParser("Load saved actors and generate one‐episode videos")
-    p.add_argument("--base-log-dir", "-ld", type=Path, default=Path("finalLogs"),
-                   help="Top‐level folder containing all your runs")
-    p.add_argument("--device", "-d", type=str, default=None,
-                   help="torch device (cpu or cuda). Auto‐detect if not set.")
-    args = p.parse_args()
+    parser = argparse.ArgumentParser("Generate one-episode videos from saved actors")
+    parser.add_argument(
+        "--base-log-dir", "-ld",
+        type=Path,
+        default=Path("finalLogs"),
+        help="Top‐level folder containing individual run subfolders"
+    )
+    parser.add_argument(
+        "--device", "-d",
+        type=str,
+        default=None,
+        help="Torch device (cpu or cuda). Auto‐detect if not set."
+    )
+    args = parser.parse_args()
 
     device = torch_utils.get_device(args.device)
     base = args.base_log_dir.expanduser()
     if not base.is_dir():
-        print(f"[error] base‐log‐dir not found: {base}")
+        print(f"[error] base-log-dir not found: {base}")
         return
 
     videos_dir = base / "videos"
     videos_dir.mkdir(exist_ok=True)
 
-    # find every subfolder that has checkpoints/actor.pt
-    for run_dir in base.iterdir():
+    for run_dir in sorted(base.iterdir()):
         ckpt = run_dir / "checkpoints" / "actor.pt"
         cfg_file = run_dir / "config.json"
         if not ckpt.exists() or not cfg_file.exists():
             continue
 
-        print(f"→ Generating video for run {run_dir.name}")
+        print(f"\n→ Generating video for run: {run_dir.name}")
+
         # 1) load config
         config = load_experiment_config(cfg_file)
 
-        # 2) build env
-        env = env_utils.make_env(
-            env_id=config.env_id,
-            seed=config.seed,
-            max_episode_steps=config.max_episode_steps
+        # 2) make env without TimeLimit, but with rgb_array rendering
+        env = gym.make(
+            config.env_id,
+            render_mode="rgb_array"
         )
+        if config.seed is not None:
+            env.reset(seed=config.seed)
 
-        # 3) instantiate agent and load weights
-        AlgoClass = ALGO_REGISTRY[config.algo.lower()]
+        # 3) instantiate agent
+        AlgoClass = ALGO_REGISTRY[config.algo]
         agent = AlgoClass(env=env, config=config, device_str=device)
-        # assume your agent has a load() or similar:
-        agent.load_checkpoint(str(ckpt))  
 
-        # 4) rollout
-        frames = rollout_episode(env, agent, config.max_episode_steps)
+        # 4) load actor weights
+        state_dict = torch.load(ckpt, map_location=device)
+        agent.actor.load_state_dict(state_dict)
+        agent.actor.eval()
 
-        # 5) save .mp4
+        # 5) rollout up to max_episode_steps (or default 10k)
+        max_steps = int(config.max_episode_steps or 10_000)
+        frames = rollout_episode(env, agent, max_steps)
+
+        # 6) save mp4
         out_path = videos_dir / f"{run_dir.name}.mp4"
         imageio.mimsave(str(out_path), frames, fps=30)
-        print(f"  → saved to {out_path}")
+        print(f"  ↳ saved video to: {out_path}")
 
         env.close()
 
