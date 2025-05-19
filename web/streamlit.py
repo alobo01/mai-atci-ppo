@@ -100,6 +100,22 @@ class RolloutBufferSamples(BaseModel):
         arbitrary_types_allowed = True
 
 # --- Streamlit Dashboard ---
+# Workaround: ensure an asyncio event loop and avoid Streamlit watcher error on torch._classes
+import asyncio
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
+# Monkey-patch torch._classes path to prevent __getattr__ errors
+if 'torch' in globals():
+    try:
+        import torch as _torch
+        if hasattr(_torch, '_classes') and hasattr(_torch._classes, '__path__'):
+            _torch._classes.__path__ = []
+    except Exception:
+        pass
+
+st.set_page_config(page_title="RL Experiment Dashboard", layout="wide")
 st.set_page_config(page_title="RL Experiment Dashboard", layout="wide")
 st.title("📊 Reinforcement Learning Experiment Dashboard")
 st.markdown(
@@ -159,9 +175,7 @@ def has_videos(run_dir: str) -> bool:
 runs = [r for r in valid_runs if (selected_env == "All" or r.startswith(selected_env))]
 if enable_video_filter:
     runs = [r for r in runs if has_videos(r)]
-
-selected_run = st.sidebar.selectbox("Run Directory", runs)("Environment", ["All"] + envs)
-runs = [r for r in valid_runs if (selected_env == "All" or r.startswith(selected_env))]
+# Select run
 selected_run = st.sidebar.selectbox("Run Directory", runs)
 run_path = os.path.join(EXP_DIR, selected_run)
 
