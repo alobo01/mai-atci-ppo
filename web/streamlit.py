@@ -116,7 +116,6 @@ if 'torch' in globals():
         pass
 
 st.set_page_config(page_title="RL Experiment Dashboard", layout="wide")
-st.set_page_config(page_title="RL Experiment Dashboard", layout="wide")
 st.title("📊 Reinforcement Learning Experiment Dashboard")
 st.markdown(
     "Welcome! Use this dashboard to explore your PPO and GRPO experiment runs across different environments."
