@@ -37,7 +37,7 @@ FOLDER_RE = re.compile(
     r"$"
 )
 
-MIN_STEPS = 900_000
+MIN_STEPS = 90000
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
