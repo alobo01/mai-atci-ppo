@@ -22,23 +22,18 @@ PHASES = [
     "actor_mlp",
     "ref_actor_mlp"
 ]
-DISTS = ["beta", "normal"]
+DISTS = ["normal"]
 G_VALUES = ["4", "16", "64"]
 TARGET_ENV = "CarRacing-v3"
 
 # possible labels and mapping to config tuples
 LABELS = [
-    "PPO_BETA",
     "PPO_NORMAL",
-    "GRPO_BETA_G4",
-    "GRPO_BETA_G16",
-    "GRPO_BETA_G64",
     "GRPO_NORMAL_G4",
     "GRPO_NORMAL_G16",
     "GRPO_NORMAL_G64",
 ]
 LABEL_TO_CFG = {
-    "PPO_BETA":   ("PPO", "BETA", None),
     "PPO_NORMAL": ("PPO", "NORMAL", None),
     **{f"GRPO_{d.upper()}_G{g}": ("GRPO", d.upper(), f"G{g}") for d in DISTS for g in G_VALUES}
 }

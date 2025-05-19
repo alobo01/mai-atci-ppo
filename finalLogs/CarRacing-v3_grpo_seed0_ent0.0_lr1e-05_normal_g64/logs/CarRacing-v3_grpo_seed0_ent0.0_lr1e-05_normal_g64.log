@@ -1,0 +1,50 @@
+2025-05-19 20:47:45 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Initializing agent for CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 on device cpu
+2025-05-19 20:47:46 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Full Config (including original run_name='None'): {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 0,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "finalLogs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 64,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.0,
+    "kl_coef": 0.001,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.00001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-19 20:47:48 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Initialized GRPO actor (type: cnn, dist: normal) and reference.
+2025-05-19 20:47:48 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | No actor checkpoint found at finalLogs/CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64/checkpoints/actor.pt, starting fresh.
+2025-05-19 20:47:48 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Starting training from step 0...
+2025-05-19 21:14:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Updating GRPO reference policy after 32768 steps.
+2025-05-19 21:14:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Step: 32768/1000000 | Avg Reward: -23.29 | Avg Length: 512.0
+2025-05-19 21:14:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Update Info: policy_loss: -0.0008 | kl_loss: 0.0027 | entropy_loss: 4.1643 | total_loss: -0.0008
+2025-05-19 21:14:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Timings (avg ms): cnn_feature: 31.67ms | actor_head: 2.06ms | rollout_phase: 1538710.44ms | ref_cnn_feature: 4.81ms | ref_actor_head: 0.23ms | backward_pass: 7.99ms | optimizer_step: 2.48ms | update_phase: 58510.15ms
+2025-05-19 21:41:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Updating GRPO reference policy after 32768 steps.
+2025-05-19 21:41:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Step: 65536/1000000 | Avg Reward: -20.85 | Avg Length: 512.0
+2025-05-19 21:41:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Update Info: policy_loss: -0.0018 | kl_loss: 0.0037 | entropy_loss: 4.1544 | total_loss: -0.0018
+2025-05-19 21:41:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Timings (avg ms): cnn_feature: 32.38ms | actor_head: 2.16ms | rollout_phase: 1565823.97ms | ref_cnn_feature: 4.51ms | ref_actor_head: 0.20ms | backward_pass: 7.53ms | optimizer_step: 2.33ms | update_phase: 54326.10ms
+2025-05-19 22:09:28 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Updating GRPO reference policy after 32768 steps.
+2025-05-19 22:09:28 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Step: 98304/1000000 | Avg Reward: -17.26 | Avg Length: 512.0
+2025-05-19 22:09:28 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Update Info: policy_loss: -0.0009 | kl_loss: 0.0031 | entropy_loss: 4.1449 | total_loss: -0.0009
+2025-05-19 22:09:28 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g64 | INFO | Timings (avg ms): cnn_feature: 33.81ms | actor_head: 2.22ms | rollout_phase: 1628773.87ms | ref_cnn_feature: 4.29ms | ref_actor_head: 0.19ms | backward_pass: 7.31ms | optimizer_step: 2.48ms | update_phase: 53542.26ms

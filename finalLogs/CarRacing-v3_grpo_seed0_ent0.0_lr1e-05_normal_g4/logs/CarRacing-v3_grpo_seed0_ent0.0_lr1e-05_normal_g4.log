@@ -437,3 +437,43 @@
 2025-05-19 18:14:50 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Starting evaluation (1 episodes, deterministic=True)...
 2025-05-19 18:15:58 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Evaluation Complete: Avg Reward = 265.45 (over 1 eps)
 2025-05-19 18:16:01 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Saved best evaluation video: final_step1001472_detTrue_bestR265.4.mp4
+2025-05-19 20:47:06 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Initializing agent for CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 on device cpu
+2025-05-19 20:47:06 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Full Config (including original run_name='None'): {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 0,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "finalLogs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 4,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.0,
+    "kl_coef": 0.001,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.00001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-19 20:47:14 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Initialized GRPO actor (type: cnn, dist: normal) and reference.
+2025-05-19 20:47:14 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Loading checkpoint from finalLogs/CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4/checkpoints, resuming at step 1001472
+2025-05-19 20:47:15 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Starting training from step 1001472...
+2025-05-19 20:47:15 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Training finished at step 1001472.
+2025-05-19 20:47:15 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g4 | INFO | Starting evaluation (1 episodes, deterministic=True)...

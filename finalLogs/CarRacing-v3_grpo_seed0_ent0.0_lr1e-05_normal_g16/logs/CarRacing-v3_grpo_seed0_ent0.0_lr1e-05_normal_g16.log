@@ -72,3 +72,38 @@
 2025-05-19 20:22:58 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 147456/1000000 | Avg Reward: 22.74 | Avg Length: 512.0
 2025-05-19 20:22:58 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0067 | kl_loss: 0.0282 | entropy_loss: 3.8482 | total_loss: -0.0067
 2025-05-19 20:22:58 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 31.75ms | actor_head: 2.00ms | rollout_phase: 386575.87ms | ref_cnn_feature: 5.49ms | ref_actor_head: 0.23ms | backward_pass: 7.11ms | optimizer_step: 2.48ms | update_phase: 13676.85ms
+2025-05-19 20:36:24 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Updating GRPO reference policy after 16384 steps.
+2025-05-19 20:36:24 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 163840/1000000 | Avg Reward: 57.26 | Avg Length: 512.0
+2025-05-19 20:36:24 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0024 | kl_loss: 0.0186 | entropy_loss: 3.3809 | total_loss: -0.0024
+2025-05-19 20:36:24 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 32.12ms | actor_head: 2.01ms | rollout_phase: 388986.57ms | ref_cnn_feature: 5.55ms | ref_actor_head: 0.24ms | backward_pass: 7.39ms | optimizer_step: 2.56ms | update_phase: 14012.53ms
+2025-05-19 20:50:02 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Updating GRPO reference policy after 16384 steps.
+2025-05-19 20:50:02 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 180224/1000000 | Avg Reward: 64.38 | Avg Length: 512.0
+2025-05-19 20:50:02 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0020 | kl_loss: 0.0076 | entropy_loss: 3.5758 | total_loss: -0.0020
+2025-05-19 20:50:02 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 32.75ms | actor_head: 2.08ms | rollout_phase: 394636.88ms | ref_cnn_feature: 5.60ms | ref_actor_head: 0.26ms | backward_pass: 7.54ms | optimizer_step: 2.81ms | update_phase: 14496.04ms
+2025-05-19 21:03:42 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Updating GRPO reference policy after 16384 steps.
+2025-05-19 21:03:42 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 196608/1000000 | Avg Reward: 80.47 | Avg Length: 512.0
+2025-05-19 21:03:42 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0037 | kl_loss: 0.0129 | entropy_loss: 3.3055 | total_loss: -0.0037
+2025-05-19 21:03:42 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 32.78ms | actor_head: 2.08ms | rollout_phase: 395356.07ms | ref_cnn_feature: 5.60ms | ref_actor_head: 0.25ms | backward_pass: 7.57ms | optimizer_step: 2.77ms | update_phase: 14478.56ms
+2025-05-19 21:17:29 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Updating GRPO reference policy after 16384 steps.
+2025-05-19 21:17:29 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 212992/1000000 | Avg Reward: 74.30 | Avg Length: 512.0
+2025-05-19 21:17:29 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0042 | kl_loss: 0.0180 | entropy_loss: 3.4212 | total_loss: -0.0042
+2025-05-19 21:17:29 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 33.20ms | actor_head: 2.08ms | rollout_phase: 399833.25ms | ref_cnn_feature: 5.39ms | ref_actor_head: 0.23ms | backward_pass: 7.13ms | optimizer_step: 2.55ms | update_phase: 13493.68ms
+2025-05-19 21:31:09 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Updating GRPO reference policy after 16384 steps.
+2025-05-19 21:31:09 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 229376/1000000 | Avg Reward: 68.02 | Avg Length: 512.0
+2025-05-19 21:31:09 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0043 | kl_loss: 0.0275 | entropy_loss: 3.9481 | total_loss: -0.0043
+2025-05-19 21:31:09 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 32.85ms | actor_head: 2.07ms | rollout_phase: 396254.97ms | ref_cnn_feature: 5.57ms | ref_actor_head: 0.24ms | backward_pass: 7.40ms | optimizer_step: 2.58ms | update_phase: 14027.26ms
+2025-05-19 21:44:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Updating GRPO reference policy after 16384 steps.
+2025-05-19 21:44:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 245760/1000000 | Avg Reward: 108.92 | Avg Length: 512.0
+2025-05-19 21:44:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0054 | kl_loss: 0.0280 | entropy_loss: 3.5661 | total_loss: -0.0054
+2025-05-19 21:44:25 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 31.55ms | actor_head: 1.97ms | rollout_phase: 383499.23ms | ref_cnn_feature: 5.61ms | ref_actor_head: 0.26ms | backward_pass: 7.42ms | optimizer_step: 2.84ms | update_phase: 14308.39ms
+2025-05-19 21:51:28 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 21:54:37 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Evaluation Complete: Avg Reward = 412.62 (over 3 eps)
+2025-05-19 21:54:40 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Saved best evaluation video: eval_step253952_detTrue_bestR558.4.mp4
+2025-05-19 22:01:45 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Updating GRPO reference policy after 16384 steps.
+2025-05-19 22:01:45 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 262144/1000000 | Avg Reward: 109.30 | Avg Length: 512.0
+2025-05-19 22:01:45 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0037 | kl_loss: 0.0210 | entropy_loss: 3.4419 | total_loss: -0.0037
+2025-05-19 22:01:45 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 34.68ms | actor_head: 2.21ms | rollout_phase: 409146.56ms | ref_cnn_feature: 5.62ms | ref_actor_head: 0.26ms | backward_pass: 7.65ms | optimizer_step: 2.91ms | update_phase: 14638.70ms | eval_action_select: 40.15ms | eval_env_interact: 10.62ms
+2025-05-19 22:15:49 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Updating GRPO reference policy after 16384 steps.
+2025-05-19 22:15:49 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Step: 278528/1000000 | Avg Reward: 103.75 | Avg Length: 512.0
+2025-05-19 22:15:49 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Update Info: policy_loss: -0.0039 | kl_loss: 0.0138 | entropy_loss: 3.5757 | total_loss: -0.0039
+2025-05-19 22:15:49 | CarRacing-v3_grpo_seed0_ent0.0_lr1e-05_normal_g16 | INFO | Timings (avg ms): cnn_feature: 34.24ms | actor_head: 2.21ms | rollout_phase: 407397.61ms | ref_cnn_feature: 5.65ms | ref_actor_head: 0.27ms | backward_pass: 7.86ms | optimizer_step: 2.98ms | update_phase: 14765.61ms
