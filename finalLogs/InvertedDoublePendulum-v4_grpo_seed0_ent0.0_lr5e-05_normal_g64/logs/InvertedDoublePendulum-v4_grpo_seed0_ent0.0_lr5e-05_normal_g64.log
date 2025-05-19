@@ -1,0 +1,792 @@
+2025-05-19 09:33:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Initializing agent for InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 on device cpu
+2025-05-19 09:33:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Full Config (including original run_name='None'): {
+  "env_id": "InvertedDoublePendulum-v4",
+  "algo": "grpo",
+  "seed": 0,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "finalLogs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      128,
+      128
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 64,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.0,
+    "kl_coef": 0.001,
+    "ref_update_interval": 10000,
+    "minibatch_size": 256,
+    "lr": 0.00005,
+    "rollout_steps_per_trajectory": 1000
+  }
+}
+2025-05-19 09:33:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Initialized GRPO actor (type: mlp, dist: normal) and reference.
+2025-05-19 09:33:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | No actor checkpoint found at finalLogs/InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64/checkpoints/actor.pt, starting fresh.
+2025-05-19 09:33:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Starting training from step 0...
+2025-05-19 09:33:29 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10332 steps.
+2025-05-19 09:33:29 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 10332/1000000 | Avg Reward: 150.32 | Avg Length: 16.3
+2025-05-19 09:33:29 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3662 | kl_loss: 0.8438 | entropy_loss: 0.1094 | total_loss: -0.3653
+2025-05-19 09:33:29 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.38ms | rollout_phase: 370.21ms | ref_actor_mlp: 5.90ms | backward_pass: 6.86ms | optimizer_step: 1.86ms | update_phase: 766.77ms
+2025-05-19 09:33:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11307 steps.
+2025-05-19 09:33:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 21639/1000000 | Avg Reward: 226.21 | Avg Length: 24.5
+2025-05-19 09:33:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3592 | kl_loss: 0.1900 | entropy_loss: -0.2881 | total_loss: -0.3590
+2025-05-19 09:33:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.22ms | rollout_phase: 618.49ms | ref_actor_mlp: 2.75ms | backward_pass: 3.90ms | optimizer_step: 1.13ms | update_phase: 678.22ms
+2025-05-19 09:33:48 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10096 steps.
+2025-05-19 09:33:48 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 31735/1000000 | Avg Reward: 270.60 | Avg Length: 29.3
+2025-05-19 09:33:48 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3017 | kl_loss: 0.0825 | entropy_loss: -0.5532 | total_loss: -0.3016
+2025-05-19 09:33:48 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.12ms | rollout_phase: 820.71ms | ref_actor_mlp: 0.26ms | backward_pass: 1.02ms | optimizer_step: 0.53ms | update_phase: 265.93ms
+2025-05-19 09:34:12 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11469 steps.
+2025-05-19 09:34:12 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 43204/1000000 | Avg Reward: 288.25 | Avg Length: 31.1
+2025-05-19 09:34:12 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3130 | kl_loss: 0.0949 | entropy_loss: -0.8651 | total_loss: -0.3130
+2025-05-19 09:34:12 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.54ms | rollout_phase: 940.97ms | ref_actor_mlp: 10.80ms | backward_pass: 13.17ms | optimizer_step: 3.20ms | update_phase: 3112.83ms
+2025-05-19 09:34:21 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10581 steps.
+2025-05-19 09:34:21 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 53785/1000000 | Avg Reward: 290.80 | Avg Length: 31.4
+2025-05-19 09:34:21 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3058 | kl_loss: 0.0686 | entropy_loss: -1.0565 | total_loss: -0.3057
+2025-05-19 09:34:21 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.18ms | rollout_phase: 1044.18ms | ref_actor_mlp: 1.97ms | backward_pass: 2.98ms | optimizer_step: 0.87ms | update_phase: 810.42ms
+2025-05-19 09:34:29 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10916 steps.
+2025-05-19 09:34:29 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 64701/1000000 | Avg Reward: 319.31 | Avg Length: 34.4
+2025-05-19 09:34:29 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3368 | kl_loss: 0.0891 | entropy_loss: -1.2872 | total_loss: -0.3367
+2025-05-19 09:34:29 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.14ms | rollout_phase: 1074.59ms | ref_actor_mlp: 1.10ms | backward_pass: 1.92ms | optimizer_step: 0.71ms | update_phase: 569.40ms
+2025-05-19 09:34:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10927 steps.
+2025-05-19 09:34:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 75628/1000000 | Avg Reward: 320.69 | Avg Length: 34.6
+2025-05-19 09:34:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3558 | kl_loss: 0.0500 | entropy_loss: -1.4271 | total_loss: -0.3557
+2025-05-19 09:34:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.13ms | rollout_phase: 1071.87ms | ref_actor_mlp: 0.90ms | backward_pass: 1.69ms | optimizer_step: 0.67ms | update_phase: 498.92ms
+2025-05-19 09:34:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10465 steps.
+2025-05-19 09:34:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 86093/1000000 | Avg Reward: 298.78 | Avg Length: 32.2
+2025-05-19 09:34:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3030 | kl_loss: 0.0555 | entropy_loss: -1.5963 | total_loss: -0.3029
+2025-05-19 09:34:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.34ms | rollout_phase: 1026.53ms | ref_actor_mlp: 6.21ms | backward_pass: 7.52ms | optimizer_step: 1.93ms | update_phase: 2007.50ms
+2025-05-19 09:35:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10499 steps.
+2025-05-19 09:35:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 96592/1000000 | Avg Reward: 297.72 | Avg Length: 32.1
+2025-05-19 09:35:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3751 | kl_loss: 0.0366 | entropy_loss: -1.7048 | total_loss: -0.3750
+2025-05-19 09:35:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 1014.94ms | ref_actor_mlp: 1.76ms | backward_pass: 2.74ms | optimizer_step: 0.79ms | update_phase: 750.71ms
+2025-05-19 09:35:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11041 steps.
+2025-05-19 09:35:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 107633/1000000 | Avg Reward: 345.59 | Avg Length: 37.2
+2025-05-19 09:35:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.4682 | kl_loss: 0.1141 | entropy_loss: -1.9274 | total_loss: -0.4681
+2025-05-19 09:35:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.16ms | rollout_phase: 1084.06ms | ref_actor_mlp: 1.48ms | backward_pass: 2.35ms | optimizer_step: 0.78ms | update_phase: 697.64ms
+2025-05-19 09:35:24 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 12078 steps.
+2025-05-19 09:35:24 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 119711/1000000 | Avg Reward: 345.72 | Avg Length: 37.3
+2025-05-19 09:35:24 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.4384 | kl_loss: 0.1528 | entropy_loss: -2.0479 | total_loss: -0.4383
+2025-05-19 09:35:24 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.26ms | rollout_phase: 1188.31ms | ref_actor_mlp: 4.11ms | backward_pass: 5.67ms | optimizer_step: 1.42ms | update_phase: 1640.82ms
+2025-05-19 09:35:35 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11459 steps.
+2025-05-19 09:35:35 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 131170/1000000 | Avg Reward: 337.29 | Avg Length: 36.4
+2025-05-19 09:35:35 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.4236 | kl_loss: 0.0974 | entropy_loss: -2.2319 | total_loss: -0.4235
+2025-05-19 09:35:35 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.19ms | rollout_phase: 1123.70ms | ref_actor_mlp: 2.33ms | backward_pass: 3.59ms | optimizer_step: 0.99ms | update_phase: 1025.79ms
+2025-05-19 09:35:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10661 steps.
+2025-05-19 09:35:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 141831/1000000 | Avg Reward: 290.06 | Avg Length: 31.3
+2025-05-19 09:35:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.4124 | kl_loss: 0.1399 | entropy_loss: -2.4441 | total_loss: -0.4122
+2025-05-19 09:35:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 1043.32ms | ref_actor_mlp: 1.78ms | backward_pass: 2.79ms | optimizer_step: 0.82ms | update_phase: 766.64ms
+2025-05-19 09:36:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11211 steps.
+2025-05-19 09:36:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 153042/1000000 | Avg Reward: 336.67 | Avg Length: 36.3
+2025-05-19 09:36:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.4221 | kl_loss: 0.3475 | entropy_loss: -2.6220 | total_loss: -0.4218
+2025-05-19 09:36:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.36ms | rollout_phase: 1089.69ms | ref_actor_mlp: 6.56ms | backward_pass: 7.78ms | optimizer_step: 1.91ms | update_phase: 2244.94ms
+2025-05-19 09:36:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11265 steps.
+2025-05-19 09:36:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 164307/1000000 | Avg Reward: 299.28 | Avg Length: 32.3
+2025-05-19 09:36:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3866 | kl_loss: 0.2323 | entropy_loss: -2.6369 | total_loss: -0.3864
+2025-05-19 09:36:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.19ms | rollout_phase: 1101.18ms | ref_actor_mlp: 2.08ms | backward_pass: 3.11ms | optimizer_step: 0.89ms | update_phase: 912.73ms
+2025-05-19 09:36:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11088 steps.
+2025-05-19 09:36:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 175395/1000000 | Avg Reward: 318.45 | Avg Length: 34.3
+2025-05-19 09:36:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3359 | kl_loss: 0.1061 | entropy_loss: -2.8302 | total_loss: -0.3358
+2025-05-19 09:36:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 1097.23ms | ref_actor_mlp: 1.82ms | backward_pass: 2.82ms | optimizer_step: 0.85ms | update_phase: 801.97ms
+2025-05-19 09:36:32 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11519 steps.
+2025-05-19 09:36:32 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 186914/1000000 | Avg Reward: 343.74 | Avg Length: 37.1
+2025-05-19 09:36:32 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.4069 | kl_loss: 0.2075 | entropy_loss: -3.0133 | total_loss: -0.4067
+2025-05-19 09:36:32 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.22ms | rollout_phase: 1135.17ms | ref_actor_mlp: 3.21ms | backward_pass: 4.23ms | optimizer_step: 1.15ms | update_phase: 1245.37ms
+2025-05-19 09:36:43 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10839 steps.
+2025-05-19 09:36:43 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 197753/1000000 | Avg Reward: 308.91 | Avg Length: 33.3
+2025-05-19 09:36:43 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3294 | kl_loss: 0.0985 | entropy_loss: -3.0770 | total_loss: -0.3293
+2025-05-19 09:36:43 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.22ms | rollout_phase: 1069.24ms | ref_actor_mlp: 3.03ms | backward_pass: 4.21ms | optimizer_step: 1.13ms | update_phase: 1156.24ms
+2025-05-19 09:37:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10527 steps.
+2025-05-19 09:37:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 208280/1000000 | Avg Reward: 297.90 | Avg Length: 32.2
+2025-05-19 09:37:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3725 | kl_loss: 0.2040 | entropy_loss: -3.1885 | total_loss: -0.3723
+2025-05-19 09:37:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.69ms | rollout_phase: 1036.63ms | ref_actor_mlp: 14.61ms | backward_pass: 16.91ms | optimizer_step: 3.86ms | update_phase: 4469.50ms
+2025-05-19 09:37:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10836 steps.
+2025-05-19 09:37:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 219116/1000000 | Avg Reward: 329.76 | Avg Length: 35.6
+2025-05-19 09:37:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3531 | kl_loss: 0.3397 | entropy_loss: -3.3476 | total_loss: -0.3528
+2025-05-19 09:37:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.68ms | rollout_phase: 1056.60ms | ref_actor_mlp: 15.22ms | backward_pass: 18.39ms | optimizer_step: 3.98ms | update_phase: 4666.78ms
+2025-05-19 09:38:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10893 steps.
+2025-05-19 09:38:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 230009/1000000 | Avg Reward: 328.64 | Avg Length: 35.4
+2025-05-19 09:38:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3148 | kl_loss: 0.2872 | entropy_loss: -3.3960 | total_loss: -0.3145
+2025-05-19 09:38:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.71ms | rollout_phase: 1071.37ms | ref_actor_mlp: 15.45ms | backward_pass: 19.05ms | optimizer_step: 4.15ms | update_phase: 4922.29ms
+2025-05-19 09:38:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10564 steps.
+2025-05-19 09:38:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 240573/1000000 | Avg Reward: 333.72 | Avg Length: 36.0
+2025-05-19 09:38:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3516 | kl_loss: 0.1900 | entropy_loss: -3.5082 | total_loss: -0.3514
+2025-05-19 09:38:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 1.04ms | rollout_phase: 1033.25ms | ref_actor_mlp: 24.59ms | backward_pass: 29.79ms | optimizer_step: 6.16ms | update_phase: 7274.86ms
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10812 steps.
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 251385/1000000 | Avg Reward: 323.54 | Avg Length: 34.9
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3522 | kl_loss: 0.1196 | entropy_loss: -3.5108 | total_loss: -0.3521
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.48ms | rollout_phase: 1055.89ms | ref_actor_mlp: 9.52ms | backward_pass: 12.04ms | optimizer_step: 2.79ms | update_phase: 3250.86ms
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:39:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Evaluation Complete: Avg Reward = 312.26 (over 3 eps)
+2025-05-19 09:39:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11625 steps.
+2025-05-19 09:39:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 263010/1000000 | Avg Reward: 348.80 | Avg Length: 37.6
+2025-05-19 09:39:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3054 | kl_loss: 0.5055 | entropy_loss: -3.6889 | total_loss: -0.3049
+2025-05-19 09:39:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.81ms | eval_action_select: 0.37ms | eval_env_interact: 0.13ms | rollout_phase: 1129.60ms | ref_actor_mlp: 18.13ms | backward_pass: 22.12ms | optimizer_step: 4.71ms | update_phase: 6199.16ms
+2025-05-19 09:40:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11247 steps.
+2025-05-19 09:40:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 274257/1000000 | Avg Reward: 341.60 | Avg Length: 36.8
+2025-05-19 09:40:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2784 | kl_loss: 0.7240 | entropy_loss: -3.7928 | total_loss: -0.2777
+2025-05-19 09:40:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 1.25ms | rollout_phase: 1091.38ms | ref_actor_mlp: 29.22ms | backward_pass: 34.94ms | optimizer_step: 7.51ms | update_phase: 9436.04ms
+2025-05-19 09:40:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11053 steps.
+2025-05-19 09:40:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 285310/1000000 | Avg Reward: 334.48 | Avg Length: 36.1
+2025-05-19 09:40:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2984 | kl_loss: 0.2398 | entropy_loss: -3.8577 | total_loss: -0.2982
+2025-05-19 09:40:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.20ms | rollout_phase: 1086.71ms | ref_actor_mlp: 2.51ms | backward_pass: 3.61ms | optimizer_step: 1.06ms | update_phase: 1041.67ms
+2025-05-19 09:41:12 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10879 steps.
+2025-05-19 09:41:12 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 296189/1000000 | Avg Reward: 321.17 | Avg Length: 34.6
+2025-05-19 09:41:12 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3202 | kl_loss: 0.4320 | entropy_loss: -3.8182 | total_loss: -0.3198
+2025-05-19 09:41:12 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.44ms | rollout_phase: 1118.31ms | ref_actor_mlp: 8.57ms | backward_pass: 10.69ms | optimizer_step: 2.46ms | update_phase: 2800.62ms
+2025-05-19 09:41:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11349 steps.
+2025-05-19 09:41:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 307538/1000000 | Avg Reward: 327.42 | Avg Length: 35.3
+2025-05-19 09:41:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2595 | kl_loss: 0.4801 | entropy_loss: -3.9429 | total_loss: -0.2590
+2025-05-19 09:41:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.63ms | rollout_phase: 1103.32ms | ref_actor_mlp: 13.78ms | backward_pass: 16.96ms | optimizer_step: 3.78ms | update_phase: 4582.89ms
+2025-05-19 09:42:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11250 steps.
+2025-05-19 09:42:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 318788/1000000 | Avg Reward: 318.63 | Avg Length: 34.4
+2025-05-19 09:42:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3733 | kl_loss: 0.1673 | entropy_loss: -3.9774 | total_loss: -0.3731
+2025-05-19 09:42:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.57ms | rollout_phase: 1095.46ms | ref_actor_mlp: 12.32ms | backward_pass: 15.21ms | optimizer_step: 3.42ms | update_phase: 4034.19ms
+2025-05-19 09:42:34 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11110 steps.
+2025-05-19 09:42:34 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 329898/1000000 | Avg Reward: 320.17 | Avg Length: 34.5
+2025-05-19 09:42:34 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3740 | kl_loss: 0.4702 | entropy_loss: -3.8466 | total_loss: -0.3736
+2025-05-19 09:42:34 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.63ms | rollout_phase: 1087.11ms | ref_actor_mlp: 13.18ms | backward_pass: 16.10ms | optimizer_step: 3.64ms | update_phase: 4395.18ms
+2025-05-19 09:42:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11133 steps.
+2025-05-19 09:42:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 341031/1000000 | Avg Reward: 336.99 | Avg Length: 36.3
+2025-05-19 09:42:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3019 | kl_loss: 2.4667 | entropy_loss: -3.9363 | total_loss: -0.2995
+2025-05-19 09:42:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.50ms | rollout_phase: 1204.98ms | ref_actor_mlp: 9.65ms | backward_pass: 11.86ms | optimizer_step: 2.77ms | update_phase: 3335.90ms
+2025-05-19 09:43:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11184 steps.
+2025-05-19 09:43:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 352215/1000000 | Avg Reward: 313.34 | Avg Length: 33.8
+2025-05-19 09:43:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2948 | kl_loss: 0.4000 | entropy_loss: -3.8970 | total_loss: -0.2944
+2025-05-19 09:43:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.19ms | rollout_phase: 1089.29ms | ref_actor_mlp: 2.46ms | backward_pass: 3.66ms | optimizer_step: 1.09ms | update_phase: 1022.79ms
+2025-05-19 09:43:27 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11665 steps.
+2025-05-19 09:43:27 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 363880/1000000 | Avg Reward: 353.76 | Avg Length: 38.1
+2025-05-19 09:43:27 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3510 | kl_loss: 0.3201 | entropy_loss: -4.0109 | total_loss: -0.3507
+2025-05-19 09:43:27 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.40ms | rollout_phase: 1142.27ms | ref_actor_mlp: 7.73ms | backward_pass: 9.76ms | optimizer_step: 2.31ms | update_phase: 2767.83ms
+2025-05-19 09:44:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11064 steps.
+2025-05-19 09:44:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 374944/1000000 | Avg Reward: 326.72 | Avg Length: 35.2
+2025-05-19 09:44:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3943 | kl_loss: 1.2369 | entropy_loss: -4.0043 | total_loss: -0.3931
+2025-05-19 09:44:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.80ms | rollout_phase: 1089.82ms | ref_actor_mlp: 17.93ms | backward_pass: 21.53ms | optimizer_step: 4.83ms | update_phase: 5741.30ms
+2025-05-19 09:44:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11264 steps.
+2025-05-19 09:44:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 386208/1000000 | Avg Reward: 307.70 | Avg Length: 33.2
+2025-05-19 09:44:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3370 | kl_loss: 1.4262 | entropy_loss: -3.8977 | total_loss: -0.3355
+2025-05-19 09:44:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.84ms | rollout_phase: 1100.18ms | ref_actor_mlp: 18.49ms | backward_pass: 22.32ms | optimizer_step: 4.83ms | update_phase: 6170.71ms
+2025-05-19 09:45:04 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11184 steps.
+2025-05-19 09:45:04 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 397392/1000000 | Avg Reward: 303.42 | Avg Length: 32.8
+2025-05-19 09:45:04 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3971 | kl_loss: 0.4102 | entropy_loss: -3.9122 | total_loss: -0.3967
+2025-05-19 09:45:04 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.60ms | rollout_phase: 1142.64ms | ref_actor_mlp: 12.15ms | backward_pass: 15.31ms | optimizer_step: 3.41ms | update_phase: 4200.05ms
+2025-05-19 09:45:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11087 steps.
+2025-05-19 09:45:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 408479/1000000 | Avg Reward: 346.33 | Avg Length: 37.3
+2025-05-19 09:45:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3978 | kl_loss: 0.9801 | entropy_loss: -3.9907 | total_loss: -0.3968
+2025-05-19 09:45:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.58ms | rollout_phase: 1082.00ms | ref_actor_mlp: 12.07ms | backward_pass: 14.79ms | optimizer_step: 3.28ms | update_phase: 4020.43ms
+2025-05-19 09:45:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11749 steps.
+2025-05-19 09:45:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 420228/1000000 | Avg Reward: 342.78 | Avg Length: 36.9
+2025-05-19 09:45:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3486 | kl_loss: 0.5754 | entropy_loss: -3.9628 | total_loss: -0.3480
+2025-05-19 09:45:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.48ms | rollout_phase: 1153.83ms | ref_actor_mlp: 9.57ms | backward_pass: 11.91ms | optimizer_step: 2.77ms | update_phase: 3472.53ms
+2025-05-19 09:46:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11646 steps.
+2025-05-19 09:46:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 431874/1000000 | Avg Reward: 320.14 | Avg Length: 34.5
+2025-05-19 09:46:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3030 | kl_loss: 1.0503 | entropy_loss: -3.9730 | total_loss: -0.3020
+2025-05-19 09:46:07 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.27ms | rollout_phase: 1147.92ms | ref_actor_mlp: 4.49ms | backward_pass: 5.92ms | optimizer_step: 1.54ms | update_phase: 1690.82ms
+2025-05-19 09:46:23 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10802 steps.
+2025-05-19 09:46:23 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 442676/1000000 | Avg Reward: 323.33 | Avg Length: 34.9
+2025-05-19 09:46:23 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2762 | kl_loss: 1.5934 | entropy_loss: -4.0368 | total_loss: -0.2746
+2025-05-19 09:46:23 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.35ms | rollout_phase: 1059.98ms | ref_actor_mlp: 6.29ms | backward_pass: 7.92ms | optimizer_step: 2.02ms | update_phase: 2167.37ms
+2025-05-19 09:46:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11106 steps.
+2025-05-19 09:46:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 453782/1000000 | Avg Reward: 312.43 | Avg Length: 33.7
+2025-05-19 09:46:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3378 | kl_loss: 0.3509 | entropy_loss: -3.9745 | total_loss: -0.3375
+2025-05-19 09:46:53 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.68ms | rollout_phase: 1079.10ms | ref_actor_mlp: 14.32ms | backward_pass: 17.48ms | optimizer_step: 3.92ms | update_phase: 4847.79ms
+2025-05-19 09:47:16 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10447 steps.
+2025-05-19 09:47:16 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 464229/1000000 | Avg Reward: 317.83 | Avg Length: 34.3
+2025-05-19 09:47:16 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2527 | kl_loss: 0.2135 | entropy_loss: -3.9507 | total_loss: -0.2525
+2025-05-19 09:47:16 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.56ms | rollout_phase: 1026.88ms | ref_actor_mlp: 11.48ms | backward_pass: 14.27ms | optimizer_step: 3.21ms | update_phase: 3688.40ms
+2025-05-19 09:47:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10630 steps.
+2025-05-19 09:47:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 474859/1000000 | Avg Reward: 303.38 | Avg Length: 32.8
+2025-05-19 09:47:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3047 | kl_loss: 2.0333 | entropy_loss: -4.0313 | total_loss: -0.3027
+2025-05-19 09:47:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.55ms | rollout_phase: 1042.82ms | ref_actor_mlp: 11.24ms | backward_pass: 13.99ms | optimizer_step: 3.13ms | update_phase: 3619.97ms
+2025-05-19 09:48:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10284 steps.
+2025-05-19 09:48:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 485143/1000000 | Avg Reward: 303.74 | Avg Length: 32.8
+2025-05-19 09:48:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2355 | kl_loss: 1.3675 | entropy_loss: -3.8764 | total_loss: -0.2341
+2025-05-19 09:48:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.75ms | rollout_phase: 1008.61ms | ref_actor_mlp: 16.28ms | backward_pass: 19.65ms | optimizer_step: 4.34ms | update_phase: 4986.22ms
+2025-05-19 09:48:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10488 steps.
+2025-05-19 09:48:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 495631/1000000 | Avg Reward: 307.46 | Avg Length: 33.2
+2025-05-19 09:48:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3361 | kl_loss: 1.0486 | entropy_loss: -3.9197 | total_loss: -0.3350
+2025-05-19 09:48:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.81ms | rollout_phase: 1032.46ms | ref_actor_mlp: 18.07ms | backward_pass: 21.81ms | optimizer_step: 4.82ms | update_phase: 5535.00ms
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:48:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Evaluation Complete: Avg Reward = 473.55 (over 3 eps)
+2025-05-19 09:48:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10969 steps.
+2025-05-19 09:48:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 506600/1000000 | Avg Reward: 313.16 | Avg Length: 33.8
+2025-05-19 09:48:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2305 | kl_loss: 0.6480 | entropy_loss: -4.0432 | total_loss: -0.2298
+2025-05-19 09:48:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.28ms | rollout_phase: 1080.76ms | ref_actor_mlp: 4.54ms | backward_pass: 6.01ms | optimizer_step: 1.53ms | update_phase: 1662.79ms | eval_action_select: 0.36ms | eval_env_interact: 0.13ms
+2025-05-19 09:49:22 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10714 steps.
+2025-05-19 09:49:22 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 517314/1000000 | Avg Reward: 323.54 | Avg Length: 34.9
+2025-05-19 09:49:22 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2982 | kl_loss: 0.7694 | entropy_loss: -3.9309 | total_loss: -0.2975
+2025-05-19 09:49:22 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.59ms | rollout_phase: 1094.99ms | ref_actor_mlp: 12.29ms | backward_pass: 15.10ms | optimizer_step: 3.43ms | update_phase: 3939.66ms
+2025-05-19 09:49:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10592 steps.
+2025-05-19 09:49:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 527906/1000000 | Avg Reward: 291.76 | Avg Length: 31.5
+2025-05-19 09:49:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3074 | kl_loss: 0.0939 | entropy_loss: -3.9713 | total_loss: -0.3073
+2025-05-19 09:49:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.51ms | rollout_phase: 1085.06ms | ref_actor_mlp: 10.19ms | backward_pass: 12.81ms | optimizer_step: 2.94ms | update_phase: 3327.09ms
+2025-05-19 09:50:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10410 steps.
+2025-05-19 09:50:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 538316/1000000 | Avg Reward: 280.33 | Avg Length: 30.3
+2025-05-19 09:50:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2963 | kl_loss: 1.6528 | entropy_loss: -3.8546 | total_loss: -0.2946
+2025-05-19 09:50:11 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.65ms | rollout_phase: 1012.69ms | ref_actor_mlp: 13.74ms | backward_pass: 17.01ms | optimizer_step: 3.86ms | update_phase: 4385.78ms
+2025-05-19 09:51:00 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10931 steps.
+2025-05-19 09:51:00 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 549247/1000000 | Avg Reward: 328.40 | Avg Length: 35.4
+2025-05-19 09:51:00 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2732 | kl_loss: 0.3119 | entropy_loss: -4.0102 | total_loss: -0.2729
+2025-05-19 09:51:00 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 1.19ms | rollout_phase: 1060.49ms | ref_actor_mlp: 28.26ms | backward_pass: 33.47ms | optimizer_step: 7.22ms | update_phase: 8693.18ms
+2025-05-19 09:51:14 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11288 steps.
+2025-05-19 09:51:14 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 560535/1000000 | Avg Reward: 332.86 | Avg Length: 35.9
+2025-05-19 09:51:14 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3092 | kl_loss: 0.3299 | entropy_loss: -4.1410 | total_loss: -0.3089
+2025-05-19 09:51:14 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.28ms | rollout_phase: 1109.73ms | ref_actor_mlp: 4.72ms | backward_pass: 6.56ms | optimizer_step: 1.70ms | update_phase: 1759.87ms
+2025-05-19 09:51:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10462 steps.
+2025-05-19 09:51:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 570997/1000000 | Avg Reward: 297.58 | Avg Length: 32.1
+2025-05-19 09:51:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2854 | kl_loss: 2.0632 | entropy_loss: -4.1588 | total_loss: -0.2833
+2025-05-19 09:51:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.61ms | rollout_phase: 1022.14ms | ref_actor_mlp: 13.05ms | backward_pass: 16.32ms | optimizer_step: 3.69ms | update_phase: 4098.45ms
+2025-05-19 09:52:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10829 steps.
+2025-05-19 09:52:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 581826/1000000 | Avg Reward: 321.51 | Avg Length: 34.7
+2025-05-19 09:52:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2659 | kl_loss: 0.8132 | entropy_loss: -4.1983 | total_loss: -0.2650
+2025-05-19 09:52:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.97ms | rollout_phase: 1055.79ms | ref_actor_mlp: 22.36ms | backward_pass: 27.20ms | optimizer_step: 5.73ms | update_phase: 6968.46ms
+2025-05-19 09:52:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10302 steps.
+2025-05-19 09:52:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 592128/1000000 | Avg Reward: 306.35 | Avg Length: 33.1
+2025-05-19 09:52:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2812 | kl_loss: 0.8092 | entropy_loss: -4.0488 | total_loss: -0.2804
+2025-05-19 09:52:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.52ms | rollout_phase: 1057.04ms | ref_actor_mlp: 10.38ms | backward_pass: 12.94ms | optimizer_step: 3.04ms | update_phase: 3299.99ms
+2025-05-19 09:53:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10776 steps.
+2025-05-19 09:53:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 602904/1000000 | Avg Reward: 331.04 | Avg Length: 35.7
+2025-05-19 09:53:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3167 | kl_loss: 0.1833 | entropy_loss: -4.0673 | total_loss: -0.3165
+2025-05-19 09:53:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.66ms | rollout_phase: 1050.18ms | ref_actor_mlp: 14.02ms | backward_pass: 17.37ms | optimizer_step: 3.94ms | update_phase: 4583.59ms
+2025-05-19 09:53:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10148 steps.
+2025-05-19 09:53:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 613052/1000000 | Avg Reward: 327.43 | Avg Length: 35.3
+2025-05-19 09:53:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3395 | kl_loss: 0.1276 | entropy_loss: -4.0267 | total_loss: -0.3394
+2025-05-19 09:53:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 1.08ms | rollout_phase: 991.30ms | ref_actor_mlp: 24.48ms | backward_pass: 29.48ms | optimizer_step: 6.34ms | update_phase: 7258.77ms
+2025-05-19 09:54:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10562 steps.
+2025-05-19 09:54:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 623614/1000000 | Avg Reward: 329.40 | Avg Length: 35.5
+2025-05-19 09:54:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2757 | kl_loss: 0.1549 | entropy_loss: -4.1087 | total_loss: -0.2756
+2025-05-19 09:54:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.69ms | rollout_phase: 1030.48ms | ref_actor_mlp: 14.89ms | backward_pass: 18.47ms | optimizer_step: 4.12ms | update_phase: 4720.87ms
+2025-05-19 09:54:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10323 steps.
+2025-05-19 09:54:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 633937/1000000 | Avg Reward: 294.72 | Avg Length: 31.8
+2025-05-19 09:54:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2945 | kl_loss: 0.9929 | entropy_loss: -4.0398 | total_loss: -0.2936
+2025-05-19 09:54:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.75ms | rollout_phase: 1015.09ms | ref_actor_mlp: 16.52ms | backward_pass: 20.08ms | optimizer_step: 4.42ms | update_phase: 4978.03ms
+2025-05-19 09:55:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10408 steps.
+2025-05-19 09:55:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 644345/1000000 | Avg Reward: 302.88 | Avg Length: 32.7
+2025-05-19 09:55:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3105 | kl_loss: 0.3271 | entropy_loss: -4.0015 | total_loss: -0.3102
+2025-05-19 09:55:20 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.74ms | rollout_phase: 1062.17ms | ref_actor_mlp: 15.51ms | backward_pass: 19.10ms | optimizer_step: 4.24ms | update_phase: 4931.81ms
+2025-05-19 09:55:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10823 steps.
+2025-05-19 09:55:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 655168/1000000 | Avg Reward: 317.63 | Avg Length: 34.3
+2025-05-19 09:55:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3846 | kl_loss: 2.7173 | entropy_loss: -4.0280 | total_loss: -0.3819
+2025-05-19 09:55:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.45ms | rollout_phase: 1053.59ms | ref_actor_mlp: 8.83ms | backward_pass: 11.14ms | optimizer_step: 2.58ms | update_phase: 2964.75ms
+2025-05-19 09:56:04 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11071 steps.
+2025-05-19 09:56:04 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 666239/1000000 | Avg Reward: 342.67 | Avg Length: 37.0
+2025-05-19 09:56:04 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3163 | kl_loss: 0.5405 | entropy_loss: -4.2226 | total_loss: -0.3157
+2025-05-19 09:56:04 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.53ms | rollout_phase: 1130.00ms | ref_actor_mlp: 10.89ms | backward_pass: 13.50ms | optimizer_step: 3.09ms | update_phase: 3667.69ms
+2025-05-19 09:56:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10838 steps.
+2025-05-19 09:56:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 677077/1000000 | Avg Reward: 326.54 | Avg Length: 35.2
+2025-05-19 09:56:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3812 | kl_loss: 0.6261 | entropy_loss: -4.0464 | total_loss: -0.3806
+2025-05-19 09:56:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.60ms | rollout_phase: 1161.58ms | ref_actor_mlp: 12.23ms | backward_pass: 15.37ms | optimizer_step: 3.51ms | update_phase: 4059.00ms
+2025-05-19 09:56:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10908 steps.
+2025-05-19 09:56:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 687985/1000000 | Avg Reward: 308.74 | Avg Length: 33.3
+2025-05-19 09:56:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3096 | kl_loss: 0.8299 | entropy_loss: -4.0359 | total_loss: -0.3088
+2025-05-19 09:56:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.48ms | rollout_phase: 1076.59ms | ref_actor_mlp: 9.49ms | backward_pass: 11.81ms | optimizer_step: 2.76ms | update_phase: 3171.49ms
+2025-05-19 09:57:17 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10640 steps.
+2025-05-19 09:57:17 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 698625/1000000 | Avg Reward: 289.47 | Avg Length: 31.3
+2025-05-19 09:57:17 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2903 | kl_loss: 0.2451 | entropy_loss: -3.9411 | total_loss: -0.2901
+2025-05-19 09:57:17 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.60ms | rollout_phase: 1044.99ms | ref_actor_mlp: 12.60ms | backward_pass: 15.79ms | optimizer_step: 3.54ms | update_phase: 4061.43ms
+2025-05-19 09:57:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10950 steps.
+2025-05-19 09:57:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 709575/1000000 | Avg Reward: 316.37 | Avg Length: 34.1
+2025-05-19 09:57:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3460 | kl_loss: 0.3624 | entropy_loss: -3.9775 | total_loss: -0.3456
+2025-05-19 09:57:42 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.57ms | rollout_phase: 1116.13ms | ref_actor_mlp: 11.52ms | backward_pass: 14.17ms | optimizer_step: 3.37ms | update_phase: 3878.52ms
+2025-05-19 09:57:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11129 steps.
+2025-05-19 09:57:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 720704/1000000 | Avg Reward: 312.07 | Avg Length: 33.7
+2025-05-19 09:57:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2704 | kl_loss: 0.5164 | entropy_loss: -4.0381 | total_loss: -0.2699
+2025-05-19 09:57:52 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.20ms | rollout_phase: 1083.78ms | ref_actor_mlp: 2.65ms | backward_pass: 3.89ms | optimizer_step: 1.16ms | update_phase: 1093.70ms
+2025-05-19 09:58:09 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10961 steps.
+2025-05-19 09:58:09 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 731665/1000000 | Avg Reward: 334.17 | Avg Length: 36.0
+2025-05-19 09:58:09 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3108 | kl_loss: 0.2660 | entropy_loss: -4.0995 | total_loss: -0.3106
+2025-05-19 09:58:09 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.34ms | rollout_phase: 1078.81ms | ref_actor_mlp: 6.11ms | backward_pass: 7.94ms | optimizer_step: 1.96ms | update_phase: 2179.90ms
+2025-05-19 09:58:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11199 steps.
+2025-05-19 09:58:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 742864/1000000 | Avg Reward: 309.97 | Avg Length: 33.5
+2025-05-19 09:58:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3274 | kl_loss: 0.9301 | entropy_loss: -4.0595 | total_loss: -0.3264
+2025-05-19 09:58:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.45ms | rollout_phase: 1198.55ms | ref_actor_mlp: 8.60ms | backward_pass: 11.02ms | optimizer_step: 2.56ms | update_phase: 2978.47ms
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10699 steps.
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 753563/1000000 | Avg Reward: 304.86 | Avg Length: 32.9
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2948 | kl_loss: 0.9775 | entropy_loss: -4.1232 | total_loss: -0.2938
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.49ms | rollout_phase: 1044.72ms | ref_actor_mlp: 9.84ms | backward_pass: 12.29ms | optimizer_step: 2.87ms | update_phase: 3204.32ms
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 09:58:51 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Evaluation Complete: Avg Reward = 305.20 (over 3 eps)
+2025-05-19 09:59:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10987 steps.
+2025-05-19 09:59:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 764550/1000000 | Avg Reward: 309.00 | Avg Length: 33.4
+2025-05-19 09:59:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3753 | kl_loss: 0.2102 | entropy_loss: -4.0869 | total_loss: -0.3751
+2025-05-19 09:59:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.90ms | eval_action_select: 0.38ms | eval_env_interact: 0.13ms | rollout_phase: 1127.03ms | ref_actor_mlp: 20.45ms | backward_pass: 24.82ms | optimizer_step: 5.48ms | update_phase: 6558.40ms
+2025-05-19 09:59:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11252 steps.
+2025-05-19 09:59:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 775802/1000000 | Avg Reward: 314.04 | Avg Length: 33.9
+2025-05-19 09:59:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3149 | kl_loss: 0.3109 | entropy_loss: -4.1684 | total_loss: -0.3145
+2025-05-19 09:59:57 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.62ms | rollout_phase: 1087.24ms | ref_actor_mlp: 13.34ms | backward_pass: 16.16ms | optimizer_step: 4.00ms | update_phase: 4441.08ms
+2025-05-19 10:00:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11396 steps.
+2025-05-19 10:00:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 787198/1000000 | Avg Reward: 299.35 | Avg Length: 32.3
+2025-05-19 10:00:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.1949 | kl_loss: 0.5090 | entropy_loss: -4.1845 | total_loss: -0.1944
+2025-05-19 10:00:30 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.73ms | rollout_phase: 1122.21ms | ref_actor_mlp: 15.78ms | backward_pass: 19.43ms | optimizer_step: 4.52ms | update_phase: 5454.10ms
+2025-05-19 10:00:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10585 steps.
+2025-05-19 10:00:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 797783/1000000 | Avg Reward: 285.44 | Avg Length: 30.8
+2025-05-19 10:00:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2495 | kl_loss: 0.5629 | entropy_loss: -4.0839 | total_loss: -0.2489
+2025-05-19 10:00:44 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.28ms | rollout_phase: 1031.99ms | ref_actor_mlp: 4.64ms | backward_pass: 6.26ms | optimizer_step: 2.02ms | update_phase: 1678.04ms
+2025-05-19 10:01:03 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11216 steps.
+2025-05-19 10:01:03 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 808999/1000000 | Avg Reward: 334.30 | Avg Length: 36.0
+2025-05-19 10:01:03 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2102 | kl_loss: 2.7045 | entropy_loss: -4.0688 | total_loss: -0.2074
+2025-05-19 10:01:03 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.40ms | rollout_phase: 1097.54ms | ref_actor_mlp: 7.48ms | backward_pass: 9.67ms | optimizer_step: 2.66ms | update_phase: 2703.29ms
+2025-05-19 10:01:14 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10779 steps.
+2025-05-19 10:01:14 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 819778/1000000 | Avg Reward: 303.19 | Avg Length: 32.7
+2025-05-19 10:01:14 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3356 | kl_loss: 0.5506 | entropy_loss: -3.9951 | total_loss: -0.3351
+2025-05-19 10:01:14 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.22ms | rollout_phase: 1056.85ms | ref_actor_mlp: 3.09ms | backward_pass: 4.37ms | optimizer_step: 1.60ms | update_phase: 1238.82ms
+2025-05-19 10:01:33 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10788 steps.
+2025-05-19 10:01:33 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 830566/1000000 | Avg Reward: 306.57 | Avg Length: 33.1
+2025-05-19 10:01:33 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3089 | kl_loss: 0.8210 | entropy_loss: -4.1034 | total_loss: -0.3081
+2025-05-19 10:01:33 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.42ms | rollout_phase: 1101.10ms | ref_actor_mlp: 7.79ms | backward_pass: 9.99ms | optimizer_step: 2.68ms | update_phase: 2688.29ms
+2025-05-19 10:02:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10559 steps.
+2025-05-19 10:02:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 841125/1000000 | Avg Reward: 303.79 | Avg Length: 32.8
+2025-05-19 10:02:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3139 | kl_loss: 1.5781 | entropy_loss: -3.9778 | total_loss: -0.3123
+2025-05-19 10:02:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.89ms | rollout_phase: 1030.85ms | ref_actor_mlp: 19.50ms | backward_pass: 23.61ms | optimizer_step: 5.51ms | update_phase: 6262.23ms
+2025-05-19 10:02:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10599 steps.
+2025-05-19 10:02:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 851724/1000000 | Avg Reward: 298.44 | Avg Length: 32.2
+2025-05-19 10:02:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2457 | kl_loss: 0.3205 | entropy_loss: -4.1747 | total_loss: -0.2454
+2025-05-19 10:02:41 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.76ms | rollout_phase: 1038.74ms | ref_actor_mlp: 16.72ms | backward_pass: 20.77ms | optimizer_step: 4.76ms | update_phase: 5321.14ms
+2025-05-19 10:03:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10375 steps.
+2025-05-19 10:03:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 862099/1000000 | Avg Reward: 304.85 | Avg Length: 32.9
+2025-05-19 10:03:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3011 | kl_loss: 1.4300 | entropy_loss: -4.1675 | total_loss: -0.2996
+2025-05-19 10:03:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.70ms | rollout_phase: 1011.20ms | ref_actor_mlp: 15.03ms | backward_pass: 18.33ms | optimizer_step: 4.42ms | update_phase: 4673.95ms
+2025-05-19 10:03:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10217 steps.
+2025-05-19 10:03:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 872316/1000000 | Avg Reward: 283.63 | Avg Length: 30.6
+2025-05-19 10:03:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.1899 | kl_loss: 0.7512 | entropy_loss: -3.9822 | total_loss: -0.1891
+2025-05-19 10:03:37 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.67ms | rollout_phase: 992.58ms | ref_actor_mlp: 14.54ms | backward_pass: 17.60ms | optimizer_step: 4.05ms | update_phase: 4393.51ms
+2025-05-19 10:03:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10505 steps.
+2025-05-19 10:03:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 882821/1000000 | Avg Reward: 305.43 | Avg Length: 33.0
+2025-05-19 10:03:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2502 | kl_loss: 0.6118 | entropy_loss: -4.1173 | total_loss: -0.2496
+2025-05-19 10:03:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.28ms | rollout_phase: 1034.40ms | ref_actor_mlp: 4.32ms | backward_pass: 5.72ms | optimizer_step: 2.00ms | update_phase: 1582.44ms
+2025-05-19 10:04:18 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10737 steps.
+2025-05-19 10:04:18 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 893558/1000000 | Avg Reward: 326.13 | Avg Length: 35.2
+2025-05-19 10:04:18 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2668 | kl_loss: 0.8149 | entropy_loss: -4.1980 | total_loss: -0.2660
+2025-05-19 10:04:18 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.65ms | rollout_phase: 1130.03ms | ref_actor_mlp: 14.43ms | backward_pass: 17.73ms | optimizer_step: 4.51ms | update_phase: 4521.73ms
+2025-05-19 10:04:36 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10330 steps.
+2025-05-19 10:04:36 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 903888/1000000 | Avg Reward: 283.25 | Avg Length: 30.6
+2025-05-19 10:04:36 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.3158 | kl_loss: 1.4202 | entropy_loss: -4.2657 | total_loss: -0.3144
+2025-05-19 10:04:36 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.41ms | rollout_phase: 1012.20ms | ref_actor_mlp: 7.88ms | backward_pass: 9.98ms | optimizer_step: 2.98ms | update_phase: 2589.78ms
+2025-05-19 10:05:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11883 steps.
+2025-05-19 10:05:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 915771/1000000 | Avg Reward: 312.03 | Avg Length: 33.7
+2025-05-19 10:05:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2889 | kl_loss: 0.6275 | entropy_loss: -4.2422 | total_loss: -0.2883
+2025-05-19 10:05:10 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.72ms | rollout_phase: 968.83ms | ref_actor_mlp: 15.71ms | backward_pass: 19.10ms | optimizer_step: 4.22ms | update_phase: 4596.51ms
+2025-05-19 10:05:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 12015 steps.
+2025-05-19 10:05:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 927786/1000000 | Avg Reward: 291.59 | Avg Length: 31.5
+2025-05-19 10:05:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2897 | kl_loss: 0.2938 | entropy_loss: -4.2358 | total_loss: -0.2894
+2025-05-19 10:05:40 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.63ms | rollout_phase: 975.69ms | ref_actor_mlp: 13.61ms | backward_pass: 16.60ms | optimizer_step: 3.70ms | update_phase: 4012.08ms
+2025-05-19 10:06:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 10149 steps.
+2025-05-19 10:06:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 937935/1000000 | Avg Reward: 300.97 | Avg Length: 32.5
+2025-05-19 10:06:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2973 | kl_loss: 2.0589 | entropy_loss: -4.1617 | total_loss: -0.2952
+2025-05-19 10:06:01 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.52ms | rollout_phase: 986.14ms | ref_actor_mlp: 10.50ms | backward_pass: 12.95ms | optimizer_step: 2.96ms | update_phase: 3304.21ms
+2025-05-19 10:06:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11998 steps.
+2025-05-19 10:06:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 949933/1000000 | Avg Reward: 294.79 | Avg Length: 31.8
+2025-05-19 10:06:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2923 | kl_loss: 1.2255 | entropy_loss: -4.0262 | total_loss: -0.2910
+2025-05-19 10:06:50 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 1.07ms | rollout_phase: 968.40ms | ref_actor_mlp: 24.68ms | backward_pass: 29.73ms | optimizer_step: 6.44ms | update_phase: 7120.02ms
+2025-05-19 10:07:22 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11612 steps.
+2025-05-19 10:07:22 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 961545/1000000 | Avg Reward: 272.22 | Avg Length: 29.4
+2025-05-19 10:07:22 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2362 | kl_loss: 1.1566 | entropy_loss: -4.0316 | total_loss: -0.2350
+2025-05-19 10:07:22 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.72ms | rollout_phase: 940.70ms | ref_actor_mlp: 15.52ms | backward_pass: 18.97ms | optimizer_step: 4.21ms | update_phase: 4466.93ms
+2025-05-19 10:08:09 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11665 steps.
+2025-05-19 10:08:09 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 973210/1000000 | Avg Reward: 274.17 | Avg Length: 29.6
+2025-05-19 10:08:09 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2656 | kl_loss: 0.2451 | entropy_loss: -4.0501 | total_loss: -0.2654
+2025-05-19 10:08:09 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 1.08ms | rollout_phase: 950.66ms | ref_actor_mlp: 24.70ms | backward_pass: 29.51ms | optimizer_step: 6.37ms | update_phase: 6956.05ms
+2025-05-19 10:08:26 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11855 steps.
+2025-05-19 10:08:26 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 985065/1000000 | Avg Reward: 297.83 | Avg Length: 32.2
+2025-05-19 10:08:26 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2761 | kl_loss: 2.2305 | entropy_loss: -4.0746 | total_loss: -0.2739
+2025-05-19 10:08:26 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 0.33ms | rollout_phase: 972.13ms | ref_actor_mlp: 5.91ms | backward_pass: 7.61ms | optimizer_step: 1.86ms | update_phase: 1867.88ms
+2025-05-19 10:09:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Updating GRPO reference policy after 11622 steps.
+2025-05-19 10:09:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Step: 996687/1000000 | Avg Reward: 285.65 | Avg Length: 30.9
+2025-05-19 10:09:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Update Info: policy_loss: -0.2878 | kl_loss: 1.6741 | entropy_loss: -4.0885 | total_loss: -0.2862
+2025-05-19 10:09:13 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Timings (avg ms): actor_mlp: 1.07ms | rollout_phase: 951.71ms | ref_actor_mlp: 23.78ms | backward_pass: 28.48ms | optimizer_step: 6.22ms | update_phase: 6870.17ms
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Training finished at step 1000932.
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Starting evaluation (1 episodes, deterministic=True)...
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 10:09:28 | InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64 | INFO | Evaluation Complete: Avg Reward = 248.52 (over 1 eps)

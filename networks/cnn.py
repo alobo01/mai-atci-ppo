@@ -21,8 +21,10 @@ class CNNFeatureExtractor(nn.Module):
         super().__init__()
         if len(obs_shape) != 3:
             raise ValueError(f"Expected obs_shape in (C, H, W) format, got {obs_shape}")
-        
-        c, h, w = obs_shape # Channels, Height, Width
+        if obs_shape[0] not in (1, 3, 4) and obs_shape[-1] in (1, 3, 4):
+            h, w, c = obs_shape # Channels, Height, Width
+        else:
+            c, h, w = obs_shape
 
         # Standard CNN architecture (Nature DQN style, adjust as needed)
         self.conv_layers = nn.Sequential(
@@ -39,7 +41,7 @@ class CNNFeatureExtractor(nn.Module):
         # by doing a dummy forward pass.
         with torch.no_grad():
             # Create a dummy input on CPU to avoid potential CUDA init issues here
-            dummy_input = torch.zeros(1, *obs_shape, device='cpu')
+            dummy_input = torch.zeros(1, c, h, w, device='cpu')
             conv_out_size = self.conv_layers(dummy_input).shape[1]
 
         # Fully connected layer to get the desired number of output features

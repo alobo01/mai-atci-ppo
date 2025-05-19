@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "Hopper-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1154.4464323050343,
+        "final_rewards_window": [
+            800.3652745272578,
+            679.688539295336,
+            742.3078026216265,
+            1111.286014538175,
+            525.7828439606283,
+            592.7029557990953,
+            1010.7563505671612,
+            1541.4474725660734,
+            1337.9957284140442,
+            816.5179581044181
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed0_ent1e-05_lr0.0003_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "Hopper-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "Hopper-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1135.661088185152,
+        "final_rewards_window": [
+            859.1790925483197,
+            1227.5464990883063,
+            734.8296835056377,
+            558.653510893638,
+            1582.83653731915,
+            594.8383144993422,
+            745.3418461985166,
+            684.3153447468366,
+            1091.6719837493395,
+            637.0312275619708
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed42_ent1e-05_lr0.0003_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "Hopper-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    }
+]

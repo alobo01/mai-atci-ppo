@@ -1,0 +1,350 @@
+2025-05-16 11:11:37 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-16 11:11:37 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 64,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.1,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-16 11:11:37 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-16 11:11:37 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 64,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.001,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-16 11:11:38 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-16 11:11:38 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 4,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.1,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-16 11:11:38 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-16 11:11:38 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 64,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.001,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-17 21:59:36 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-17 21:59:36 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 16,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.01,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-17 22:01:55 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-17 22:01:55 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 64,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.01,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-17 22:04:24 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-17 22:04:24 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 16,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.001,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-17 22:09:59 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-17 22:09:59 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 64,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.1,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-17 22:24:06 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-17 22:24:06 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 16,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.01,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}
+2025-05-17 23:04:21 | CarRacing-v3_grpo_seed1_normal | INFO | Initializing agent for CarRacing-v3_grpo_seed1_normal on device cpu
+2025-05-17 23:04:21 | CarRacing-v3_grpo_seed1_normal | INFO | Full Config: {
+  "env_id": "CarRacing-v3",
+  "algo": "grpo",
+  "seed": 1,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "normal",
+    "group_size": 4,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.005,
+    "kl_coef": 0.01,
+    "ref_update_interval": 10000,
+    "minibatch_size": 128,
+    "lr": 0.0001,
+    "rollout_steps_per_trajectory": 512
+  }
+}

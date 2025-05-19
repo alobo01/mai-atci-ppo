@@ -1,0 +1,344 @@
+2025-05-19 00:41:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Initializing agent for HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal on device cpu
+2025-05-19 00:41:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
+  "env_id": "HalfCheetah-v4",
+  "algo": "ppo",
+  "seed": 42,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "sweeps/HalfCheetah_PPO_EC_LR_Sweep1",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      64,
+      64
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": {
+    "distribution_type": "normal",
+    "lam": 0.95,
+    "clip_eps": 0.2,
+    "ppo_epochs": 10,
+    "num_minibatches": 32,
+    "entropy_coef": 0.001,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": null,
+    "rollout_steps": 2048,
+    "lr": 0.0003
+  },
+  "grpo_config": null
+}
+2025-05-19 00:41:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 00:41:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | No actor checkpoint found at sweeps\HalfCheetah_PPO_EC_LR_Sweep1\HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal\checkpoints\actor.pt, starting fresh.
+2025-05-19 00:41:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Starting training from step 0...
+2025-05-19 00:41:54 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 10240/1000000 | Avg Reward: -265.26 | Avg Length: 1000.0
+2025-05-19 00:41:54 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0359 | value_loss: 24.9345 | entropy_loss: 8.2619 | approx_kl: -0.0153 | clip_fraction: 0.1646
+2025-05-19 00:41:54 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.24ms | critic_pass: 0.23ms | rollout_phase: 2827.92ms | backward_pass: 2.38ms | optimizer_step: 2.62ms | update_phase: 3125.97ms
+2025-05-19 00:42:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 20480/1000000 | Avg Reward: -348.10 | Avg Length: 1000.0
+2025-05-19 00:42:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0319 | value_loss: 25.0453 | entropy_loss: 8.0990 | approx_kl: -0.0165 | clip_fraction: 0.1725
+2025-05-19 00:42:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.24ms | critic_pass: 0.23ms | rollout_phase: 2754.95ms | backward_pass: 2.35ms | optimizer_step: 2.60ms | update_phase: 3089.41ms
+2025-05-19 00:42:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 30720/1000000 | Avg Reward: -276.98 | Avg Length: 1000.0
+2025-05-19 00:42:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0421 | value_loss: 11.6659 | entropy_loss: 7.7772 | approx_kl: -0.0282 | clip_fraction: 0.3070
+2025-05-19 00:42:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.26ms | critic_pass: 0.24ms | rollout_phase: 3169.37ms | backward_pass: 2.45ms | optimizer_step: 2.75ms | update_phase: 3248.39ms
+2025-05-19 00:43:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 40960/1000000 | Avg Reward: -257.99 | Avg Length: 1000.0
+2025-05-19 00:43:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0441 | value_loss: 14.8830 | entropy_loss: 7.5659 | approx_kl: -0.0185 | clip_fraction: 0.2708
+2025-05-19 00:43:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.24ms | critic_pass: 0.22ms | rollout_phase: 2742.01ms | backward_pass: 2.32ms | optimizer_step: 2.56ms | update_phase: 3044.20ms
+2025-05-19 00:43:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 51200/1000000 | Avg Reward: -266.34 | Avg Length: 1000.0
+2025-05-19 00:43:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0415 | value_loss: 14.4885 | entropy_loss: 7.4509 | approx_kl: -0.0114 | clip_fraction: 0.2028
+2025-05-19 00:43:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.26ms | critic_pass: 0.23ms | rollout_phase: 3085.89ms | backward_pass: 2.30ms | optimizer_step: 2.58ms | update_phase: 3045.27ms
+2025-05-19 00:44:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 61440/1000000 | Avg Reward: -191.44 | Avg Length: 1000.0
+2025-05-19 00:44:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0437 | value_loss: 9.7997 | entropy_loss: 7.1733 | approx_kl: -0.0260 | clip_fraction: 0.2764
+2025-05-19 00:44:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2756.11ms | backward_pass: 2.16ms | optimizer_step: 2.43ms | update_phase: 2865.10ms
+2025-05-19 00:44:51 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 71680/1000000 | Avg Reward: -168.92 | Avg Length: 1000.0
+2025-05-19 00:44:51 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0416 | value_loss: 17.5730 | entropy_loss: 7.1434 | approx_kl: -0.0132 | clip_fraction: 0.2563
+2025-05-19 00:44:51 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2770.00ms | backward_pass: 2.16ms | optimizer_step: 2.43ms | update_phase: 2860.11ms
+2025-05-19 00:45:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 81920/1000000 | Avg Reward: -194.26 | Avg Length: 1000.0
+2025-05-19 00:45:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0423 | value_loss: 14.4705 | entropy_loss: 7.0147 | approx_kl: -0.0201 | clip_fraction: 0.2217
+2025-05-19 00:45:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2737.73ms | backward_pass: 2.18ms | optimizer_step: 2.42ms | update_phase: 2882.07ms
+2025-05-19 00:45:46 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 92160/1000000 | Avg Reward: -240.06 | Avg Length: 1000.0
+2025-05-19 00:45:46 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0386 | value_loss: 18.8856 | entropy_loss: 6.9685 | approx_kl: -0.0237 | clip_fraction: 0.2441
+2025-05-19 00:45:46 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.22ms | critic_pass: 0.20ms | rollout_phase: 2650.37ms | backward_pass: 2.03ms | optimizer_step: 2.30ms | update_phase: 2706.17ms
+2025-05-19 00:46:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 102400/1000000 | Avg Reward: -205.35 | Avg Length: 1000.0
+2025-05-19 00:46:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0461 | value_loss: 14.1898 | entropy_loss: 6.5756 | approx_kl: -0.0184 | clip_fraction: 0.3010
+2025-05-19 00:46:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.22ms | critic_pass: 0.20ms | rollout_phase: 2489.15ms | backward_pass: 2.24ms | optimizer_step: 2.51ms | update_phase: 2958.16ms
+2025-05-19 00:46:40 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 112640/1000000 | Avg Reward: -140.12 | Avg Length: 1000.0
+2025-05-19 00:46:40 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0452 | value_loss: 19.4227 | entropy_loss: 6.7234 | approx_kl: -0.0274 | clip_fraction: 0.2817
+2025-05-19 00:46:40 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.22ms | critic_pass: 0.20ms | rollout_phase: 2623.22ms | backward_pass: 2.01ms | optimizer_step: 2.29ms | update_phase: 2695.51ms
+2025-05-19 00:47:06 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 122880/1000000 | Avg Reward: -173.65 | Avg Length: 1000.0
+2025-05-19 00:47:06 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0439 | value_loss: 10.1943 | entropy_loss: 6.1325 | approx_kl: -0.0365 | clip_fraction: 0.3926
+2025-05-19 00:47:06 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.21ms | critic_pass: 0.20ms | rollout_phase: 2485.76ms | backward_pass: 2.04ms | optimizer_step: 2.30ms | update_phase: 2711.15ms
+2025-05-19 00:47:34 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 133120/1000000 | Avg Reward: -65.57 | Avg Length: 1000.0
+2025-05-19 00:47:34 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0487 | value_loss: 13.4698 | entropy_loss: 6.5129 | approx_kl: -0.0322 | clip_fraction: 0.3308
+2025-05-19 00:47:34 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2644.56ms | backward_pass: 2.20ms | optimizer_step: 2.49ms | update_phase: 2934.41ms
+2025-05-19 00:48:01 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 143360/1000000 | Avg Reward: -101.50 | Avg Length: 1000.0
+2025-05-19 00:48:01 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0445 | value_loss: 16.4245 | entropy_loss: 6.2784 | approx_kl: -0.0228 | clip_fraction: 0.2712
+2025-05-19 00:48:01 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2702.41ms | backward_pass: 2.16ms | optimizer_step: 2.45ms | update_phase: 2886.03ms
+2025-05-19 00:48:29 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 153600/1000000 | Avg Reward: -80.91 | Avg Length: 1000.0
+2025-05-19 00:48:29 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0487 | value_loss: 9.7586 | entropy_loss: 5.6308 | approx_kl: -0.0352 | clip_fraction: 0.3885
+2025-05-19 00:48:29 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2599.96ms | backward_pass: 2.25ms | optimizer_step: 2.52ms | update_phase: 2974.86ms
+2025-05-19 00:48:57 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 163840/1000000 | Avg Reward: -157.20 | Avg Length: 1000.0
+2025-05-19 00:48:57 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0468 | value_loss: 14.0349 | entropy_loss: 5.5969 | approx_kl: -0.0218 | clip_fraction: 0.2925
+2025-05-19 00:48:57 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2646.92ms | backward_pass: 2.19ms | optimizer_step: 2.47ms | update_phase: 2918.08ms
+2025-05-19 00:49:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 174080/1000000 | Avg Reward: 6.11 | Avg Length: 1000.0
+2025-05-19 00:49:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0472 | value_loss: 14.2780 | entropy_loss: 5.6138 | approx_kl: -0.0220 | clip_fraction: 0.3174
+2025-05-19 00:49:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.21ms | critic_pass: 0.20ms | rollout_phase: 2459.94ms | backward_pass: 2.10ms | optimizer_step: 2.37ms | update_phase: 2795.70ms
+2025-05-19 00:49:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 184320/1000000 | Avg Reward: -8.72 | Avg Length: 1000.0
+2025-05-19 00:49:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0477 | value_loss: 10.7237 | entropy_loss: 5.3937 | approx_kl: -0.0398 | clip_fraction: 0.3447
+2025-05-19 00:49:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.24ms | critic_pass: 0.22ms | rollout_phase: 2908.22ms | backward_pass: 2.25ms | optimizer_step: 2.56ms | update_phase: 2990.80ms
+2025-05-19 00:50:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 194560/1000000 | Avg Reward: -21.77 | Avg Length: 1000.0
+2025-05-19 00:50:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0440 | value_loss: 8.0784 | entropy_loss: 5.0168 | approx_kl: -0.0215 | clip_fraction: 0.2665
+2025-05-19 00:50:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.21ms | critic_pass: 0.19ms | rollout_phase: 2347.30ms | backward_pass: 2.13ms | optimizer_step: 2.43ms | update_phase: 2844.58ms
+2025-05-19 00:50:48 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 204800/1000000 | Avg Reward: 19.92 | Avg Length: 1000.0
+2025-05-19 00:50:48 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0431 | value_loss: 6.8336 | entropy_loss: 4.8013 | approx_kl: -0.0318 | clip_fraction: 0.3724
+2025-05-19 00:50:48 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.24ms | critic_pass: 0.22ms | rollout_phase: 2832.26ms | backward_pass: 2.20ms | optimizer_step: 2.49ms | update_phase: 2933.94ms
+2025-05-19 00:51:15 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 215040/1000000 | Avg Reward: -92.41 | Avg Length: 1000.0
+2025-05-19 00:51:15 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0458 | value_loss: 15.6213 | entropy_loss: 5.5251 | approx_kl: -0.0271 | clip_fraction: 0.2877
+2025-05-19 00:51:15 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2729.08ms | backward_pass: 2.08ms | optimizer_step: 2.37ms | update_phase: 2782.62ms
+2025-05-19 00:51:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 225280/1000000 | Avg Reward: -2.64 | Avg Length: 1000.0
+2025-05-19 00:51:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0464 | value_loss: 10.2033 | entropy_loss: 4.7944 | approx_kl: -0.0333 | clip_fraction: 0.3532
+2025-05-19 00:51:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.22ms | critic_pass: 0.21ms | rollout_phase: 2705.04ms | backward_pass: 2.09ms | optimizer_step: 2.37ms | update_phase: 2786.66ms
+2025-05-19 00:52:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 235520/1000000 | Avg Reward: 89.67 | Avg Length: 1000.0
+2025-05-19 00:52:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0453 | value_loss: 16.4429 | entropy_loss: 5.0141 | approx_kl: -0.0186 | clip_fraction: 0.2648
+2025-05-19 00:52:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.24ms | critic_pass: 0.22ms | rollout_phase: 2886.32ms | backward_pass: 2.20ms | optimizer_step: 2.50ms | update_phase: 2935.39ms
+2025-05-19 00:52:38 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 245760/1000000 | Avg Reward: -20.41 | Avg Length: 1000.0
+2025-05-19 00:52:38 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0422 | value_loss: 20.6308 | entropy_loss: 5.2445 | approx_kl: -0.0164 | clip_fraction: 0.2483
+2025-05-19 00:52:38 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.21ms | critic_pass: 0.20ms | rollout_phase: 2467.53ms | backward_pass: 2.09ms | optimizer_step: 2.37ms | update_phase: 2787.45ms
+2025-05-19 00:52:54 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 00:53:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Evaluation Complete: Avg Reward = 77.93 (over 3 eps)
+2025-05-19 00:53:50 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Saved best evaluation video: eval_step251904_detTrue_bestR139.0.mp4
+2025-05-19 00:54:01 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 256000/1000000 | Avg Reward: 55.55 | Avg Length: 1000.0
+2025-05-19 00:54:01 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0498 | value_loss: 15.1327 | entropy_loss: 4.9179 | approx_kl: -0.0289 | clip_fraction: 0.3248
+2025-05-19 00:54:01 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.20ms | rollout_phase: 2647.55ms | backward_pass: 2.05ms | optimizer_step: 2.33ms | update_phase: 2737.93ms | eval_action_select: 1.45ms | eval_env_interact: 0.32ms
+2025-05-19 00:54:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 266240/1000000 | Avg Reward: 155.53 | Avg Length: 1000.0
+2025-05-19 00:54:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0467 | value_loss: 12.0683 | entropy_loss: 4.0717 | approx_kl: -0.0404 | clip_fraction: 0.3790
+2025-05-19 00:54:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.29ms | critic_pass: 0.26ms | rollout_phase: 3319.89ms | backward_pass: 2.66ms | optimizer_step: 2.98ms | update_phase: 3538.25ms
+2025-05-19 00:55:03 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 276480/1000000 | Avg Reward: 192.28 | Avg Length: 1000.0
+2025-05-19 00:55:03 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0461 | value_loss: 10.2175 | entropy_loss: 3.7103 | approx_kl: -0.0307 | clip_fraction: 0.3852
+2025-05-19 00:55:03 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2619.34ms | backward_pass: 2.27ms | optimizer_step: 2.57ms | update_phase: 3036.65ms
+2025-05-19 00:55:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 286720/1000000 | Avg Reward: 81.48 | Avg Length: 1000.0
+2025-05-19 00:55:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0475 | value_loss: 13.5032 | entropy_loss: 3.4355 | approx_kl: -0.0319 | clip_fraction: 0.4018
+2025-05-19 00:55:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.27ms | critic_pass: 0.24ms | rollout_phase: 3134.97ms | backward_pass: 2.48ms | optimizer_step: 2.78ms | update_phase: 3298.44ms
+2025-05-19 00:56:06 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 296960/1000000 | Avg Reward: 111.19 | Avg Length: 1000.0
+2025-05-19 00:56:06 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0432 | value_loss: 20.9564 | entropy_loss: 4.6456 | approx_kl: -0.0314 | clip_fraction: 0.3077
+2025-05-19 00:56:06 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.25ms | critic_pass: 0.23ms | rollout_phase: 2934.37ms | backward_pass: 2.28ms | optimizer_step: 2.61ms | update_phase: 3061.99ms
+2025-05-19 00:56:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 307200/1000000 | Avg Reward: 108.36 | Avg Length: 1000.0
+2025-05-19 00:56:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0446 | value_loss: 19.5985 | entropy_loss: 4.4578 | approx_kl: -0.0510 | clip_fraction: 0.3939
+2025-05-19 00:56:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.25ms | critic_pass: 0.23ms | rollout_phase: 2907.89ms | backward_pass: 2.36ms | optimizer_step: 2.65ms | update_phase: 3140.82ms
+2025-05-19 00:57:08 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 317440/1000000 | Avg Reward: 215.28 | Avg Length: 1000.0
+2025-05-19 00:57:08 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0424 | value_loss: 18.5456 | entropy_loss: 3.5084 | approx_kl: -0.0952 | clip_fraction: 0.4925
+2025-05-19 00:57:08 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.26ms | critic_pass: 0.24ms | rollout_phase: 3023.95ms | backward_pass: 2.49ms | optimizer_step: 2.81ms | update_phase: 3312.51ms
+2025-05-19 00:57:38 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 327680/1000000 | Avg Reward: 1.38 | Avg Length: 1000.0
+2025-05-19 00:57:38 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0462 | value_loss: 23.8437 | entropy_loss: 3.5196 | approx_kl: -0.0371 | clip_fraction: 0.3861
+2025-05-19 00:57:38 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.25ms | critic_pass: 0.23ms | rollout_phase: 2885.46ms | backward_pass: 2.43ms | optimizer_step: 2.73ms | update_phase: 3235.72ms
+2025-05-19 00:58:10 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 337920/1000000 | Avg Reward: -31.00 | Avg Length: 1000.0
+2025-05-19 00:58:10 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0455 | value_loss: 42.9075 | entropy_loss: 4.5226 | approx_kl: -0.0276 | clip_fraction: 0.3021
+2025-05-19 00:58:10 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.27ms | critic_pass: 0.24ms | rollout_phase: 3163.87ms | backward_pass: 2.43ms | optimizer_step: 2.73ms | update_phase: 3233.59ms
+2025-05-19 00:58:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 348160/1000000 | Avg Reward: 175.67 | Avg Length: 1000.0
+2025-05-19 00:58:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0346 | value_loss: 25.8400 | entropy_loss: 3.2021 | approx_kl: -0.1367 | clip_fraction: 0.5125
+2025-05-19 00:58:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.21ms | critic_pass: 0.20ms | rollout_phase: 2480.63ms | backward_pass: 2.02ms | optimizer_step: 2.29ms | update_phase: 2703.78ms
+2025-05-19 00:59:03 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 358400/1000000 | Avg Reward: 260.37 | Avg Length: 1000.0
+2025-05-19 00:59:03 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0455 | value_loss: 19.8649 | entropy_loss: 3.2452 | approx_kl: -0.0660 | clip_fraction: 0.4787
+2025-05-19 00:59:03 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.22ms | critic_pass: 0.20ms | rollout_phase: 2576.50ms | backward_pass: 2.13ms | optimizer_step: 2.43ms | update_phase: 2851.71ms
+2025-05-19 00:59:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 368640/1000000 | Avg Reward: -104.25 | Avg Length: 1000.0
+2025-05-19 00:59:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0535 | value_loss: 24.9428 | entropy_loss: 5.8118 | approx_kl: -0.0384 | clip_fraction: 0.3940
+2025-05-19 00:59:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.22ms | critic_pass: 0.20ms | rollout_phase: 2575.28ms | backward_pass: 2.12ms | optimizer_step: 2.44ms | update_phase: 2860.32ms
+2025-05-19 00:59:59 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 378880/1000000 | Avg Reward: 152.39 | Avg Length: 1000.0
+2025-05-19 00:59:59 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0431 | value_loss: 24.9051 | entropy_loss: 3.8352 | approx_kl: -0.0693 | clip_fraction: 0.4470
+2025-05-19 00:59:59 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.22ms | rollout_phase: 2824.35ms | backward_pass: 2.10ms | optimizer_step: 2.38ms | update_phase: 2808.03ms
+2025-05-19 01:00:25 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 389120/1000000 | Avg Reward: 228.56 | Avg Length: 1000.0
+2025-05-19 01:00:25 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0470 | value_loss: 23.9119 | entropy_loss: 4.1080 | approx_kl: -0.0642 | clip_fraction: 0.4590
+2025-05-19 01:00:25 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.21ms | critic_pass: 0.20ms | rollout_phase: 2471.47ms | backward_pass: 2.07ms | optimizer_step: 2.32ms | update_phase: 2753.03ms
+2025-05-19 01:00:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 399360/1000000 | Avg Reward: 286.06 | Avg Length: 1000.0
+2025-05-19 01:00:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0462 | value_loss: 29.1243 | entropy_loss: 3.9754 | approx_kl: -0.0468 | clip_fraction: 0.4427
+2025-05-19 01:00:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.28ms | critic_pass: 0.25ms | rollout_phase: 3359.34ms | backward_pass: 2.47ms | optimizer_step: 2.79ms | update_phase: 3289.19ms
+2025-05-19 01:01:22 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 409600/1000000 | Avg Reward: 318.05 | Avg Length: 1000.0
+2025-05-19 01:01:22 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0470 | value_loss: 28.1764 | entropy_loss: 3.9125 | approx_kl: -0.0412 | clip_fraction: 0.3878
+2025-05-19 01:01:22 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.19ms | critic_pass: 0.18ms | rollout_phase: 2249.87ms | backward_pass: 1.93ms | optimizer_step: 2.20ms | update_phase: 2582.29ms
+2025-05-19 01:01:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 419840/1000000 | Avg Reward: 359.31 | Avg Length: 1000.0
+2025-05-19 01:01:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0436 | value_loss: 22.7032 | entropy_loss: 3.8228 | approx_kl: -0.0751 | clip_fraction: 0.4283
+2025-05-19 01:01:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.22ms | critic_pass: 0.21ms | rollout_phase: 2687.67ms | backward_pass: 2.05ms | optimizer_step: 2.33ms | update_phase: 2747.39ms
+2025-05-19 01:02:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 430080/1000000 | Avg Reward: 370.48 | Avg Length: 1000.0
+2025-05-19 01:02:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0456 | value_loss: 23.8931 | entropy_loss: 3.0396 | approx_kl: -0.0837 | clip_fraction: 0.4688
+2025-05-19 01:02:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.19ms | critic_pass: 0.18ms | rollout_phase: 2190.97ms | backward_pass: 1.84ms | optimizer_step: 2.09ms | update_phase: 2474.31ms
+2025-05-19 01:02:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 440320/1000000 | Avg Reward: 401.19 | Avg Length: 1000.0
+2025-05-19 01:02:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0427 | value_loss: 41.9049 | entropy_loss: 3.9469 | approx_kl: -0.0481 | clip_fraction: 0.3702
+2025-05-19 01:02:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.25ms | critic_pass: 0.23ms | rollout_phase: 2824.18ms | backward_pass: 2.54ms | optimizer_step: 2.81ms | update_phase: 3317.97ms
+2025-05-19 01:03:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 450560/1000000 | Avg Reward: 295.80 | Avg Length: 1000.0
+2025-05-19 01:03:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0501 | value_loss: 30.6823 | entropy_loss: 3.8499 | approx_kl: -0.0543 | clip_fraction: 0.4424
+2025-05-19 01:03:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.31ms | critic_pass: 0.28ms | rollout_phase: 3922.67ms | backward_pass: 2.37ms | optimizer_step: 2.70ms | update_phase: 3159.06ms
+2025-05-19 01:03:50 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 460800/1000000 | Avg Reward: 502.24 | Avg Length: 1000.0
+2025-05-19 01:03:50 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0219 | value_loss: 32.5224 | entropy_loss: 3.5056 | approx_kl: -0.1517 | clip_fraction: 0.5292
+2025-05-19 01:03:50 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.26ms | critic_pass: 0.25ms | rollout_phase: 3263.28ms | backward_pass: 2.27ms | optimizer_step: 2.59ms | update_phase: 3031.68ms
+2025-05-19 01:04:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 471040/1000000 | Avg Reward: 507.04 | Avg Length: 1000.0
+2025-05-19 01:04:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0249 | value_loss: 25.6026 | entropy_loss: 2.1915 | approx_kl: -0.1193 | clip_fraction: 0.5461
+2025-05-19 01:04:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.22ms | rollout_phase: 2667.74ms | backward_pass: 2.26ms | optimizer_step: 2.55ms | update_phase: 3014.96ms
+2025-05-19 01:04:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 481280/1000000 | Avg Reward: 427.29 | Avg Length: 1000.0
+2025-05-19 01:04:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0409 | value_loss: 36.9777 | entropy_loss: 3.2588 | approx_kl: -0.0834 | clip_fraction: 0.4663
+2025-05-19 01:04:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.25ms | critic_pass: 0.23ms | rollout_phase: 3004.66ms | backward_pass: 2.34ms | optimizer_step: 2.67ms | update_phase: 3117.27ms
+2025-05-19 01:05:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 491520/1000000 | Avg Reward: 568.78 | Avg Length: 1000.0
+2025-05-19 01:05:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0476 | value_loss: 46.9445 | entropy_loss: 3.1013 | approx_kl: -0.0478 | clip_fraction: 0.4283
+2025-05-19 01:05:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.21ms | critic_pass: 0.20ms | rollout_phase: 2513.05ms | backward_pass: 2.07ms | optimizer_step: 2.34ms | update_phase: 2751.36ms
+2025-05-19 01:05:47 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 501760/1000000 | Avg Reward: 629.91 | Avg Length: 1000.0
+2025-05-19 01:05:47 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0355 | value_loss: 51.3519 | entropy_loss: 2.6755 | approx_kl: -0.0832 | clip_fraction: 0.4668
+2025-05-19 01:05:47 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.25ms | critic_pass: 0.23ms | rollout_phase: 2963.81ms | backward_pass: 2.44ms | optimizer_step: 2.79ms | update_phase: 3240.13ms
+2025-05-19 01:05:52 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 01:06:41 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Evaluation Complete: Avg Reward = 477.34 (over 3 eps)
+2025-05-19 01:06:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Saved best evaluation video: eval_step503808_detTrue_bestR561.5.mp4
+2025-05-19 01:07:10 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 512000/1000000 | Avg Reward: 389.49 | Avg Length: 1000.0
+2025-05-19 01:07:10 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0484 | value_loss: 41.7667 | entropy_loss: 2.8494 | approx_kl: -0.0669 | clip_fraction: 0.4393
+2025-05-19 01:07:10 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.20ms | rollout_phase: 2556.56ms | backward_pass: 2.15ms | optimizer_step: 2.43ms | update_phase: 2862.73ms | eval_action_select: 1.48ms | eval_env_interact: 0.32ms
+2025-05-19 01:07:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 522240/1000000 | Avg Reward: 682.75 | Avg Length: 1000.0
+2025-05-19 01:07:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0149 | value_loss: 31.6127 | entropy_loss: 1.4130 | approx_kl: -0.2006 | clip_fraction: 0.5989
+2025-05-19 01:07:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.27ms | critic_pass: 0.25ms | rollout_phase: 3303.93ms | backward_pass: 2.44ms | optimizer_step: 2.75ms | update_phase: 3227.80ms
+2025-05-19 01:08:11 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 532480/1000000 | Avg Reward: 108.30 | Avg Length: 1000.0
+2025-05-19 01:08:11 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0450 | value_loss: 34.3441 | entropy_loss: 5.1999 | approx_kl: -0.0415 | clip_fraction: 0.4070
+2025-05-19 01:08:11 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.23ms | critic_pass: 0.21ms | rollout_phase: 2736.39ms | backward_pass: 2.09ms | optimizer_step: 2.36ms | update_phase: 2782.23ms
+2025-05-19 01:08:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 542720/1000000 | Avg Reward: 503.84 | Avg Length: 1000.0
+2025-05-19 01:08:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0355 | value_loss: 44.2984 | entropy_loss: 2.0610 | approx_kl: -0.2212 | clip_fraction: 0.5089
+2025-05-19 01:08:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.22ms | critic_pass: 0.21ms | rollout_phase: 2746.19ms | backward_pass: 1.83ms | optimizer_step: 2.08ms | update_phase: 2435.31ms
+2025-05-19 01:08:52 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 552960/1000000 | Avg Reward: 730.48 | Avg Length: 1000.0
+2025-05-19 01:08:52 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0373 | value_loss: 38.6610 | entropy_loss: 2.7040 | approx_kl: -0.0750 | clip_fraction: 0.4804
+2025-05-19 01:08:52 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.13ms | critic_pass: 0.12ms | rollout_phase: 1581.69ms | backward_pass: 1.18ms | optimizer_step: 1.38ms | update_phase: 1581.37ms
+2025-05-19 01:09:08 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 563200/1000000 | Avg Reward: 546.31 | Avg Length: 1000.0
+2025-05-19 01:09:08 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0435 | value_loss: 40.0329 | entropy_loss: 2.8866 | approx_kl: -0.0513 | clip_fraction: 0.4171
+2025-05-19 01:09:08 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.12ms | critic_pass: 0.11ms | rollout_phase: 1514.48ms | backward_pass: 1.15ms | optimizer_step: 1.37ms | update_phase: 1538.79ms
+2025-05-19 01:09:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 573440/1000000 | Avg Reward: 531.18 | Avg Length: 1000.0
+2025-05-19 01:09:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0340 | value_loss: 52.4024 | entropy_loss: 2.5993 | approx_kl: -0.0888 | clip_fraction: 0.4798
+2025-05-19 01:09:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.12ms | critic_pass: 0.11ms | rollout_phase: 1494.21ms | backward_pass: 1.15ms | optimizer_step: 1.36ms | update_phase: 1531.04ms
+2025-05-19 01:09:44 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 583680/1000000 | Avg Reward: 662.96 | Avg Length: 1000.0
+2025-05-19 01:09:44 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0397 | value_loss: 53.3210 | entropy_loss: 2.4191 | approx_kl: -0.0838 | clip_fraction: 0.4890
+2025-05-19 01:09:44 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.17ms | critic_pass: 0.15ms | rollout_phase: 1994.24ms | backward_pass: 1.62ms | optimizer_step: 1.92ms | update_phase: 2178.43ms
+2025-05-19 01:10:04 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 593920/1000000 | Avg Reward: 554.99 | Avg Length: 1000.0
+2025-05-19 01:10:04 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0397 | value_loss: 59.6421 | entropy_loss: 2.1415 | approx_kl: -0.0863 | clip_fraction: 0.4718
+2025-05-19 01:10:04 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.17ms | critic_pass: 0.15ms | rollout_phase: 2024.46ms | backward_pass: 1.54ms | optimizer_step: 1.79ms | update_phase: 2050.30ms
+2025-05-19 01:10:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 604160/1000000 | Avg Reward: 411.56 | Avg Length: 1000.0
+2025-05-19 01:10:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: 0.1038 | value_loss: 14.2499 | entropy_loss: 0.3239 | approx_kl: -2.6589 | clip_fraction: 0.8519
+2025-05-19 01:10:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.14ms | rollout_phase: 1874.69ms | backward_pass: 1.49ms | optimizer_step: 1.74ms | update_phase: 1983.61ms
+2025-05-19 01:10:44 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 614400/1000000 | Avg Reward: 623.69 | Avg Length: 1000.0
+2025-05-19 01:10:44 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0429 | value_loss: 61.0760 | entropy_loss: 2.5238 | approx_kl: -0.0536 | clip_fraction: 0.4004
+2025-05-19 01:10:44 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.15ms | rollout_phase: 1922.69ms | backward_pass: 1.56ms | optimizer_step: 1.86ms | update_phase: 2108.70ms
+2025-05-19 01:11:04 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 624640/1000000 | Avg Reward: 761.48 | Avg Length: 1000.0
+2025-05-19 01:11:04 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0450 | value_loss: 63.4923 | entropy_loss: 2.2750 | approx_kl: -0.0622 | clip_fraction: 0.4572
+2025-05-19 01:11:04 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.17ms | critic_pass: 0.15ms | rollout_phase: 2011.56ms | backward_pass: 1.56ms | optimizer_step: 1.87ms | update_phase: 2103.06ms
+2025-05-19 01:11:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 634880/1000000 | Avg Reward: 802.02 | Avg Length: 1000.0
+2025-05-19 01:11:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0373 | value_loss: 60.3388 | entropy_loss: 2.3109 | approx_kl: -0.0791 | clip_fraction: 0.5003
+2025-05-19 01:11:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.15ms | rollout_phase: 1921.00ms | backward_pass: 1.52ms | optimizer_step: 1.79ms | update_phase: 2029.31ms
+2025-05-19 01:11:46 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 645120/1000000 | Avg Reward: 830.91 | Avg Length: 1000.0
+2025-05-19 01:11:46 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0345 | value_loss: 67.5261 | entropy_loss: 2.2501 | approx_kl: -0.0730 | clip_fraction: 0.4960
+2025-05-19 01:11:46 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.18ms | critic_pass: 0.17ms | rollout_phase: 2245.64ms | backward_pass: 1.66ms | optimizer_step: 1.96ms | update_phase: 2223.87ms
+2025-05-19 01:12:09 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 655360/1000000 | Avg Reward: 737.23 | Avg Length: 1000.0
+2025-05-19 01:12:09 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0202 | value_loss: 42.3056 | entropy_loss: 1.6325 | approx_kl: -0.1976 | clip_fraction: 0.6004
+2025-05-19 01:12:09 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.19ms | critic_pass: 0.17ms | rollout_phase: 2227.71ms | backward_pass: 1.82ms | optimizer_step: 2.13ms | update_phase: 2421.53ms
+2025-05-19 01:12:31 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 665600/1000000 | Avg Reward: 719.76 | Avg Length: 1000.0
+2025-05-19 01:12:31 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0314 | value_loss: 65.5386 | entropy_loss: 2.1570 | approx_kl: -0.1033 | clip_fraction: 0.4954
+2025-05-19 01:12:31 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.18ms | critic_pass: 0.16ms | rollout_phase: 2205.85ms | backward_pass: 1.62ms | optimizer_step: 1.90ms | update_phase: 2181.97ms
+2025-05-19 01:12:54 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 675840/1000000 | Avg Reward: 920.07 | Avg Length: 1000.0
+2025-05-19 01:12:54 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0400 | value_loss: 60.0859 | entropy_loss: 0.6891 | approx_kl: -0.1029 | clip_fraction: 0.5308
+2025-05-19 01:12:54 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.18ms | critic_pass: 0.16ms | rollout_phase: 2168.95ms | backward_pass: 1.67ms | optimizer_step: 1.99ms | update_phase: 2265.50ms
+2025-05-19 01:13:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 686080/1000000 | Avg Reward: 1027.35 | Avg Length: 1000.0
+2025-05-19 01:13:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0270 | value_loss: 71.9704 | entropy_loss: 1.2446 | approx_kl: -0.1100 | clip_fraction: 0.5674
+2025-05-19 01:13:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.14ms | rollout_phase: 1933.77ms | backward_pass: 1.49ms | optimizer_step: 1.76ms | update_phase: 1992.52ms
+2025-05-19 01:13:33 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 696320/1000000 | Avg Reward: 919.03 | Avg Length: 1000.0
+2025-05-19 01:13:33 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0341 | value_loss: 86.1670 | entropy_loss: 1.4260 | approx_kl: -0.0751 | clip_fraction: 0.4754
+2025-05-19 01:13:33 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.14ms | rollout_phase: 1834.93ms | backward_pass: 1.52ms | optimizer_step: 1.81ms | update_phase: 2048.27ms
+2025-05-19 01:13:52 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 706560/1000000 | Avg Reward: 1123.37 | Avg Length: 1000.0
+2025-05-19 01:13:52 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0316 | value_loss: 80.5680 | entropy_loss: 1.1662 | approx_kl: -0.0764 | clip_fraction: 0.5151
+2025-05-19 01:13:52 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1839.52ms | backward_pass: 1.50ms | optimizer_step: 1.78ms | update_phase: 2016.45ms
+2025-05-19 01:14:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 716800/1000000 | Avg Reward: 1077.63 | Avg Length: 1000.0
+2025-05-19 01:14:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0268 | value_loss: 80.7699 | entropy_loss: 1.2491 | approx_kl: -0.1102 | clip_fraction: 0.5243
+2025-05-19 01:14:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.15ms | rollout_phase: 1914.39ms | backward_pass: 1.54ms | optimizer_step: 1.82ms | update_phase: 2068.04ms
+2025-05-19 01:14:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 727040/1000000 | Avg Reward: 1126.81 | Avg Length: 1000.0
+2025-05-19 01:14:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0269 | value_loss: 85.5405 | entropy_loss: 1.1218 | approx_kl: -0.0733 | clip_fraction: 0.4797
+2025-05-19 01:14:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1866.73ms | backward_pass: 1.38ms | optimizer_step: 1.65ms | update_phase: 1858.04ms
+2025-05-19 01:14:51 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 737280/1000000 | Avg Reward: 942.22 | Avg Length: 1000.0
+2025-05-19 01:14:51 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0200 | value_loss: 65.6312 | entropy_loss: 1.2339 | approx_kl: -0.1317 | clip_fraction: 0.5525
+2025-05-19 01:14:51 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.15ms | rollout_phase: 1963.55ms | backward_pass: 1.54ms | optimizer_step: 1.83ms | update_phase: 2065.52ms
+2025-05-19 01:15:11 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 747520/1000000 | Avg Reward: 1163.49 | Avg Length: 1000.0
+2025-05-19 01:15:11 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0302 | value_loss: 78.7331 | entropy_loss: 0.8912 | approx_kl: -0.0863 | clip_fraction: 0.5007
+2025-05-19 01:15:11 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.15ms | rollout_phase: 1944.85ms | backward_pass: 1.58ms | optimizer_step: 1.87ms | update_phase: 2123.53ms
+2025-05-19 01:15:26 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 01:16:08 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Evaluation Complete: Avg Reward = 1115.22 (over 3 eps)
+2025-05-19 01:16:13 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Saved best evaluation video: eval_step755712_detTrue_bestR1172.4.mp4
+2025-05-19 01:16:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 757760/1000000 | Avg Reward: 1088.29 | Avg Length: 1000.0
+2025-05-19 01:16:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: 0.0756 | value_loss: 79.4616 | entropy_loss: 0.7764 | approx_kl: -1.6343 | clip_fraction: 0.7303
+2025-05-19 01:16:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.14ms | rollout_phase: 1826.29ms | backward_pass: 1.46ms | optimizer_step: 1.72ms | update_phase: 1943.96ms | eval_action_select: 1.10ms | eval_env_interact: 0.25ms
+2025-05-19 01:16:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 768000/1000000 | Avg Reward: 962.17 | Avg Length: 1000.0
+2025-05-19 01:16:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0341 | value_loss: 98.2041 | entropy_loss: 1.1606 | approx_kl: -0.0765 | clip_fraction: 0.4588
+2025-05-19 01:16:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.15ms | rollout_phase: 1995.91ms | backward_pass: 1.57ms | optimizer_step: 1.86ms | update_phase: 2110.77ms
+2025-05-19 01:16:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 778240/1000000 | Avg Reward: 1037.90 | Avg Length: 1000.0
+2025-05-19 01:16:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0332 | value_loss: 81.7147 | entropy_loss: 1.2356 | approx_kl: -0.0895 | clip_fraction: 0.5026
+2025-05-19 01:16:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.17ms | critic_pass: 0.15ms | rollout_phase: 2019.45ms | backward_pass: 1.61ms | optimizer_step: 1.90ms | update_phase: 2159.60ms
+2025-05-19 01:17:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 788480/1000000 | Avg Reward: 1169.36 | Avg Length: 1000.0
+2025-05-19 01:17:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0340 | value_loss: 93.3327 | entropy_loss: 0.5636 | approx_kl: -0.1075 | clip_fraction: 0.5367
+2025-05-19 01:17:19 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.17ms | critic_pass: 0.15ms | rollout_phase: 2046.00ms | backward_pass: 1.60ms | optimizer_step: 1.90ms | update_phase: 2148.67ms
+2025-05-19 01:17:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 798720/1000000 | Avg Reward: 1239.33 | Avg Length: 1000.0
+2025-05-19 01:17:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0109 | value_loss: 82.5958 | entropy_loss: 0.2439 | approx_kl: -0.2226 | clip_fraction: 0.6003
+2025-05-19 01:17:37 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.14ms | critic_pass: 0.13ms | rollout_phase: 1787.69ms | backward_pass: 1.36ms | optimizer_step: 1.60ms | update_phase: 1807.41ms
+2025-05-19 01:17:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 808960/1000000 | Avg Reward: 838.42 | Avg Length: 1000.0
+2025-05-19 01:17:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: 0.0047 | value_loss: 60.0917 | entropy_loss: -0.4067 | approx_kl: -0.3731 | clip_fraction: 0.6896
+2025-05-19 01:17:55 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1811.81ms | backward_pass: 1.43ms | optimizer_step: 1.69ms | update_phase: 1909.00ms
+2025-05-19 01:18:15 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 819200/1000000 | Avg Reward: 1370.19 | Avg Length: 1000.0
+2025-05-19 01:18:15 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: 0.0204 | value_loss: 94.0748 | entropy_loss: -0.0142 | approx_kl: -0.8547 | clip_fraction: 0.6602
+2025-05-19 01:18:15 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.14ms | rollout_phase: 1892.83ms | backward_pass: 1.53ms | optimizer_step: 1.80ms | update_phase: 2046.00ms
+2025-05-19 01:18:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 829440/1000000 | Avg Reward: 1350.69 | Avg Length: 1000.0
+2025-05-19 01:18:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0221 | value_loss: 95.9098 | entropy_loss: -0.0558 | approx_kl: -0.1162 | clip_fraction: 0.5406
+2025-05-19 01:18:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1864.13ms | backward_pass: 1.50ms | optimizer_step: 1.78ms | update_phase: 2009.92ms
+2025-05-19 01:18:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 839680/1000000 | Avg Reward: 1005.72 | Avg Length: 1000.0
+2025-05-19 01:18:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0144 | value_loss: 96.3438 | entropy_loss: 0.9649 | approx_kl: -0.2236 | clip_fraction: 0.5261
+2025-05-19 01:18:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1834.73ms | backward_pass: 1.37ms | optimizer_step: 1.62ms | update_phase: 1820.56ms
+2025-05-19 01:19:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 849920/1000000 | Avg Reward: 1330.51 | Avg Length: 1000.0
+2025-05-19 01:19:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: 0.0502 | value_loss: 88.9121 | entropy_loss: -0.0513 | approx_kl: -1.8723 | clip_fraction: 0.7043
+2025-05-19 01:19:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.19ms | critic_pass: 0.17ms | rollout_phase: 2155.52ms | backward_pass: 1.89ms | optimizer_step: 2.14ms | update_phase: 2481.45ms
+2025-05-19 01:19:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 860160/1000000 | Avg Reward: 1359.31 | Avg Length: 1000.0
+2025-05-19 01:19:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0308 | value_loss: 107.8584 | entropy_loss: -0.1025 | approx_kl: -0.0812 | clip_fraction: 0.5124
+2025-05-19 01:19:36 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.16ms | critic_pass: 0.14ms | rollout_phase: 1864.01ms | backward_pass: 1.58ms | optimizer_step: 1.85ms | update_phase: 2101.30ms
+2025-05-19 01:19:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 870400/1000000 | Avg Reward: 1344.70 | Avg Length: 1000.0
+2025-05-19 01:19:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0081 | value_loss: 103.8865 | entropy_loss: -0.2021 | approx_kl: -0.2011 | clip_fraction: 0.5977
+2025-05-19 01:19:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.18ms | critic_pass: 0.17ms | rollout_phase: 2265.95ms | backward_pass: 1.66ms | optimizer_step: 1.95ms | update_phase: 2212.63ms
+2025-05-19 01:20:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 880640/1000000 | Avg Reward: 1461.17 | Avg Length: 1000.0
+2025-05-19 01:20:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0257 | value_loss: 121.7958 | entropy_loss: -0.2418 | approx_kl: -0.0948 | clip_fraction: 0.5052
+2025-05-19 01:20:24 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.21ms | critic_pass: 0.19ms | rollout_phase: 2494.23ms | backward_pass: 2.03ms | optimizer_step: 2.35ms | update_phase: 2692.15ms
+2025-05-19 01:20:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 890880/1000000 | Avg Reward: 1445.91 | Avg Length: 1000.0
+2025-05-19 01:20:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0278 | value_loss: 99.0496 | entropy_loss: -0.3577 | approx_kl: -0.0957 | clip_fraction: 0.5154
+2025-05-19 01:20:43 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1848.92ms | backward_pass: 1.47ms | optimizer_step: 1.73ms | update_phase: 1959.84ms
+2025-05-19 01:21:02 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 901120/1000000 | Avg Reward: 1415.58 | Avg Length: 1000.0
+2025-05-19 01:21:02 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0051 | value_loss: 98.4273 | entropy_loss: -0.5209 | approx_kl: -0.3101 | clip_fraction: 0.6015
+2025-05-19 01:21:02 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1801.73ms | backward_pass: 1.44ms | optimizer_step: 1.70ms | update_phase: 1923.65ms
+2025-05-19 01:21:21 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 911360/1000000 | Avg Reward: 1339.30 | Avg Length: 1000.0
+2025-05-19 01:21:21 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0036 | value_loss: 108.2656 | entropy_loss: -0.1303 | approx_kl: -0.3819 | clip_fraction: 0.5665
+2025-05-19 01:21:21 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1757.25ms | backward_pass: 1.47ms | optimizer_step: 1.74ms | update_phase: 1969.64ms
+2025-05-19 01:21:39 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 921600/1000000 | Avg Reward: 1413.58 | Avg Length: 1000.0
+2025-05-19 01:21:39 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0247 | value_loss: 116.5475 | entropy_loss: -0.5594 | approx_kl: -0.0851 | clip_fraction: 0.5154
+2025-05-19 01:21:39 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1846.86ms | backward_pass: 1.40ms | optimizer_step: 1.66ms | update_phase: 1875.14ms
+2025-05-19 01:21:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 931840/1000000 | Avg Reward: 1317.47 | Avg Length: 1000.0
+2025-05-19 01:21:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: 0.0219 | value_loss: 100.6083 | entropy_loss: -0.4691 | approx_kl: -0.4336 | clip_fraction: 0.6663
+2025-05-19 01:21:58 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1796.38ms | backward_pass: 1.45ms | optimizer_step: 1.73ms | update_phase: 1945.62ms
+2025-05-19 01:22:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 942080/1000000 | Avg Reward: 1363.61 | Avg Length: 1000.0
+2025-05-19 01:22:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0169 | value_loss: 101.5243 | entropy_loss: -0.5985 | approx_kl: -0.2113 | clip_fraction: 0.5874
+2025-05-19 01:22:16 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.14ms | critic_pass: 0.13ms | rollout_phase: 1757.09ms | backward_pass: 1.35ms | optimizer_step: 1.59ms | update_phase: 1798.29ms
+2025-05-19 01:22:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 952320/1000000 | Avg Reward: 1561.17 | Avg Length: 1000.0
+2025-05-19 01:22:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: 0.0028 | value_loss: 111.8262 | entropy_loss: -0.7232 | approx_kl: -0.2690 | clip_fraction: 0.6370
+2025-05-19 01:22:35 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1817.58ms | backward_pass: 1.50ms | optimizer_step: 1.77ms | update_phase: 2005.62ms
+2025-05-19 01:22:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 962560/1000000 | Avg Reward: 1465.00 | Avg Length: 1000.0
+2025-05-19 01:22:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0204 | value_loss: 99.8397 | entropy_loss: -0.4452 | approx_kl: -0.1095 | clip_fraction: 0.5736
+2025-05-19 01:22:53 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1817.56ms | backward_pass: 1.44ms | optimizer_step: 1.70ms | update_phase: 1920.05ms
+2025-05-19 01:23:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 972800/1000000 | Avg Reward: 1411.05 | Avg Length: 1000.0
+2025-05-19 01:23:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0168 | value_loss: 100.0641 | entropy_loss: -0.3583 | approx_kl: -0.1097 | clip_fraction: 0.5556
+2025-05-19 01:23:12 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.14ms | rollout_phase: 1850.86ms | backward_pass: 1.47ms | optimizer_step: 1.72ms | update_phase: 1951.08ms
+2025-05-19 01:23:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 983040/1000000 | Avg Reward: 1587.05 | Avg Length: 1000.0
+2025-05-19 01:23:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0191 | value_loss: 129.0567 | entropy_loss: -0.6403 | approx_kl: -0.1154 | clip_fraction: 0.5543
+2025-05-19 01:23:30 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.14ms | critic_pass: 0.13ms | rollout_phase: 1689.58ms | backward_pass: 1.42ms | optimizer_step: 1.68ms | update_phase: 1907.84ms
+2025-05-19 01:23:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Step: 993280/1000000 | Avg Reward: 1432.08 | Avg Length: 1000.0
+2025-05-19 01:23:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0238 | value_loss: 118.3416 | entropy_loss: -0.5914 | approx_kl: -0.1128 | clip_fraction: 0.5489
+2025-05-19 01:23:49 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Timings (avg ms): actor_pass: 0.14ms | critic_pass: 0.13ms | rollout_phase: 1740.95ms | backward_pass: 1.45ms | optimizer_step: 1.70ms | update_phase: 1930.46ms
+2025-05-19 01:24:05 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Training finished at step 1001472.
+2025-05-19 01:24:05 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Starting evaluation (1 episodes, deterministic=True)...
+2025-05-19 01:24:18 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Evaluation Complete: Avg Reward = 1653.42 (over 1 eps)
+2025-05-19 01:24:23 | HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal | INFO | Saved best evaluation video: final_step1001472_detTrue_bestR1653.4.mp4

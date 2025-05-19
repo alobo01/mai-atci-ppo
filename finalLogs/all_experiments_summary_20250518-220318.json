@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 2353.214376267977,
+        "final_rewards_window": [
+            102.50467754366758,
+            95.24781677355563,
+            100.2797101467251,
+            104.0423676816776,
+            97.54078405942744,
+            100.08875036844313,
+            95.2760807275285,
+            100.2406388949512,
+            97.01603432741979,
+            96.21312942519316
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_ppo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_ppo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "Swimmer-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 2360.121212574886,
+        "final_rewards_window": [
+            99.06844791852015,
+            60.675638823022666,
+            91.00176560131948,
+            101.59136654035348,
+            105.14216756254902,
+            105.07434787663976,
+            102.45061443869255,
+            101.08722419534261,
+            101.78656457535355,
+            99.99090560498449
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_ppo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_ppo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "Swimmer-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    }
+]

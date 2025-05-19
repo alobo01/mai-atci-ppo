@@ -1,0 +1,170 @@
+[
+    {
+        "run_id": "Hopper-v4_grpo_seed0_ent0.0_lr1e-05_beta_g4",
+        "status": "completed",
+        "duration_s": 2886.411935817916,
+        "final_rewards_window": [
+            963.995021273828,
+            959.3964965409098,
+            921.3775353721549,
+            806.4297001932246,
+            692.9619624661362,
+            825.442544411454,
+            899.8981616165354,
+            945.7067811591437,
+            748.421119630464,
+            915.305057775413
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed0_ent0.0_lr1e-05_beta_g16",
+        "status": "completed",
+        "duration_s": 3.105965845985338,
+        "final_rewards_window": [
+            963.995021273828,
+            959.3964965409098,
+            921.3775353721549,
+            806.4297001932246,
+            692.9619624661362,
+            825.442544411454,
+            899.8981616165354,
+            945.7067811591437,
+            748.421119630464,
+            915.305057775413
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed0_ent0.0_lr1e-05_beta_g64",
+        "status": "completed",
+        "duration_s": 3.044503141893074,
+        "final_rewards_window": [
+            963.995021273828,
+            959.3964965409098,
+            921.3775353721549,
+            806.4297001932246,
+            692.9619624661362,
+            825.442544411454,
+            899.8981616165354,
+            945.7067811591437,
+            748.421119630464,
+            915.305057775413
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 64
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed42_ent0.0_lr1e-05_beta_g4",
+        "status": "completed",
+        "duration_s": 2790.9011938741896,
+        "final_rewards_window": [
+            830.564300666276,
+            943.0361993346232,
+            1041.9244323546832,
+            968.7083496689175,
+            718.3840240151537,
+            1056.0564279797663,
+            835.1996259486152,
+            1039.7447334745486,
+            1005.116621022009,
+            1044.6636579372957
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed42_ent0.0_lr1e-05_beta_g16",
+        "status": "completed",
+        "duration_s": 3.184776250971481,
+        "final_rewards_window": [
+            830.564300666276,
+            943.0361993346232,
+            1041.9244323546832,
+            968.7083496689175,
+            718.3840240151537,
+            1056.0564279797663,
+            835.1996259486152,
+            1039.7447334745486,
+            1005.116621022009,
+            1044.6636579372957
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed42_ent0.0_lr1e-05_beta_g64",
+        "status": "completed",
+        "duration_s": 3.061425141058862,
+        "final_rewards_window": [
+            830.564300666276,
+            943.0361993346232,
+            1041.9244323546832,
+            968.7083496689175,
+            718.3840240151537,
+            1056.0564279797663,
+            835.1996259486152,
+            1039.7447334745486,
+            1005.116621022009,
+            1044.6636579372957
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 64
+        }
+    }
+]

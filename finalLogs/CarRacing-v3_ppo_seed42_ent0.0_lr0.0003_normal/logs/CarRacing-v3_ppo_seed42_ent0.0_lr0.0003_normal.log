@@ -1,0 +1,120 @@
+2025-05-19 13:11:01 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Initializing agent for CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal on device cpu
+2025-05-19 13:11:01 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
+  "env_id": "CarRacing-v3",
+  "algo": "ppo",
+  "seed": 42,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "finalLogs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "cnn",
+    "mlp_hidden_dims": [
+      256
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": {
+    "distribution_type": "normal",
+    "lam": 0.95,
+    "clip_eps": 0.2,
+    "ppo_epochs": 10,
+    "num_minibatches": 64,
+    "entropy_coef": 0.0,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": null,
+    "rollout_steps": 4096,
+    "lr": 0.0003
+  },
+  "grpo_config": null
+}
+2025-05-19 13:11:02 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Using CNN Feature Extractor with separate MLP heads and optimizers (shared base gradients will sum).
+2025-05-19 13:11:02 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | No actor checkpoint found at finalLogs/CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal/checkpoints/actor.pt, starting fresh.
+2025-05-19 13:11:02 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Starting training from step 0...
+2025-05-19 13:20:37 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 12288/1000000 | Avg Reward: -47.13 | Avg Length: 1000.0
+2025-05-19 13:20:37 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0222 | value_loss: 0.2271 | entropy_loss: 4.0593 | approx_kl: -0.0123 | clip_fraction: 0.1889
+2025-05-19 13:20:37 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 27.92ms | actor_pass: 1.77ms | critic_pass: 0.10ms | rollout_phase: 182862.84ms | backward_pass: 4.93ms | optimizer_step: 4.43ms | update_phase: 9095.46ms
+2025-05-19 13:30:29 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 24576/1000000 | Avg Reward: -46.27 | Avg Length: 1000.0
+2025-05-19 13:30:29 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0478 | value_loss: 0.0900 | entropy_loss: 4.2920 | approx_kl: -0.0970 | clip_fraction: 0.4156
+2025-05-19 13:30:29 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.81ms | actor_pass: 1.88ms | critic_pass: 0.11ms | rollout_phase: 187685.27ms | backward_pass: 4.87ms | optimizer_step: 4.97ms | update_phase: 9403.86ms
+2025-05-19 13:40:12 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 36864/1000000 | Avg Reward: -70.70 | Avg Length: 1000.0
+2025-05-19 13:40:12 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0361 | value_loss: 0.0643 | entropy_loss: 4.9933 | approx_kl: -0.1680 | clip_fraction: 0.5186
+2025-05-19 13:40:12 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.16ms | actor_pass: 1.81ms | critic_pass: 0.11ms | rollout_phase: 184723.79ms | backward_pass: 4.97ms | optimizer_step: 5.18ms | update_phase: 9642.48ms
+2025-05-19 13:50:05 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 49152/1000000 | Avg Reward: -73.32 | Avg Length: 1000.0
+2025-05-19 13:50:05 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0309 | value_loss: 0.0623 | entropy_loss: 5.6818 | approx_kl: -0.1062 | clip_fraction: 0.4947
+2025-05-19 13:50:05 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.76ms | actor_pass: 1.87ms | critic_pass: 0.11ms | rollout_phase: 187676.25ms | backward_pass: 4.99ms | optimizer_step: 5.44ms | update_phase: 9894.34ms
+2025-05-19 13:59:51 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 61440/1000000 | Avg Reward: -70.95 | Avg Length: 1000.0
+2025-05-19 13:59:51 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0327 | value_loss: 0.0525 | entropy_loss: 6.2490 | approx_kl: -0.1312 | clip_fraction: 0.5332
+2025-05-19 13:59:51 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.36ms | actor_pass: 1.85ms | critic_pass: 0.11ms | rollout_phase: 185399.97ms | backward_pass: 5.10ms | optimizer_step: 5.35ms | update_phase: 10016.48ms
+2025-05-19 14:09:41 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 73728/1000000 | Avg Reward: -71.31 | Avg Length: 1000.0
+2025-05-19 14:09:41 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0212 | value_loss: 0.0553 | entropy_loss: 6.4671 | approx_kl: -0.1021 | clip_fraction: 0.4649
+2025-05-19 14:09:41 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.51ms | actor_pass: 1.86ms | critic_pass: 0.11ms | rollout_phase: 186245.56ms | backward_pass: 5.31ms | optimizer_step: 5.58ms | update_phase: 10334.70ms
+2025-05-19 14:19:45 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 86016/1000000 | Avg Reward: -65.43 | Avg Length: 1000.0
+2025-05-19 14:19:45 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0450 | value_loss: 0.0601 | entropy_loss: 6.5761 | approx_kl: -0.1890 | clip_fraction: 0.5793
+2025-05-19 14:19:45 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 29.32ms | actor_pass: 1.97ms | critic_pass: 0.11ms | rollout_phase: 191211.25ms | backward_pass: 5.13ms | optimizer_step: 5.65ms | update_phase: 10184.09ms
+2025-05-19 14:29:48 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 98304/1000000 | Avg Reward: -52.06 | Avg Length: 1000.0
+2025-05-19 14:29:48 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0495 | value_loss: 0.0810 | entropy_loss: 5.4091 | approx_kl: -0.1640 | clip_fraction: 0.5782
+2025-05-19 14:29:48 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 29.16ms | actor_pass: 1.89ms | critic_pass: 0.11ms | rollout_phase: 190872.79ms | backward_pass: 5.13ms | optimizer_step: 5.56ms | update_phase: 10079.60ms
+2025-05-19 14:39:55 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 110592/1000000 | Avg Reward: -27.14 | Avg Length: 1000.0
+2025-05-19 14:39:55 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0761 | value_loss: 0.0963 | entropy_loss: 4.4757 | approx_kl: -0.1807 | clip_fraction: 0.6344
+2025-05-19 14:39:55 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 29.58ms | actor_pass: 1.94ms | critic_pass: 0.11ms | rollout_phase: 193049.43ms | backward_pass: 4.91ms | optimizer_step: 5.10ms | update_phase: 9568.47ms
+2025-05-19 14:49:53 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 122880/1000000 | Avg Reward: -20.75 | Avg Length: 1000.0
+2025-05-19 14:49:53 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0695 | value_loss: 0.0886 | entropy_loss: 4.5621 | approx_kl: -0.1790 | clip_fraction: 0.6440
+2025-05-19 14:49:53 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.89ms | actor_pass: 1.87ms | critic_pass: 0.11ms | rollout_phase: 188685.48ms | backward_pass: 5.30ms | optimizer_step: 5.68ms | update_phase: 10364.85ms
+2025-05-19 15:00:10 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 135168/1000000 | Avg Reward: -24.36 | Avg Length: 1000.0
+2025-05-19 15:00:10 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0723 | value_loss: 0.0812 | entropy_loss: 4.8070 | approx_kl: -0.3004 | clip_fraction: 0.6887
+2025-05-19 15:00:10 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 30.34ms | actor_pass: 2.02ms | critic_pass: 0.11ms | rollout_phase: 195772.26ms | backward_pass: 5.20ms | optimizer_step: 5.35ms | update_phase: 9996.85ms
+2025-05-19 15:10:10 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 147456/1000000 | Avg Reward: -46.25 | Avg Length: 1000.0
+2025-05-19 15:10:10 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0647 | value_loss: 0.0691 | entropy_loss: 6.0204 | approx_kl: -0.1606 | clip_fraction: 0.6398
+2025-05-19 15:10:10 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 29.16ms | actor_pass: 1.95ms | critic_pass: 0.11ms | rollout_phase: 190004.27ms | backward_pass: 5.11ms | optimizer_step: 5.41ms | update_phase: 10011.17ms
+2025-05-19 15:19:59 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 159744/1000000 | Avg Reward: -15.70 | Avg Length: 1000.0
+2025-05-19 15:19:59 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0687 | value_loss: 0.0836 | entropy_loss: 5.0226 | approx_kl: -0.2657 | clip_fraction: 0.6514
+2025-05-19 15:19:59 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.43ms | actor_pass: 1.85ms | critic_pass: 0.11ms | rollout_phase: 186285.07ms | backward_pass: 5.19ms | optimizer_step: 5.36ms | update_phase: 10041.92ms
+2025-05-19 15:29:30 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 172032/1000000 | Avg Reward: -23.17 | Avg Length: 1000.0
+2025-05-19 15:29:30 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0550 | value_loss: 0.0763 | entropy_loss: 5.7491 | approx_kl: -0.3401 | clip_fraction: 0.6531
+2025-05-19 15:29:30 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 27.18ms | actor_pass: 1.70ms | critic_pass: 0.11ms | rollout_phase: 179538.79ms | backward_pass: 5.55ms | optimizer_step: 6.04ms | update_phase: 10873.63ms
+2025-05-19 15:39:01 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 184320/1000000 | Avg Reward: -24.70 | Avg Length: 1000.0
+2025-05-19 15:39:01 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0627 | value_loss: 0.0683 | entropy_loss: 5.8030 | approx_kl: -0.3034 | clip_fraction: 0.6351
+2025-05-19 15:39:01 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 27.31ms | actor_pass: 1.69ms | critic_pass: 0.11ms | rollout_phase: 180218.78ms | backward_pass: 5.10ms | optimizer_step: 5.47ms | update_phase: 10064.91ms
+2025-05-19 15:48:37 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 196608/1000000 | Avg Reward: -18.93 | Avg Length: 1000.0
+2025-05-19 15:48:37 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0577 | value_loss: 0.0667 | entropy_loss: 6.6842 | approx_kl: -0.1571 | clip_fraction: 0.5723
+2025-05-19 15:48:37 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 27.65ms | actor_pass: 1.76ms | critic_pass: 0.11ms | rollout_phase: 182181.91ms | backward_pass: 5.12ms | optimizer_step: 5.32ms | update_phase: 9891.52ms
+2025-05-19 15:58:53 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 208896/1000000 | Avg Reward: -26.56 | Avg Length: 1000.0
+2025-05-19 15:58:53 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0536 | value_loss: 0.0576 | entropy_loss: 7.1280 | approx_kl: -0.1364 | clip_fraction: 0.5343
+2025-05-19 15:58:53 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 29.99ms | actor_pass: 2.01ms | critic_pass: 0.11ms | rollout_phase: 194922.49ms | backward_pass: 4.87ms | optimizer_step: 6.13ms | update_phase: 10163.45ms
+2025-05-19 16:08:57 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 221184/1000000 | Avg Reward: -35.59 | Avg Length: 1000.0
+2025-05-19 16:08:57 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0510 | value_loss: 0.0590 | entropy_loss: 7.4247 | approx_kl: -0.1527 | clip_fraction: 0.5366
+2025-05-19 16:08:57 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 29.11ms | actor_pass: 1.88ms | critic_pass: 0.18ms | rollout_phase: 190280.00ms | backward_pass: 5.24ms | optimizer_step: 7.22ms | update_phase: 11293.38ms
+2025-05-19 16:19:07 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 233472/1000000 | Avg Reward: -42.96 | Avg Length: 1000.0
+2025-05-19 16:19:07 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0596 | value_loss: 0.0680 | entropy_loss: 8.3651 | approx_kl: -0.1798 | clip_fraction: 0.5422
+2025-05-19 16:19:07 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 29.61ms | actor_pass: 1.96ms | critic_pass: 0.11ms | rollout_phase: 192466.84ms | backward_pass: 5.08ms | optimizer_step: 6.62ms | update_phase: 10620.18ms
+2025-05-19 16:28:54 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 245760/1000000 | Avg Reward: -34.81 | Avg Length: 1000.0
+2025-05-19 16:28:54 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0544 | value_loss: 0.0598 | entropy_loss: 8.0462 | approx_kl: -0.1356 | clip_fraction: 0.5288
+2025-05-19 16:28:54 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.17ms | actor_pass: 1.81ms | critic_pass: 0.11ms | rollout_phase: 184950.51ms | backward_pass: 4.96ms | optimizer_step: 6.91ms | update_phase: 10789.62ms
+2025-05-19 16:35:29 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 16:38:50 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Evaluation Complete: Avg Reward = -22.77 (over 3 eps)
+2025-05-19 16:38:52 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Saved best evaluation video: eval_step253952_detTrue_bestR-14.2.mp4
+2025-05-19 16:42:16 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 258048/1000000 | Avg Reward: -32.34 | Avg Length: 1000.0
+2025-05-19 16:42:16 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0608 | value_loss: 0.0692 | entropy_loss: 7.5969 | approx_kl: -0.3430 | clip_fraction: 0.6152
+2025-05-19 16:42:16 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 31.26ms | actor_pass: 2.16ms | critic_pass: 0.11ms | rollout_phase: 189821.10ms | backward_pass: 4.91ms | optimizer_step: 5.11ms | update_phase: 9478.37ms | eval_action_select: 44.96ms | eval_env_interact: 10.36ms
+2025-05-19 16:52:03 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 270336/1000000 | Avg Reward: -34.68 | Avg Length: 1000.0
+2025-05-19 16:52:03 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0547 | value_loss: 0.0532 | entropy_loss: 7.9461 | approx_kl: -0.2343 | clip_fraction: 0.5584
+2025-05-19 16:52:03 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.61ms | actor_pass: 1.91ms | critic_pass: 0.10ms | rollout_phase: 186138.07ms | backward_pass: 5.05ms | optimizer_step: 5.17ms | update_phase: 9773.48ms
+2025-05-19 17:01:55 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 282624/1000000 | Avg Reward: -26.66 | Avg Length: 1000.0
+2025-05-19 17:01:55 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0625 | value_loss: 0.0653 | entropy_loss: 7.8854 | approx_kl: -0.2128 | clip_fraction: 0.5764
+2025-05-19 17:01:55 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 28.85ms | actor_pass: 1.91ms | critic_pass: 0.11ms | rollout_phase: 187423.17ms | backward_pass: 4.97ms | optimizer_step: 5.32ms | update_phase: 9762.46ms
+2025-05-19 17:13:16 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 294912/1000000 | Avg Reward: -39.00 | Avg Length: 1000.0
+2025-05-19 17:13:16 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0612 | value_loss: 0.0651 | entropy_loss: 7.9087 | approx_kl: -0.1282 | clip_fraction: 0.5545
+2025-05-19 17:13:16 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 33.94ms | actor_pass: 2.21ms | critic_pass: 0.18ms | rollout_phase: 215305.73ms | backward_pass: 6.04ms | optimizer_step: 6.54ms | update_phase: 11706.89ms
+2025-05-19 17:26:38 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 307200/1000000 | Avg Reward: -21.08 | Avg Length: 1000.0
+2025-05-19 17:26:38 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0645 | value_loss: 0.0647 | entropy_loss: 7.4527 | approx_kl: -0.2162 | clip_fraction: 0.6249
+2025-05-19 17:26:38 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 40.75ms | actor_pass: 2.50ms | critic_pass: 0.17ms | rollout_phase: 247953.06ms | backward_pass: 9.55ms | optimizer_step: 11.81ms | update_phase: 19230.55ms
+2025-05-19 17:39:18 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Step: 319488/1000000 | Avg Reward: -18.57 | Avg Length: 1000.0
+2025-05-19 17:39:18 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Update Info: policy_loss: -0.0638 | value_loss: 0.0645 | entropy_loss: 7.4525 | approx_kl: -0.2469 | clip_fraction: 0.6490
+2025-05-19 17:39:18 | CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Timings (avg ms): cnn_feature_pass: 38.84ms | actor_pass: 2.29ms | critic_pass: 0.16ms | rollout_phase: 240519.51ms | backward_pass: 6.57ms | optimizer_step: 7.30ms | update_phase: 12940.95ms

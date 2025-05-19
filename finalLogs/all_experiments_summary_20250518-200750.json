@@ -1,0 +1,170 @@
+[
+    {
+        "run_id": "Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_beta_g4",
+        "status": "completed",
+        "duration_s": 5067.388987279963,
+        "final_rewards_window": [
+            273.3892998730077,
+            270.6094332698332,
+            274.6990872040266,
+            279.61444723399325,
+            278.7206388852079,
+            278.9078351548654,
+            276.5817882749593,
+            282.40596911774816,
+            284.7135279803334,
+            280.39224923509244
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16",
+        "status": "completed",
+        "duration_s": 3.274322714889422,
+        "final_rewards_window": [
+            273.3892998730077,
+            270.6094332698332,
+            274.6990872040266,
+            279.61444723399325,
+            278.7206388852079,
+            278.9078351548654,
+            276.5817882749593,
+            282.40596911774816,
+            284.7135279803334,
+            280.39224923509244
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_beta_g64",
+        "status": "completed",
+        "duration_s": 3.1704668439924717,
+        "final_rewards_window": [
+            273.3892998730077,
+            270.6094332698332,
+            274.6990872040266,
+            279.61444723399325,
+            278.7206388852079,
+            278.9078351548654,
+            276.5817882749593,
+            282.40596911774816,
+            284.7135279803334,
+            280.39224923509244
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 64
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_beta_g4",
+        "status": "completed",
+        "duration_s": 5059.624807284214,
+        "final_rewards_window": [
+            277.35007353478625,
+            283.1084899550553,
+            284.89252848074295,
+            286.12535184733366,
+            280.6689376043035,
+            279.97336132252536,
+            283.0814609216529,
+            276.3801209978861,
+            277.96947724682536,
+            281.8766181597612
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16",
+        "status": "completed",
+        "duration_s": 2.9970103460364044,
+        "final_rewards_window": [
+            277.35007353478625,
+            283.1084899550553,
+            284.89252848074295,
+            286.12535184733366,
+            280.6689376043035,
+            279.97336132252536,
+            283.0814609216529,
+            276.3801209978861,
+            277.96947724682536,
+            281.8766181597612
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64",
+        "status": "completed",
+        "duration_s": 2.857484371867031,
+        "final_rewards_window": [
+            277.35007353478625,
+            283.1084899550553,
+            284.89252848074295,
+            286.12535184733366,
+            280.6689376043035,
+            279.97336132252536,
+            283.0814609216529,
+            276.3801209978861,
+            277.96947724682536,
+            281.8766181597612
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 64
+        }
+    }
+]

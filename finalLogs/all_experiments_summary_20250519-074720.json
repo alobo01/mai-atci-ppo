@@ -1,0 +1,170 @@
+[
+    {
+        "run_id": "Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g4",
+        "status": "completed",
+        "duration_s": 2318.879738859134,
+        "final_rewards_window": [
+            1118.127375616351,
+            1051.6425941385787,
+            1067.4039972302626,
+            1099.2219046600878,
+            1092.0675486993582,
+            1040.9207155557224,
+            1095.2131200312074,
+            1063.3600043583688,
+            1113.64609570359,
+            1057.3919407248384
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g4/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g4",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 1466.0375424851663,
+        "final_rewards_window": [
+            1056.2260020599188,
+            1043.6038436738063,
+            1040.3056898487237,
+            1054.1256061214633,
+            1074.2273578969323,
+            1013.4916568360521,
+            1078.312507420981,
+            976.2481233897877,
+            1073.8669726192536,
+            1058.8847176485922
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g16/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g16",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g64",
+        "status": "completed",
+        "duration_s": 1052.6170215159655,
+        "final_rewards_window": [
+            596.1374840806172,
+            651.5532330529957,
+            807.1633277366986,
+            623.1690497602485,
+            754.039299551456,
+            830.1271450408742,
+            900.5764086344388,
+            928.8909332493695,
+            962.4659381819266,
+            987.0268689991333
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g64/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed0_ent0.0_lr1e-05_normal_g64",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 64
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g4",
+        "status": "completed",
+        "duration_s": 2398.3714682939462,
+        "final_rewards_window": [
+            1073.0485633492628,
+            1041.8570064954342,
+            1058.7851657528884,
+            1053.6018565164595,
+            1052.1306133247167,
+            1060.722284373996,
+            1059.374453162901,
+            1050.1718187968618,
+            1049.0605978838764,
+            993.8491575395734
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g4/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g4",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 1320.408812765032,
+        "final_rewards_window": [
+            1029.7759182552313,
+            1014.0044570253577,
+            1035.699132899906,
+            1025.282640412603,
+            1042.7177843997124,
+            1045.2173505276023,
+            1048.8856763588562,
+            989.7361798248073,
+            1065.4697901018963,
+            1053.0907277273207
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g16/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g16",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g64",
+        "status": "completed",
+        "duration_s": 1064.0364756409544,
+        "final_rewards_window": [
+            796.393474628042,
+            727.5393152212894,
+            873.4651508462357,
+            900.1098873912065,
+            939.9398497369693,
+            946.7210841887406,
+            993.059819431496,
+            959.513145909074,
+            1004.9555945636218,
+            931.7236889187789
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g64/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_grpo_seed42_ent0.0_lr1e-05_normal_g64",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Hopper-v4",
+            "lr": 1e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 64
+        }
+    }
+]

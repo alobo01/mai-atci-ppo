@@ -3,7 +3,7 @@
     "algo": "grpo",
     "seed": 1,
     "gamma": 0.99,
-    "total_steps": 10000000,
+    "total_steps": 1000000,
     "log_interval": 10000,
     "checkpoint_interval": 100000,
     "video_interval": 250000,
@@ -22,14 +22,14 @@
     "ppo_config": null,
     "grpo_config": {
         "distribution_type": "normal",
-        "group_size": 32,
+        "group_size": 16,
         "update_epochs": 10,
         "max_grad_norm": 0.5,
-        "entropy_coef": 0.0001,
-        "kl_coef": 0.0001,
-        "ref_update_interval": 100000,
+        "entropy_coef": 1e-05,
+        "kl_coef": 0.1,
+        "ref_update_interval": 10000,
         "minibatch_size": 256,
-        "lr": 0.0003,
+        "lr": 0.0001,
         "rollout_steps_per_trajectory": 1000
     }
 }

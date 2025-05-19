@@ -1,0 +1,731 @@
+[
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent0.0_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 2171.9661663000006,
+        "final_rewards_window": [
+            988.1637614089249,
+            1072.2868815007623,
+            1073.003445891101,
+            786.3798490371923,
+            1131.2878263689963,
+            993.807320432315,
+            1149.8568133983517,
+            1255.1061836827598,
+            1070.1359747989316,
+            1093.5283563601186
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.0_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.0_lr5e-05_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent0.0_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 4171.447503800009,
+        "final_rewards_window": [
+            1196.2365524032211,
+            1228.3801514417923,
+            1176.0606952963253,
+            1239.7740743783538,
+            1127.6992706625306,
+            1127.162868673075,
+            1224.8238479229083,
+            1241.46135864912,
+            1163.4175094402149,
+            1195.9524098875868
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.0_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.0_lr0.0001_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent0.0_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 3685.154039599991,
+        "final_rewards_window": [
+            1484.7931967140587,
+            1453.6338847448976,
+            1468.9499778507666,
+            1426.5273117169245,
+            1427.672161308195,
+            1463.794286644235,
+            1445.6388491665857,
+            1384.400645804176,
+            1406.7921970326522,
+            1465.963075535356
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.0_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.0_lr0.0003_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent0.001_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 4102.887423799999,
+        "final_rewards_window": [
+            2496.581486858873,
+            2393.3178736498085,
+            2265.1356294333627,
+            2420.5970412000543,
+            1992.8231644539924,
+            1447.1704448437554,
+            1794.1886191156768,
+            2572.7434110559366,
+            1841.7048977562524,
+            2294.931337667296
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.001_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.001_lr5e-05_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent0.001_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 3618.434141299993,
+        "final_rewards_window": [
+            1302.5426577142343,
+            1448.0831708540952,
+            1408.4398463765197,
+            1408.914094955515,
+            1392.553894035142,
+            559.1890193998876,
+            1354.9065523151867,
+            1260.470348617001,
+            1379.0540540734412,
+            1243.8497094314494
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.001_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.001_lr0.0001_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent0.001_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 4491.204375800007,
+        "final_rewards_window": [
+            1200.8197922512923,
+            1214.5580432920633,
+            1231.1031577789317,
+            1162.3824400753633,
+            1235.4357715598196,
+            1225.2418730600427,
+            1157.7591575325564,
+            1136.149329240337,
+            1188.607650893021,
+            1177.1992858119695
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.001_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent0.001_lr0.0003_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent1e-05_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 3607.62065360001,
+        "final_rewards_window": [
+            2256.8441655928737,
+            2637.9704688285974,
+            2345.4128906363558,
+            1170.1536064513623,
+            1866.3997194062954,
+            2299.489269057469,
+            2413.7532843643235,
+            2074.7567490847796,
+            2482.2079185374782,
+            2686.409519082872
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent1e-05_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent1e-05_lr5e-05_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent1e-05_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 3754.6026175999723,
+        "final_rewards_window": [
+            1263.347084228918,
+            1339.132819491037,
+            1329.1823142510316,
+            1075.280577530331,
+            1340.4911994979032,
+            1263.8801063880962,
+            1204.1879308746447,
+            1284.0407315012358,
+            1351.8145999961407,
+            1320.4226554602458
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent1e-05_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent1e-05_lr0.0001_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 3452.0860620999883,
+        "final_rewards_window": [
+            1438.6424208272924,
+            1370.3170178669056,
+            1286.240697346805,
+            1005.9368241984191,
+            1200.3973312498504,
+            1231.5093424372194,
+            1306.1780012166644,
+            1248.2478057877847,
+            1216.9068858206704,
+            1268.9296871297604
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent1e-05_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent0.0_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 1912.7445077000011,
+        "final_rewards_window": [
+            1711.814111270582,
+            1782.4633569587572,
+            1719.6748712543415,
+            1573.3837907493496,
+            1606.7802687543776,
+            1610.4830023691702,
+            1717.536428023449,
+            1859.8230166709923,
+            1739.2087230196187,
+            1965.2949618596076
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.0_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.0_lr5e-05_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent0.0_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 2486.5699063999928,
+        "final_rewards_window": [
+            2333.051968716708,
+            2456.059749591367,
+            2527.0880655242263,
+            2539.6614731925456,
+            2496.1916902966373,
+            2338.3974545900237,
+            2450.4540938814253,
+            2308.3456065472474,
+            2501.6729983194614,
+            2550.040397966035
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.0_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.0_lr0.0001_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent0.0_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 2725.9367241,
+        "final_rewards_window": [
+            1071.6225286472734,
+            628.3834191778211,
+            1096.9010299917234,
+            998.3650098717598,
+            954.2142239897,
+            1087.400153555292,
+            1140.5822661508234,
+            1249.1936008672994,
+            1280.47905752852,
+            1270.0753065867762
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.0_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.0_lr0.0003_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent0.001_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 2215.255007700005,
+        "final_rewards_window": [
+            1155.9432436193747,
+            2097.5802603502725,
+            1342.6651581326018,
+            1582.941548868564,
+            2290.022145624881,
+            1927.687322750297,
+            3092.556968381595,
+            2951.72887692145,
+            2481.090908079865,
+            2826.575008248108
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.001_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.001_lr5e-05_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 2583.3980950000114,
+        "final_rewards_window": [
+            1248.1476223273742,
+            1441.58204599605,
+            1960.2532304800532,
+            1391.5946626414548,
+            1828.4964323677825,
+            2405.146029448876,
+            2035.7624554236188,
+            2613.737478632041,
+            2444.371967523463,
+            1488.7134874799942
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0001_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 2579.1533199000114,
+        "final_rewards_window": [
+            1415.5787555910026,
+            1339.3046067688656,
+            1413.5766927219092,
+            1317.468029157613,
+            1363.6094225620689,
+            1561.170074149953,
+            1464.9972069640153,
+            1411.0507799497548,
+            1587.0452401589373,
+            1432.0763464469933
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent0.001_lr0.0003_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent1e-05_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 2029.9685466000228,
+        "final_rewards_window": [
+            1927.4696814243935,
+            1608.2328446963265,
+            1242.4040357208341,
+            2259.4170774593636,
+            2451.858456867819,
+            2489.076678666179,
+            1312.9419984031326,
+            2927.5650455849313,
+            2138.489491487338,
+            1560.6837382896888
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent1e-05_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent1e-05_lr5e-05_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent1e-05_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 2329.7553506999975,
+        "final_rewards_window": [
+            3065.9229425031385,
+            1978.4554865843336,
+            3220.309249607659,
+            3160.5577929845003,
+            3110.6976758259934,
+            3268.0361133055276,
+            3348.2343899348234,
+            2450.2605456219862,
+            3340.982749423137,
+            1219.794408355026
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent1e-05_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent1e-05_lr0.0001_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1920.470445999992,
+        "final_rewards_window": [
+            1496.8916851460813,
+            1512.1499734283157,
+            1585.0221161655734,
+            1508.4009265650893,
+            1550.2764941824403,
+            1660.4162725540327,
+            1536.9524586587872,
+            1559.4292275141468,
+            1605.0286199658767,
+            1648.1484110234228
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent1e-05_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent0.0_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 1733.8091371000046,
+        "final_rewards_window": [
+            1160.7435257479997,
+            1237.4664901994993,
+            1192.5881572293747,
+            1189.9169458673944,
+            1218.2849637485028,
+            415.7429034243224,
+            1175.1119842490193,
+            1195.5767419399942,
+            1175.9084069668725,
+            1146.9709835610756
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.0_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.0_lr5e-05_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent0.0_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 1732.1690728999965,
+        "final_rewards_window": [
+            1260.9065430688906,
+            1323.4645656722832,
+            1283.9860662278668,
+            1249.7915189118191,
+            1145.2995156080751,
+            1232.9321914953864,
+            1281.262175755688,
+            1239.3104786932709,
+            1197.8628544161222,
+            1266.5698075564674
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.0_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.0_lr0.0001_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent0.0_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1655.0087663999875,
+        "final_rewards_window": [
+            882.7344524347383,
+            988.3815401220781,
+            948.934482752349,
+            965.9121284571063,
+            1065.2994978309798,
+            1132.1829204307512,
+            1090.949425273685,
+            467.7371760745458,
+            904.9366866164099,
+            517.1685143566547
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.0_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.0_lr0.0003_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent0.001_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 1662.6761305999826,
+        "final_rewards_window": [
+            1022.8474599054546,
+            1036.5056849075281,
+            1028.0145018699914,
+            1039.0815927221615,
+            1013.755374946858,
+            1031.3673419741353,
+            1108.118388003774,
+            1059.121769526826,
+            978.2154645864292,
+            1081.1915676291883
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.001_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.001_lr5e-05_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent0.001_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 1657.354251700017,
+        "final_rewards_window": [
+            1190.1075542722017,
+            1226.7577750169703,
+            1206.5534053742263,
+            1245.0408024067096,
+            1268.7449820060635,
+            1252.5572832198138,
+            1214.626751010324,
+            1256.328219155906,
+            1285.6680410948702,
+            1278.3833425738353
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.001_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.001_lr0.0001_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent0.001_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1656.9545279000013,
+        "final_rewards_window": [
+            1168.1880554205377,
+            1210.8978219813496,
+            1203.0332470643366,
+            1192.6452378198305,
+            1259.0739562426375,
+            1197.272466195237,
+            1275.504285038549,
+            1291.537866098859,
+            1327.2628680153139,
+            1411.813258782925
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.001_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent0.001_lr0.0003_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent1e-05_lr5e-05_normal",
+        "status": "completed",
+        "duration_s": 1660.6650915000064,
+        "final_rewards_window": [
+            1276.1333694212663,
+            1254.8864777689641,
+            1247.1443283931371,
+            1231.881807763229,
+            1260.7960553025514,
+            1265.154797406664,
+            1256.6748505036753,
+            1202.2042939638613,
+            1220.2821077700612,
+            1332.6770211681269
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent1e-05_lr5e-05_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent1e-05_lr5e-05_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent1e-05_lr0.0001_normal",
+        "status": "completed",
+        "duration_s": 1652.2563200999866,
+        "final_rewards_window": [
+            2948.237962812116,
+            3094.7384159341614,
+            2348.273827842621,
+            1850.3830817525482,
+            2335.534013537822,
+            3106.026142655034,
+            3150.304544298329,
+            2394.5564820704626,
+            2897.0258136652196,
+            3111.859204460767
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent1e-05_lr0.0001_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent1e-05_lr0.0001_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_ppo_seed100_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1662.2611510000133,
+        "final_rewards_window": [
+            1226.6937262739748,
+            1298.1784257702452,
+            1270.5595163351463,
+            1259.3733024783423,
+            1299.3066384135996,
+            1244.0290614483793,
+            1304.3109051538659,
+            1274.0777489798186,
+            1315.888136712668,
+            1279.1280085892854
+        ],
+        "metrics_file": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent1e-05_lr0.0003_normal\\metrics.json",
+        "log_dir": "C:\\Users\\Usuario\\OneDrive\\Documentos\\RL\\Project\\cleanCode\\sweeps\\HalfCheetah_PPO_EC_LR_Sweep1\\HalfCheetah-v4_ppo_seed100_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "ppo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    }
+]

@@ -1,0 +1,758 @@
+[
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent0.0_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 797.1867152408231,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent0.0_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.742743942886591,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent0.0_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7152702410239726,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent0.001_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 2.716904853004962,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent0.001_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7799543410073966,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent0.001_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.728468009037897,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent1e-05_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 2.728412187192589,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent1e-05_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7289977110922337,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed0_ent1e-05_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7224878917913884,
+        "final_rewards_window": [
+            -278.0537857678303,
+            -265.7148865264327,
+            -290.5094417163815,
+            -283.4718576015316,
+            -263.1316856254488,
+            -255.45731048796503,
+            -321.14470901294374,
+            -259.5640293642031,
+            -275.5311717996515,
+            -288.87635849382286
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent0.0_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 783.6042328840122,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent0.0_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.718642898835242,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent0.0_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.707825565012172,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent0.001_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7089965459890664,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent0.001_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7042243380565196,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent0.001_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7023986880667508,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent1e-05_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7798661421984434,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent1e-05_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.713735569966957,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed42_ent1e-05_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7129980779718608,
+        "final_rewards_window": [
+            -255.1880360518997,
+            -242.72166596490956,
+            -255.8674076256184,
+            -272.765092594551,
+            -244.16930193990834,
+            -233.25439153271088,
+            -267.94764504691904,
+            -249.79013443185923,
+            -249.13843914223355,
+            -245.12885459487262
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent0.0_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 781.7562170620076,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent0.0_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.757987434975803,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent0.0_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7097558409441262,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent0.001_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 2.713029840029776,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent0.001_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.721542509039864,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent0.001_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.773055019089952,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.001,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent1e-05_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 2.6968363348860294,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 5e-05,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent1e-05_lr0.0001_normal_g16",
+        "status": "completed",
+        "duration_s": 2.7350894031114876,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0001,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "HalfCheetah-v4_grpo_seed100_ent1e-05_lr0.0003_normal_g16",
+        "status": "completed",
+        "duration_s": 2.685872506117448,
+        "final_rewards_window": [
+            -348.9410602303401,
+            -341.9293611408867,
+            -301.4123818234124,
+            -337.1068604272174,
+            -308.82741336518495,
+            -300.2452329905025,
+            -312.64972625287277,
+            -306.13554454905693,
+            -313.63571598537965,
+            -280.75860042243465
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/sweeps/HalfCheetah_GRPO_NORMAL_EC_LR_Sweep1/HalfCheetah-v4_grpo_seed100_normal",
+        "config_params": {
+            "seed": 100,
+            "algo": "grpo",
+            "env_id": "HalfCheetah-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    }
+]

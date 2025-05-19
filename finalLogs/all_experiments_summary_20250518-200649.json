@@ -1,0 +1,170 @@
+[
+    {
+        "run_id": "Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g4",
+        "status": "completed",
+        "duration_s": 4531.542305873008,
+        "final_rewards_window": [
+            453.8241895475458,
+            503.446458850172,
+            432.0133763324651,
+            755.5518516591985,
+            682.1998944379185,
+            742.7403152505206,
+            643.5648422658182,
+            982.2638859283084,
+            826.5899161341231,
+            648.5290995421637
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16",
+        "status": "completed",
+        "duration_s": 3.149498929036781,
+        "final_rewards_window": [
+            453.8241895475458,
+            503.446458850172,
+            432.0133763324651,
+            755.5518516591985,
+            682.1998944379185,
+            742.7403152505206,
+            643.5648422658182,
+            982.2638859283084,
+            826.5899161341231,
+            648.5290995421637
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g64",
+        "status": "completed",
+        "duration_s": 3.0631367000751197,
+        "final_rewards_window": [
+            453.8241895475458,
+            503.446458850172,
+            432.0133763324651,
+            755.5518516591985,
+            682.1998944379185,
+            742.7403152505206,
+            643.5648422658182,
+            982.2638859283084,
+            826.5899161341231,
+            648.5290995421637
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 64
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g4",
+        "status": "completed",
+        "duration_s": 3493.5593381868675,
+        "final_rewards_window": [
+            979.5107306759807,
+            840.926515369139,
+            1016.3463117134116,
+            1022.1702644342638,
+            1022.1531403532764,
+            794.9915796580382,
+            998.512255962678,
+            889.3275937242579,
+            1013.5107099858471,
+            679.4149239677748
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16",
+        "status": "completed",
+        "duration_s": 3.110811503138393,
+        "final_rewards_window": [
+            979.5107306759807,
+            840.926515369139,
+            1016.3463117134116,
+            1022.1702644342638,
+            1022.1531403532764,
+            794.9915796580382,
+            998.512255962678,
+            889.3275937242579,
+            1013.5107099858471,
+            679.4149239677748
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64",
+        "status": "completed",
+        "duration_s": 3.0985934550408274,
+        "final_rewards_window": [
+            979.5107306759807,
+            840.926515369139,
+            1016.3463117134116,
+            1022.1702644342638,
+            1022.1531403532764,
+            794.9915796580382,
+            998.512255962678,
+            889.3275937242579,
+            1013.5107099858471,
+            679.4149239677748
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 64
+        }
+    }
+]

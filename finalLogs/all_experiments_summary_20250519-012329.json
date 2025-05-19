@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "InvertedPendulum-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1046.9123587640934,
+        "final_rewards_window": [
+            1000.0,
+            1000.0,
+            1000.0,
+            1000.0,
+            530.0,
+            610.0,
+            536.5,
+            490.0,
+            1000.0,
+            1000.0
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedPendulum-v4_ppo_seed0_ent1e-05_lr0.0003_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedPendulum-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "InvertedPendulum-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "InvertedPendulum-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1025.0340767530724,
+        "final_rewards_window": [
+            137.0,
+            1000.0,
+            1000.0,
+            717.0,
+            812.0,
+            1000.0,
+            1000.0,
+            480.0,
+            1000.0,
+            436.6666666666667
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedPendulum-v4_ppo_seed42_ent1e-05_lr0.0003_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedPendulum-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "InvertedPendulum-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    }
+]

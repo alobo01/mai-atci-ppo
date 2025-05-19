@@ -1,0 +1,1029 @@
+2025-05-19 17:19:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Initializing agent for Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 on device cpu
+2025-05-19 17:19:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Full Config (including original run_name='None'): {
+  "env_id": "Walker2d-v4",
+  "algo": "grpo",
+  "seed": 0,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "finalLogs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      128,
+      128
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "beta",
+    "group_size": 16,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.0,
+    "kl_coef": 0.001,
+    "ref_update_interval": 10000,
+    "minibatch_size": 256,
+    "lr": 0.00005,
+    "rollout_steps_per_trajectory": 1000
+  }
+}
+2025-05-19 17:19:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Initialized GRPO actor (type: mlp, dist: beta) and reference.
+2025-05-19 17:19:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | No actor checkpoint found at finalLogs/Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16/checkpoints/actor.pt, starting fresh.
+2025-05-19 17:19:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Starting training from step 0...
+2025-05-19 17:20:55 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10806 steps.
+2025-05-19 17:20:55 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 10806/1000000 | Avg Reward: 40.41 | Avg Length: 62.7
+2025-05-19 17:20:55 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2818 | kl_loss: 0.2181 | entropy_loss: -0.6051 | total_loss: -0.2816
+2025-05-19 17:20:55 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 1.27ms | rollout_phase: 559.80ms | ref_actor_mlp: 23.73ms | backward_pass: 29.73ms | optimizer_step: 10.22ms | update_phase: 2831.89ms
+2025-05-19 17:21:19 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11789 steps.
+2025-05-19 17:21:19 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 22595/1000000 | Avg Reward: 112.17 | Avg Length: 116.0
+2025-05-19 17:21:19 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.4045 | kl_loss: 0.0619 | entropy_loss: -0.7034 | total_loss: -0.4044
+2025-05-19 17:21:19 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.32ms | rollout_phase: 1203.72ms | ref_actor_mlp: 4.50ms | backward_pass: 7.59ms | optimizer_step: 2.18ms | update_phase: 1457.96ms
+2025-05-19 17:21:57 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11611 steps.
+2025-05-19 17:21:57 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 34206/1000000 | Avg Reward: 117.44 | Avg Length: 117.0
+2025-05-19 17:21:57 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2030 | kl_loss: 0.0480 | entropy_loss: -0.7902 | total_loss: -0.2030
+2025-05-19 17:21:57 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.62ms | rollout_phase: 1754.52ms | ref_actor_mlp: 11.37ms | backward_pass: 18.00ms | optimizer_step: 5.23ms | update_phase: 4652.19ms
+2025-05-19 17:22:20 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11322 steps.
+2025-05-19 17:22:20 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 45528/1000000 | Avg Reward: 213.02 | Avg Length: 152.2
+2025-05-19 17:22:20 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1326 | kl_loss: 0.0307 | entropy_loss: -0.8313 | total_loss: -0.1325
+2025-05-19 17:22:20 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.31ms | rollout_phase: 2049.57ms | ref_actor_mlp: 4.51ms | backward_pass: 8.26ms | optimizer_step: 2.31ms | update_phase: 2505.40ms
+2025-05-19 17:22:36 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10675 steps.
+2025-05-19 17:22:36 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 56203/1000000 | Avg Reward: 191.01 | Avg Length: 156.2
+2025-05-19 17:22:36 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1607 | kl_loss: 0.0287 | entropy_loss: -0.8703 | total_loss: -0.1606
+2025-05-19 17:22:36 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.19ms | rollout_phase: 2433.72ms | ref_actor_mlp: 1.90ms | backward_pass: 4.66ms | optimizer_step: 1.27ms | update_phase: 1629.82ms
+2025-05-19 17:23:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12584 steps.
+2025-05-19 17:23:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 68787/1000000 | Avg Reward: 266.91 | Avg Length: 188.1
+2025-05-19 17:23:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2808 | kl_loss: 0.0189 | entropy_loss: -0.9168 | total_loss: -0.2808
+2025-05-19 17:23:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.50ms | rollout_phase: 3067.22ms | ref_actor_mlp: 9.23ms | backward_pass: 15.11ms | optimizer_step: 4.25ms | update_phase: 6075.73ms
+2025-05-19 17:23:48 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11496 steps.
+2025-05-19 17:23:48 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 80283/1000000 | Avg Reward: 221.49 | Avg Length: 185.4
+2025-05-19 17:23:48 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1441 | kl_loss: 0.0223 | entropy_loss: -0.9286 | total_loss: -0.1441
+2025-05-19 17:23:48 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.53ms | rollout_phase: 2635.52ms | ref_actor_mlp: 10.60ms | backward_pass: 16.17ms | optimizer_step: 4.46ms | update_phase: 6104.32ms
+2025-05-19 17:24:10 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11203 steps.
+2025-05-19 17:24:10 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 91486/1000000 | Avg Reward: 240.57 | Avg Length: 177.9
+2025-05-19 17:24:10 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.0352 | kl_loss: 0.0213 | entropy_loss: -0.9438 | total_loss: -0.0351
+2025-05-19 17:24:10 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.31ms | rollout_phase: 2575.75ms | ref_actor_mlp: 4.50ms | backward_pass: 8.41ms | optimizer_step: 2.21ms | update_phase: 3088.73ms
+2025-05-19 17:24:53 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12193 steps.
+2025-05-19 17:24:53 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 103679/1000000 | Avg Reward: 262.34 | Avg Length: 191.4
+2025-05-19 17:24:53 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1991 | kl_loss: 0.0204 | entropy_loss: -0.9933 | total_loss: -0.1991
+2025-05-19 17:24:53 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.64ms | rollout_phase: 2808.34ms | ref_actor_mlp: 13.25ms | backward_pass: 18.84ms | optimizer_step: 6.04ms | update_phase: 7738.50ms
+2025-05-19 17:25:09 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11989 steps.
+2025-05-19 17:25:09 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 115668/1000000 | Avg Reward: 234.13 | Avg Length: 205.4
+2025-05-19 17:25:09 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.0864 | kl_loss: 0.0280 | entropy_loss: -1.0153 | total_loss: -0.0864
+2025-05-19 17:25:09 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.16ms | rollout_phase: 2762.26ms | ref_actor_mlp: 1.31ms | backward_pass: 3.80ms | optimizer_step: 0.80ms | update_phase: 1417.27ms
+2025-05-19 17:25:31 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11375 steps.
+2025-05-19 17:25:31 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 127043/1000000 | Avg Reward: 260.41 | Avg Length: 166.6
+2025-05-19 17:25:31 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.0077 | kl_loss: 0.0186 | entropy_loss: -1.0278 | total_loss: -0.0076
+2025-05-19 17:25:31 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.28ms | rollout_phase: 2595.23ms | ref_actor_mlp: 4.16ms | backward_pass: 7.48ms | optimizer_step: 2.01ms | update_phase: 2829.68ms
+2025-05-19 17:26:10 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10400 steps.
+2025-05-19 17:26:10 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 137443/1000000 | Avg Reward: 307.15 | Avg Length: 200.6
+2025-05-19 17:26:10 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2479 | kl_loss: 0.0098 | entropy_loss: -1.0355 | total_loss: -0.2479
+2025-05-19 17:26:10 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.70ms | rollout_phase: 3087.93ms | ref_actor_mlp: 15.15ms | backward_pass: 20.95ms | optimizer_step: 6.27ms | update_phase: 9725.63ms
+2025-05-19 17:26:29 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11655 steps.
+2025-05-19 17:26:29 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 149098/1000000 | Avg Reward: 263.68 | Avg Length: 195.8
+2025-05-19 17:26:29 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.0063 | kl_loss: 0.0125 | entropy_loss: -1.0507 | total_loss: -0.0063
+2025-05-19 17:26:29 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.23ms | rollout_phase: 2572.76ms | ref_actor_mlp: 2.95ms | backward_pass: 5.57ms | optimizer_step: 1.44ms | update_phase: 2200.40ms
+2025-05-19 17:26:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12940 steps.
+2025-05-19 17:26:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 162038/1000000 | Avg Reward: 276.11 | Avg Length: 193.1
+2025-05-19 17:26:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.0625 | kl_loss: 0.0170 | entropy_loss: -1.0683 | total_loss: -0.0625
+2025-05-19 17:26:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.23ms | rollout_phase: 2974.97ms | ref_actor_mlp: 2.85ms | backward_pass: 6.07ms | optimizer_step: 1.50ms | update_phase: 2439.65ms
+2025-05-19 17:27:15 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11412 steps.
+2025-05-19 17:27:15 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 173450/1000000 | Avg Reward: 266.30 | Avg Length: 162.4
+2025-05-19 17:27:15 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1745 | kl_loss: 0.0177 | entropy_loss: -1.1025 | total_loss: -0.1745
+2025-05-19 17:27:15 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.34ms | rollout_phase: 2618.02ms | ref_actor_mlp: 5.18ms | backward_pass: 9.11ms | optimizer_step: 2.60ms | update_phase: 3479.37ms
+2025-05-19 17:27:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11957 steps.
+2025-05-19 17:27:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 185407/1000000 | Avg Reward: 306.06 | Avg Length: 182.2
+2025-05-19 17:27:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2717 | kl_loss: 0.0202 | entropy_loss: -1.0893 | total_loss: -0.2717
+2025-05-19 17:27:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.46ms | rollout_phase: 2734.69ms | ref_actor_mlp: 7.99ms | backward_pass: 11.94ms | optimizer_step: 3.60ms | update_phase: 4972.49ms
+2025-05-19 17:28:04 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12754 steps.
+2025-05-19 17:28:04 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 198161/1000000 | Avg Reward: 280.65 | Avg Length: 200.5
+2025-05-19 17:28:04 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.0469 | kl_loss: 0.0271 | entropy_loss: -1.1417 | total_loss: -0.0468
+2025-05-19 17:28:04 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.18ms | rollout_phase: 2937.68ms | ref_actor_mlp: 1.24ms | backward_pass: 3.97ms | optimizer_step: 1.09ms | update_phase: 1681.99ms
+2025-05-19 17:28:26 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12764 steps.
+2025-05-19 17:28:26 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 210925/1000000 | Avg Reward: 314.24 | Avg Length: 193.2
+2025-05-19 17:28:26 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2123 | kl_loss: 0.0225 | entropy_loss: -1.1734 | total_loss: -0.2122
+2025-05-19 17:28:26 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.23ms | rollout_phase: 2919.19ms | ref_actor_mlp: 3.06ms | backward_pass: 6.46ms | optimizer_step: 1.69ms | update_phase: 2633.20ms
+2025-05-19 17:28:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 13165 steps.
+2025-05-19 17:28:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 224090/1000000 | Avg Reward: 300.87 | Avg Length: 230.8
+2025-05-19 17:28:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.3623 | kl_loss: 0.0286 | entropy_loss: -1.1994 | total_loss: -0.3623
+2025-05-19 17:28:50 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.26ms | rollout_phase: 2995.59ms | ref_actor_mlp: 3.60ms | backward_pass: 6.30ms | optimizer_step: 1.69ms | update_phase: 2860.32ms
+2025-05-19 17:29:06 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11512 steps.
+2025-05-19 17:29:06 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 235602/1000000 | Avg Reward: 274.47 | Avg Length: 172.1
+2025-05-19 17:29:06 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: 0.0367 | kl_loss: 0.0249 | entropy_loss: -1.1884 | total_loss: 0.0368
+2025-05-19 17:29:06 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.18ms | rollout_phase: 2650.28ms | ref_actor_mlp: 1.60ms | backward_pass: 4.10ms | optimizer_step: 0.99ms | update_phase: 1534.49ms
+2025-05-19 17:29:38 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10533 steps.
+2025-05-19 17:29:38 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 246135/1000000 | Avg Reward: 299.57 | Avg Length: 215.6
+2025-05-19 17:29:38 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.4672 | kl_loss: 0.0186 | entropy_loss: -1.2471 | total_loss: -0.4672
+2025-05-19 17:29:38 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.57ms | rollout_phase: 3190.22ms | ref_actor_mlp: 10.46ms | backward_pass: 14.94ms | optimizer_step: 4.73ms | update_phase: 7313.82ms
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:46 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:29:47 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Evaluation Complete: Avg Reward = 250.44 (over 3 eps)
+2025-05-19 17:29:55 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11555 steps.
+2025-05-19 17:29:55 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 257690/1000000 | Avg Reward: 294.39 | Avg Length: 175.8
+2025-05-19 17:29:55 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.4830 | kl_loss: 0.0257 | entropy_loss: -1.2606 | total_loss: -0.4829
+2025-05-19 17:29:55 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 2530.65ms | ref_actor_mlp: 1.34ms | backward_pass: 3.93ms | optimizer_step: 1.01ms | update_phase: 1493.20ms | eval_action_select: 0.60ms | eval_env_interact: 0.24ms
+2025-05-19 17:30:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10139 steps.
+2025-05-19 17:30:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 267829/1000000 | Avg Reward: 337.90 | Avg Length: 231.2
+2025-05-19 17:30:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8972 | kl_loss: 0.0119 | entropy_loss: -1.2910 | total_loss: -0.8972
+2025-05-19 17:30:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.23ms | rollout_phase: 3105.10ms | ref_actor_mlp: 2.84ms | backward_pass: 6.00ms | optimizer_step: 1.43ms | update_phase: 2607.55ms
+2025-05-19 17:30:31 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12685 steps.
+2025-05-19 17:30:31 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 280514/1000000 | Avg Reward: 284.31 | Avg Length: 204.4
+2025-05-19 17:30:31 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2552 | kl_loss: 0.0163 | entropy_loss: -1.3093 | total_loss: -0.2552
+2025-05-19 17:30:31 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.20ms | rollout_phase: 2809.90ms | ref_actor_mlp: 1.85ms | backward_pass: 4.52ms | optimizer_step: 1.18ms | update_phase: 1907.48ms
+2025-05-19 17:30:54 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12214 steps.
+2025-05-19 17:30:54 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 292728/1000000 | Avg Reward: 295.81 | Avg Length: 169.7
+2025-05-19 17:30:54 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1497 | kl_loss: 0.0142 | entropy_loss: -1.3414 | total_loss: -0.1497
+2025-05-19 17:30:54 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.27ms | rollout_phase: 2722.02ms | ref_actor_mlp: 4.05ms | backward_pass: 7.37ms | optimizer_step: 1.92ms | update_phase: 2935.73ms
+2025-05-19 17:31:30 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12339 steps.
+2025-05-19 17:31:30 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 305067/1000000 | Avg Reward: 330.20 | Avg Length: 223.2
+2025-05-19 17:31:30 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.9382 | kl_loss: 0.0222 | entropy_loss: -1.3584 | total_loss: -0.9382
+2025-05-19 17:31:30 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.52ms | rollout_phase: 2776.17ms | ref_actor_mlp: 9.36ms | backward_pass: 15.64ms | optimizer_step: 4.66ms | update_phase: 6241.57ms
+2025-05-19 17:31:49 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12494 steps.
+2025-05-19 17:31:49 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 317561/1000000 | Avg Reward: 308.41 | Avg Length: 192.9
+2025-05-19 17:31:49 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.7193 | kl_loss: 0.0289 | entropy_loss: -1.3321 | total_loss: -0.7193
+2025-05-19 17:31:49 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.19ms | rollout_phase: 2835.90ms | ref_actor_mlp: 1.81ms | backward_pass: 4.44ms | optimizer_step: 1.09ms | update_phase: 1821.12ms
+2025-05-19 17:32:15 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11909 steps.
+2025-05-19 17:32:15 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 329470/1000000 | Avg Reward: 330.46 | Avg Length: 205.5
+2025-05-19 17:32:15 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.4715 | kl_loss: 0.0225 | entropy_loss: -1.3676 | total_loss: -0.4714
+2025-05-19 17:32:15 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.36ms | rollout_phase: 2738.60ms | ref_actor_mlp: 5.82ms | backward_pass: 9.99ms | optimizer_step: 2.84ms | update_phase: 3964.76ms
+2025-05-19 17:32:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12783 steps.
+2025-05-19 17:32:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 342253/1000000 | Avg Reward: 321.73 | Avg Length: 220.1
+2025-05-19 17:32:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.4652 | kl_loss: 0.0261 | entropy_loss: -1.3775 | total_loss: -0.4652
+2025-05-19 17:32:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.20ms | rollout_phase: 2923.46ms | ref_actor_mlp: 2.11ms | backward_pass: 4.31ms | optimizer_step: 1.15ms | update_phase: 1953.44ms
+2025-05-19 17:33:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11696 steps.
+2025-05-19 17:33:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 353949/1000000 | Avg Reward: 377.37 | Avg Length: 283.9
+2025-05-19 17:33:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.9412 | kl_loss: 0.0209 | entropy_loss: -1.4437 | total_loss: -0.9412
+2025-05-19 17:33:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.53ms | rollout_phase: 3586.96ms | ref_actor_mlp: 10.34ms | backward_pass: 17.40ms | optimizer_step: 4.71ms | update_phase: 8347.36ms
+2025-05-19 17:33:29 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11359 steps.
+2025-05-19 17:33:29 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 365308/1000000 | Avg Reward: 400.13 | Avg Length: 313.7
+2025-05-19 17:33:29 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8783 | kl_loss: 0.0127 | entropy_loss: -1.4135 | total_loss: -0.8783
+2025-05-19 17:33:29 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.22ms | rollout_phase: 3466.83ms | ref_actor_mlp: 2.58ms | backward_pass: 5.40ms | optimizer_step: 1.46ms | update_phase: 2733.51ms
+2025-05-19 17:33:56 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 13506 steps.
+2025-05-19 17:33:56 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 378814/1000000 | Avg Reward: 352.03 | Avg Length: 262.4
+2025-05-19 17:33:56 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.7938 | kl_loss: 0.0150 | entropy_loss: -1.4621 | total_loss: -0.7938
+2025-05-19 17:33:56 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.29ms | rollout_phase: 4146.70ms | ref_actor_mlp: 4.56ms | backward_pass: 8.52ms | optimizer_step: 2.31ms | update_phase: 4852.87ms
+2025-05-19 17:34:16 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11643 steps.
+2025-05-19 17:34:16 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 390457/1000000 | Avg Reward: 308.52 | Avg Length: 232.6
+2025-05-19 17:34:16 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.7726 | kl_loss: 0.0136 | entropy_loss: -1.4255 | total_loss: -0.7726
+2025-05-19 17:34:16 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.23ms | rollout_phase: 3586.79ms | ref_actor_mlp: 2.97ms | backward_pass: 6.04ms | optimizer_step: 1.54ms | update_phase: 2964.52ms
+2025-05-19 17:34:37 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 14087 steps.
+2025-05-19 17:34:37 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 404544/1000000 | Avg Reward: 412.18 | Avg Length: 348.9
+2025-05-19 17:34:37 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.9111 | kl_loss: 0.0131 | entropy_loss: -1.5220 | total_loss: -0.9111
+2025-05-19 17:34:37 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.18ms | rollout_phase: 4319.14ms | ref_actor_mlp: 1.59ms | backward_pass: 4.49ms | optimizer_step: 1.24ms | update_phase: 2571.34ms
+2025-05-19 17:35:02 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 17226 steps.
+2025-05-19 17:35:02 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 421770/1000000 | Avg Reward: 519.27 | Avg Length: 466.4
+2025-05-19 17:35:02 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8083 | kl_loss: 0.0119 | entropy_loss: -1.6059 | total_loss: -0.8083
+2025-05-19 17:35:02 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 5275.92ms | ref_actor_mlp: 1.50ms | backward_pass: 4.31ms | optimizer_step: 1.08ms | update_phase: 3064.85ms
+2025-05-19 17:35:25 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 12288 steps.
+2025-05-19 17:35:25 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 434058/1000000 | Avg Reward: 441.40 | Avg Length: 382.7
+2025-05-19 17:35:25 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8062 | kl_loss: 0.0083 | entropy_loss: -1.6255 | total_loss: -0.8062
+2025-05-19 17:35:25 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.28ms | rollout_phase: 5757.30ms | ref_actor_mlp: 4.04ms | backward_pass: 7.78ms | optimizer_step: 2.13ms | update_phase: 5959.70ms
+2025-05-19 17:35:44 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 13569 steps.
+2025-05-19 17:35:44 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 447627/1000000 | Avg Reward: 552.67 | Avg Length: 536.8
+2025-05-19 17:35:44 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.7667 | kl_loss: 0.0090 | entropy_loss: -1.6912 | total_loss: -0.7667
+2025-05-19 17:35:44 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.16ms | rollout_phase: 6222.26ms | ref_actor_mlp: 1.36ms | backward_pass: 4.01ms | optimizer_step: 0.96ms | update_phase: 3256.05ms
+2025-05-19 17:36:07 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 14688 steps.
+2025-05-19 17:36:07 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 462315/1000000 | Avg Reward: 376.99 | Avg Length: 326.3
+2025-05-19 17:36:07 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.9593 | kl_loss: 0.0155 | entropy_loss: -1.7427 | total_loss: -0.9593
+2025-05-19 17:36:07 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.19ms | rollout_phase: 4522.63ms | ref_actor_mlp: 1.96ms | backward_pass: 4.75ms | optimizer_step: 1.26ms | update_phase: 2926.11ms
+2025-05-19 17:36:28 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 14893 steps.
+2025-05-19 17:36:28 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 477208/1000000 | Avg Reward: 447.51 | Avg Length: 377.8
+2025-05-19 17:36:28 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.9602 | kl_loss: 0.0135 | entropy_loss: -1.8032 | total_loss: -0.9602
+2025-05-19 17:36:28 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 4576.28ms | ref_actor_mlp: 1.32ms | backward_pass: 3.95ms | optimizer_step: 1.02ms | update_phase: 2517.70ms
+2025-05-19 17:36:52 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 14180 steps.
+2025-05-19 17:36:52 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 491388/1000000 | Avg Reward: 458.07 | Avg Length: 400.1
+2025-05-19 17:36:52 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8384 | kl_loss: 0.0085 | entropy_loss: -1.9383 | total_loss: -0.8384
+2025-05-19 17:36:52 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.23ms | rollout_phase: 6563.44ms | ref_actor_mlp: 3.05ms | backward_pass: 6.35ms | optimizer_step: 1.68ms | update_phase: 5677.89ms
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 13342 steps.
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 504730/1000000 | Avg Reward: 458.73 | Avg Length: 408.9
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8332 | kl_loss: 0.0076 | entropy_loss: -1.9080 | total_loss: -0.8332
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 6182.26ms | ref_actor_mlp: 1.48ms | backward_pass: 3.95ms | optimizer_step: 1.08ms | update_phase: 3378.76ms
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:12 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-19 17:37:13 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Evaluation Complete: Avg Reward = 249.92 (over 3 eps)
+2025-05-19 17:37:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 13034 steps.
+2025-05-19 17:37:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 517764/1000000 | Avg Reward: 386.35 | Avg Length: 309.7
+2025-05-19 17:37:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -1.0439 | kl_loss: 0.0082 | entropy_loss: -1.9172 | total_loss: -1.0439
+2025-05-19 17:37:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.23ms | eval_action_select: 0.64ms | eval_env_interact: 0.26ms | rollout_phase: 5967.83ms | ref_actor_mlp: 2.95ms | backward_pass: 6.29ms | optimizer_step: 1.78ms | update_phase: 5172.53ms
+2025-05-19 17:37:53 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11460 steps.
+2025-05-19 17:37:53 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 529224/1000000 | Avg Reward: 454.53 | Avg Length: 396.6
+2025-05-19 17:37:53 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8980 | kl_loss: 0.0074 | entropy_loss: -1.9789 | total_loss: -0.8980
+2025-05-19 17:37:53 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.19ms | rollout_phase: 5241.57ms | ref_actor_mlp: 2.17ms | backward_pass: 5.04ms | optimizer_step: 1.32ms | update_phase: 3548.11ms
+2025-05-19 17:38:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11301 steps.
+2025-05-19 17:38:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 540525/1000000 | Avg Reward: 471.81 | Avg Length: 406.2
+2025-05-19 17:38:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8762 | kl_loss: 0.0092 | entropy_loss: -2.0093 | total_loss: -0.8761
+2025-05-19 17:38:11 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.21ms | rollout_phase: 5159.00ms | ref_actor_mlp: 2.65ms | backward_pass: 5.55ms | optimizer_step: 1.43ms | update_phase: 3948.18ms
+2025-05-19 17:38:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 16989 steps.
+2025-05-19 17:38:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 557514/1000000 | Avg Reward: 498.28 | Avg Length: 450.3
+2025-05-19 17:38:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8194 | kl_loss: 0.0097 | entropy_loss: -2.0738 | total_loss: -0.8194
+2025-05-19 17:38:35 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 5238.11ms | ref_actor_mlp: 1.32ms | backward_pass: 4.03ms | optimizer_step: 1.00ms | update_phase: 2792.79ms
+2025-05-19 17:39:14 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 17082 steps.
+2025-05-19 17:39:14 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 574596/1000000 | Avg Reward: 559.34 | Avg Length: 545.1
+2025-05-19 17:39:14 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.7165 | kl_loss: 0.0096 | entropy_loss: -2.1832 | total_loss: -0.7165
+2025-05-19 17:39:14 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.36ms | rollout_phase: 7795.16ms | ref_actor_mlp: 6.04ms | backward_pass: 10.66ms | optimizer_step: 3.22ms | update_phase: 11517.20ms
+2025-05-19 17:39:36 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 15748 steps.
+2025-05-19 17:39:36 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Step: 590344/1000000 | Avg Reward: 511.24 | Avg Length: 468.3
+2025-05-19 17:39:36 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.8407 | kl_loss: 0.0072 | entropy_loss: -2.2077 | total_loss: -0.8407
+2025-05-19 17:39:36 | Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 0.17ms | rollout_phase: 7273.71ms | ref_actor_mlp: 1.35ms | backward_pass: 4.06ms | optimizer_step: 1.12ms | update_phase: 4019.22ms

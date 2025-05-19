@@ -38,7 +38,7 @@ class BaseAgent(ABC):
             device_str: The torch device string (e.g., 'cpu', 'cuda'). Auto-detects if None.
         """
         self.env = env
-        self.config = config
+        self.config = config # This config includes the original config.run_name if it was set
         self.device = torch_utils.get_device(device_str)
 
         # Common config parameters
@@ -48,15 +48,36 @@ class BaseAgent(ABC):
         self.log_interval: int = config.log_interval
         self.checkpoint_interval: int = config.checkpoint_interval
         self.video_interval: int = config.video_interval
-
-        run_name = config.run_name or f"{self.env.spec.id}_{config.algo}_seed{self.seed}"
-        # If algo specific config has distribution_type, add it to run_name
+        
         algo_specific_conf = config.get_algo_specific_config()
+        
+        # Construct the run name ALWAYS from detailed config parameters for directory naming.
+        # The original config.run_name (if provided in JSON) is ignored for directory naming
+        # but is preserved in the saved config.json within the run's directory.
+        run_name_parts = [
+            self.env.spec.id if self.env.spec else config.env_id,
+            config.algo,
+            f"seed{self.seed}"
+        ]
+        
+        # Child agent (PPO/GRPO) sets self.entropy_coef in its __init__ before super()
+        # This uses the value from algo_specific_conf which might have been swept.
+        # Here, we use algo_specific_conf directly for consistency in naming.
+        if hasattr(algo_specific_conf, 'entropy_coef'):
+            run_name_parts.append(f"ent{getattr(algo_specific_conf, 'entropy_coef')}")
+        
+        if hasattr(algo_specific_conf, 'lr'):
+            run_name_parts.append(f"lr{getattr(algo_specific_conf, 'lr')}")
+        
         if hasattr(algo_specific_conf, 'distribution_type'):
-            run_name += f"_{getattr(algo_specific_conf, 'distribution_type')}"
+            run_name_parts.append(f"{getattr(algo_specific_conf, 'distribution_type')}")
 
+        if config.algo == "grpo" and hasattr(algo_specific_conf, 'group_size'):
+             run_name_parts.append(f"g{getattr(algo_specific_conf, 'group_size')}")
 
-        base_dir = Path(config.base_log_dir) / run_name
+        effective_run_name = "_".join(run_name_parts)
+
+        base_dir = Path(config.base_log_dir) / effective_run_name
         self.log_dir = base_dir / "logs"
         self.ckpt_dir = base_dir / "checkpoints"
         self.vid_dir = base_dir / "videos"
@@ -68,25 +89,23 @@ class BaseAgent(ABC):
         self.vid_dir.mkdir(parents=True, exist_ok=True)
 
         log_level = logging.DEBUG if config.verbose else logging.INFO
-        self.logger = logging_utils.get_logger(run_name, self.log_dir, level=log_level, enabled=True)
-        self.logger.info(f"Initializing agent for {run_name} on device {self.device}")
-        self.logger.info(f"Full Config: {config.model_dump_json(indent=2)}")
+        self.logger = logging_utils.get_logger(effective_run_name, self.log_dir, level=log_level, enabled=True)
+        self.logger.info(f"Initializing agent for {effective_run_name} on device {self.device}")
+        self.logger.info(f"Full Config (including original run_name='{config.run_name}'): {config.model_dump_json(indent=2)}")
+
 
         self.timer = Timing()
 
         # Network and optimizer placeholders (defined in subclasses)
         self.actor: Optional[nn.Module] = None
-        self.critic: Optional[nn.Module] = None # Optional (e.g. GRPO may not use it)
+        self.critic: Optional[nn.Module] = None 
         self.actor_optimizer: Optional[Optimizer] = None
         self.critic_optimizer: Optional[Optimizer] = None
         
-        # For CNN based architectures
         self.cnn_feature_extractor: Optional[nn.Module] = None
         self.actor_head: Optional[nn.Module] = None
         self.critic_head: Optional[nn.Module] = None
 
-
-        # Observation and action space info
         self.obs_shape: Tuple[int, ...] = env.observation_space.shape
         self.action_space: gym.Space = env.action_space
 
@@ -99,7 +118,6 @@ class BaseAgent(ABC):
         else:
             raise NotImplementedError(f"Unsupported action space: {type(env.action_space)}")
         
-        # Initialize networks here, so load_checkpoint can access them
         self._setup_networks_and_optimizers()
 
 
@@ -153,12 +171,10 @@ class BaseAgent(ABC):
 
     def train(self) -> None:
         """Main training loop."""
-        # Networks are setup in __init__ now
         start_step = checkpoint_utils.load_checkpoint(self, self.ckpt_dir)
         metrics = video_plot_utils.load_metrics(self.results_file)
         
         global_step = start_step
-        # Adjust last log/ckpt/vid steps based on loaded start_step to avoid immediate trigger
         last_log_step = start_step - (start_step % self.log_interval) if start_step > 0 else 0
         last_ckpt_step = start_step - (start_step % self.checkpoint_interval) if start_step > 0 else 0
         last_vid_step = start_step - (start_step % self.video_interval) if start_step > 0 else 0
@@ -167,35 +183,31 @@ class BaseAgent(ABC):
         self.logger.info(f"Starting training from step {global_step}...")
 
         while global_step < self.total_steps:
-            with self.timer("rollout_phase"): # Timer for the entire rollout phase
+            with self.timer("rollout_phase"): 
                 rollout_data, rollout_info = self._rollout()
             
-            # Assuming _rollout returns the number of steps collected in rollout_info
             steps_this_rollout = rollout_info.get("steps_collected_this_rollout", 0)
-            if steps_this_rollout == 0 and isinstance(rollout_data, dict) and "n_steps" in rollout_data: # PPO direct batch
+            if steps_this_rollout == 0 and isinstance(rollout_data, dict) and "n_steps" in rollout_data: 
                 steps_this_rollout = rollout_data.get("n_steps", 0)
-            elif steps_this_rollout == 0 and hasattr(rollout_data, 'size'): # Buffer-like
+            elif steps_this_rollout == 0 and hasattr(rollout_data, 'size'): 
                 steps_this_rollout = rollout_data.size
             
             if steps_this_rollout == 0 :
                  self.logger.warning("Rollout collected 0 steps. Check rollout logic or batch info.")
-                 # Potentially break or skip update if this is critical
-                 if global_step == start_step : # No progress from start
+                 if global_step == start_step : 
                      self.logger.error("Failed to collect any steps on first rollout. Aborting.")
                      break
-                 # else, maybe it was a very short final rollout.
             
             global_step += steps_this_rollout
 
-            with self.timer("update_phase"): # Timer for the entire update phase
-                update_info = self._update(rollout_data) # Pass buffer or batch to update
+            with self.timer("update_phase"): 
+                update_info = self._update(rollout_data) 
 
             if global_step >= last_log_step + self.log_interval:
                 avg_reward = rollout_info.get('avg_episodic_reward', np.nan)
                 avg_length = rollout_info.get('avg_episode_length', np.nan)
 
                 metrics["steps"].append(global_step)
-                # Ensure rewards/lengths are float or handle None/NaN gracefully for JSON
                 metrics["avg_episodic_reward"].append(float(avg_reward) if not np.isnan(avg_reward) else None)
                 metrics["avg_episode_length"].append(float(avg_length) if not np.isnan(avg_length) else None)
 
@@ -244,10 +256,9 @@ class BaseAgent(ABC):
         """Runs evaluation episodes and saves the best one as a video."""
         self.logger.info(f"Starting evaluation ({num_episodes} episodes, deterministic={deterministic})...")
         
-        # Create a new env instance for evaluation for isolation
-        eval_env_seed = self.seed + 1000 + current_step # Unique seed for eval
+        eval_env_seed = self.seed + 1000 + current_step 
         eval_env = env_utils.make_env(
-            self.env.spec.id if self.env.spec else self.config.env_id, # Use config.env_id if spec is None
+            self.env.spec.id if self.env.spec else self.config.env_id, 
             render_mode="rgb_array",
             seed=eval_env_seed,
             max_episode_steps=self.config.max_episode_steps
@@ -276,12 +287,11 @@ class BaseAgent(ABC):
             ep_total_reward = 0.0
             ep_frames: List[NpArray] = []
             ep_step_count = 0
-            # Use the max_episode_steps from the eval_env itself
             max_eval_ep_len = getattr(eval_env, "_max_episode_steps", self.config.total_steps)
 
 
             while not (terminated or truncated) and ep_step_count < max_eval_ep_len :
-                with torch.no_grad(), self.timer("eval_action_select"): # Separate timer for eval
+                with torch.no_grad(), self.timer("eval_action_select"): 
                     action_env, _ = self.get_action(obs, deterministic=deterministic)
                 
                 with self.timer("eval_env_interact"):
@@ -314,7 +324,6 @@ class BaseAgent(ABC):
             video_plot_utils.save_video(best_frames_eval, video_filename)
             self.logger.info(f"Saved best evaluation video: {video_filename.name}")
 
-        # Restore training mode
         if self.actor and actor_is_training: self.actor.train()
         if self.critic and critic_is_training: self.critic.train()
         if self.cnn_feature_extractor and cnn_is_training: self.cnn_feature_extractor.train()

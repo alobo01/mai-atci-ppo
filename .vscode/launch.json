@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": "-cd test_ppo -w 1"
+            "args": "-cf configs_generated\\configs_last\\CarRacing-v3_ppo_normal.json"
         }
     ]
 }

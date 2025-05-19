@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "InvertedDoublePendulum-v4_ppo_seed0_ent1e-05_lr0.0003_beta",
+        "status": "completed",
+        "duration_s": 156.58257000287995,
+        "final_rewards_window": [
+            9346.488941054562,
+            1759.7277526710827,
+            5125.277861827343,
+            9347.939987109012,
+            9347.571799963347,
+            9345.92055264556,
+            9344.252267161222,
+            9346.926704319136,
+            9337.317824909815,
+            9341.453273063624
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "beta"
+        }
+    },
+    {
+        "run_id": "InvertedDoublePendulum-v4_ppo_seed42_ent1e-05_lr0.0003_beta",
+        "status": "completed",
+        "duration_s": 1373.3727125329897,
+        "final_rewards_window": [
+            5072.533132488458,
+            9345.714219471352,
+            9345.59226061477,
+            9337.567677752058,
+            9337.621570627221,
+            3763.861857209836,
+            9342.856282123139,
+            3078.9306284410463,
+            9337.092633406655,
+            1161.1456952975702
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "beta"
+        }
+    }
+]

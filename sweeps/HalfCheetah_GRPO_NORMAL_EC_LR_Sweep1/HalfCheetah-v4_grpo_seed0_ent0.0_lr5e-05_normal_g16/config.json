@@ -1,0 +1,35 @@
+{
+    "env_id": "HalfCheetah-v4",
+    "algo": "grpo",
+    "seed": 0,
+    "gamma": 0.99,
+    "total_steps": 1000000,
+    "log_interval": 10000,
+    "checkpoint_interval": 100000,
+    "video_interval": 250000,
+    "run_name": null,
+    "base_log_dir": "experiment_runs",
+    "verbose": false,
+    "max_episode_steps": 1000,
+    "network_config": {
+        "network_type": "mlp",
+        "mlp_hidden_dims": [
+            64,
+            64
+        ],
+        "cnn_output_features": 256
+    },
+    "ppo_config": null,
+    "grpo_config": {
+        "distribution_type": "normal",
+        "group_size": 16,
+        "update_epochs": 10,
+        "max_grad_norm": 0.5,
+        "entropy_coef": 0.0,
+        "kl_coef": 0.001,
+        "ref_update_interval": 10000,
+        "minibatch_size": 256,
+        "lr": 5e-05,
+        "rollout_steps_per_trajectory": 1000
+    }
+}

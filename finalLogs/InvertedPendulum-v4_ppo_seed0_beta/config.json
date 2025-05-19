@@ -1,0 +1,36 @@
+{
+    "env_id": "InvertedPendulum-v4",
+    "algo": "ppo",
+    "seed": 0,
+    "gamma": 0.99,
+    "total_steps": 1000000,
+    "log_interval": 10000,
+    "checkpoint_interval": 100000,
+    "video_interval": 250000,
+    "run_name": null,
+    "base_log_dir": "experiment_runs",
+    "verbose": false,
+    "max_episode_steps": 1000,
+    "network_config": {
+        "network_type": "mlp",
+        "mlp_hidden_dims": [
+            64,
+            64
+        ],
+        "cnn_output_features": 256
+    },
+    "ppo_config": {
+        "distribution_type": "beta",
+        "lam": 0.95,
+        "clip_eps": 0.2,
+        "ppo_epochs": 10,
+        "num_minibatches": 8,
+        "entropy_coef": 1e-05,
+        "value_coef": 0.5,
+        "max_grad_norm": 0.5,
+        "target_kl": null,
+        "rollout_steps": 512,
+        "lr": 0.0003
+    },
+    "grpo_config": null
+}

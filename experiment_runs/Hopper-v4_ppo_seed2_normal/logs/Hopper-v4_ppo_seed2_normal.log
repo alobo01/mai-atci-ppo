@@ -1,0 +1,61 @@
+2025-05-18 05:47:00 | Hopper-v4_ppo_seed2_normal | INFO | Initializing agent for Hopper-v4_ppo_seed2_normal on device cpu
+2025-05-18 05:47:01 | Hopper-v4_ppo_seed2_normal | INFO | Full Config: {
+  "env_id": "Hopper-v4",
+  "algo": "ppo",
+  "seed": 2,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      64,
+      64
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": {
+    "distribution_type": "normal",
+    "lam": 0.95,
+    "clip_eps": 0.2,
+    "ppo_epochs": 10,
+    "num_minibatches": 32,
+    "entropy_coef": 0.0,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": null,
+    "rollout_steps": 2048,
+    "lr": 0.0003
+  },
+  "grpo_config": null
+}
+2025-05-18 05:47:01 | Hopper-v4_ppo_seed2_normal | INFO | Using separate MLP Actor and Critic networks.
+2025-05-18 05:47:01 | Hopper-v4_ppo_seed2_normal | INFO | No actor checkpoint found at experiment_runs/Hopper-v4_ppo_seed2_normal/checkpoints/actor.pt, starting fresh.
+2025-05-18 05:47:01 | Hopper-v4_ppo_seed2_normal | INFO | Starting training from step 0...
+2025-05-18 06:20:27 | Hopper-v4_ppo_seed2_normal | INFO | Step: 10240/1000000 | Avg Reward: 174.72 | Avg Length: 90.9
+2025-05-18 06:20:27 | Hopper-v4_ppo_seed2_normal | INFO | Update Info: policy_loss: -0.0098 | value_loss: 223.0209 | entropy_loss: 3.6588 | approx_kl: -0.0069 | clip_fraction: 0.0700
+2025-05-18 06:20:27 | Hopper-v4_ppo_seed2_normal | INFO | Timings (avg ms): actor_pass: 10.85ms | critic_pass: 11.15ms | rollout_phase: 252126.08ms | backward_pass: 26.64ms | optimizer_step: 199.76ms | update_phase: 149213.21ms
+2025-05-18 06:58:10 | Hopper-v4_ppo_seed2_normal | INFO | Step: 20480/1000000 | Avg Reward: 222.14 | Avg Length: 104.0
+2025-05-18 06:58:10 | Hopper-v4_ppo_seed2_normal | INFO | Update Info: policy_loss: -0.0120 | value_loss: 164.7458 | entropy_loss: 3.5175 | approx_kl: -0.0118 | clip_fraction: 0.1327
+2025-05-18 06:58:10 | Hopper-v4_ppo_seed2_normal | INFO | Timings (avg ms): actor_pass: 12.46ms | critic_pass: 13.00ms | rollout_phase: 284809.25ms | backward_pass: 29.30ms | optimizer_step: 225.61ms | update_phase: 167735.91ms
+2025-05-18 07:36:24 | Hopper-v4_ppo_seed2_normal | INFO | Step: 30720/1000000 | Avg Reward: 266.73 | Avg Length: 119.4
+2025-05-18 07:36:24 | Hopper-v4_ppo_seed2_normal | INFO | Update Info: policy_loss: -0.0166 | value_loss: 107.4210 | entropy_loss: 3.4708 | approx_kl: -0.0191 | clip_fraction: 0.2041
+2025-05-18 07:36:24 | Hopper-v4_ppo_seed2_normal | INFO | Timings (avg ms): actor_pass: 12.76ms | critic_pass: 13.39ms | rollout_phase: 291259.00ms | backward_pass: 28.90ms | optimizer_step: 225.26ms | update_phase: 167487.19ms
+2025-05-18 08:15:19 | Hopper-v4_ppo_seed2_normal | INFO | Step: 40960/1000000 | Avg Reward: 311.98 | Avg Length: 134.2
+2025-05-18 08:15:19 | Hopper-v4_ppo_seed2_normal | INFO | Update Info: policy_loss: -0.0133 | value_loss: 79.4253 | entropy_loss: 3.3935 | approx_kl: -0.0161 | clip_fraction: 0.1973
+2025-05-18 08:15:19 | Hopper-v4_ppo_seed2_normal | INFO | Timings (avg ms): actor_pass: 12.90ms | critic_pass: 13.52ms | rollout_phase: 296467.66ms | backward_pass: 29.46ms | optimizer_step: 230.79ms | update_phase: 170611.72ms
+2025-05-18 08:53:52 | Hopper-v4_ppo_seed2_normal | INFO | Step: 51200/1000000 | Avg Reward: 358.28 | Avg Length: 155.1
+2025-05-18 08:53:52 | Hopper-v4_ppo_seed2_normal | INFO | Update Info: policy_loss: -0.0047 | value_loss: 18.1344 | entropy_loss: 3.6757 | approx_kl: -0.0132 | clip_fraction: 0.1908
+2025-05-18 08:53:52 | Hopper-v4_ppo_seed2_normal | INFO | Timings (avg ms): actor_pass: 12.92ms | critic_pass: 13.38ms | rollout_phase: 293964.35ms | backward_pass: 28.98ms | optimizer_step: 226.56ms | update_phase: 168549.79ms
+2025-05-18 09:32:14 | Hopper-v4_ppo_seed2_normal | INFO | Step: 61440/1000000 | Avg Reward: 432.60 | Avg Length: 182.6
+2025-05-18 09:32:14 | Hopper-v4_ppo_seed2_normal | INFO | Update Info: policy_loss: -0.0069 | value_loss: 21.8981 | entropy_loss: 3.5668 | approx_kl: -0.0173 | clip_fraction: 0.1554
+2025-05-18 09:32:14 | Hopper-v4_ppo_seed2_normal | INFO | Timings (avg ms): actor_pass: 12.78ms | critic_pass: 13.42ms | rollout_phase: 291890.19ms | backward_pass: 28.96ms | optimizer_step: 227.23ms | update_phase: 168456.14ms
+2025-05-18 10:10:39 | Hopper-v4_ppo_seed2_normal | INFO | Step: 71680/1000000 | Avg Reward: 462.38 | Avg Length: 213.0
+2025-05-18 10:10:39 | Hopper-v4_ppo_seed2_normal | INFO | Update Info: policy_loss: -0.0061 | value_loss: 112.5335 | entropy_loss: 3.2544 | approx_kl: -0.0065 | clip_fraction: 0.0838
+2025-05-18 10:10:39 | Hopper-v4_ppo_seed2_normal | INFO | Timings (avg ms): actor_pass: 12.82ms | critic_pass: 13.46ms | rollout_phase: 292593.71ms | backward_pass: 29.50ms | optimizer_step: 226.95ms | update_phase: 168477.51ms

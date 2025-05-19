@@ -1,0 +1,94 @@
+2025-05-17 20:26:36 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Initializing agent for InvertedPendulum-v4_ppo_seed2_beta on device cpu
+2025-05-17 20:26:36 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Full Config: {
+  "env_id": "InvertedPendulum-v4",
+  "algo": "ppo",
+  "seed": 2,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      64,
+      64
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": {
+    "distribution_type": "beta",
+    "lam": 0.95,
+    "clip_eps": 0.2,
+    "ppo_epochs": 10,
+    "num_minibatches": 8,
+    "entropy_coef": 0.001,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": null,
+    "rollout_steps": 512,
+    "lr": 0.0003
+  },
+  "grpo_config": null
+}
+2025-05-17 20:26:36 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Using separate MLP Actor and Critic networks.
+2025-05-17 20:26:36 | InvertedPendulum-v4_ppo_seed2_beta | INFO | No actor checkpoint found at experiment_runs/InvertedPendulum-v4_ppo_seed2_beta/checkpoints/actor.pt, starting fresh.
+2025-05-17 20:26:36 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Starting training from step 0...
+2025-05-17 21:18:49 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 10240/1000000 | Avg Reward: 78.29 | Avg Length: 78.3
+2025-05-17 21:18:49 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0086 | value_loss: 59.7100 | entropy_loss: -0.4609 | approx_kl: -0.0082 | clip_fraction: 0.0566
+2025-05-17 21:18:49 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 12.01ms | critic_pass: 12.77ms | rollout_phase: 105865.43ms | backward_pass: 47.37ms | optimizer_step: 217.53ms | update_phase: 50779.25ms
+2025-05-17 22:06:25 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 20480/1000000 | Avg Reward: 238.00 | Avg Length: 238.0
+2025-05-17 22:06:25 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0037 | value_loss: 21.1850 | entropy_loss: -0.6768 | approx_kl: -0.0057 | clip_fraction: 0.0232
+2025-05-17 22:06:25 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 10.89ms | critic_pass: 11.43ms | rollout_phase: 96765.98ms | backward_pass: 43.14ms | optimizer_step: 197.50ms | update_phase: 45992.32ms
+2025-05-17 22:58:35 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 30720/1000000 | Avg Reward: 932.00 | Avg Length: 932.0
+2025-05-17 22:58:35 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0001 | value_loss: 14.5128 | entropy_loss: -0.6329 | approx_kl: -0.0005 | clip_fraction: 0.0000
+2025-05-17 22:58:35 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 11.99ms | critic_pass: 12.71ms | rollout_phase: 105896.20ms | backward_pass: 47.00ms | optimizer_step: 216.65ms | update_phase: 50621.32ms
+2025-05-17 23:50:49 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 40960/1000000 | Avg Reward: 1000.00 | Avg Length: 1000.0
+2025-05-17 23:50:49 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0037 | value_loss: 66.8827 | entropy_loss: -0.6482 | approx_kl: -0.0082 | clip_fraction: 0.0828
+2025-05-17 23:50:49 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 12.10ms | critic_pass: 12.93ms | rollout_phase: 106082.23ms | backward_pass: 46.81ms | optimizer_step: 217.06ms | update_phase: 50636.77ms
+2025-05-18 00:43:00 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 51200/1000000 | Avg Reward: 1000.00 | Avg Length: 1000.0
+2025-05-18 00:43:00 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0067 | value_loss: 69.9925 | entropy_loss: -0.6799 | approx_kl: -0.0092 | clip_fraction: 0.0967
+2025-05-18 00:43:00 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 11.96ms | critic_pass: 12.73ms | rollout_phase: 105716.30ms | backward_pass: 46.98ms | optimizer_step: 216.02ms | update_phase: 50820.06ms
+2025-05-18 01:35:18 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 61440/1000000 | Avg Reward: 1000.00 | Avg Length: 1000.0
+2025-05-18 01:35:18 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: 0.0005 | value_loss: 71.5863 | entropy_loss: -0.7744 | approx_kl: 0.0006 | clip_fraction: 0.0342
+2025-05-18 01:35:18 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 12.02ms | critic_pass: 12.74ms | rollout_phase: 106057.04ms | backward_pass: 46.60ms | optimizer_step: 217.56ms | update_phase: 50838.85ms
+2025-05-18 02:27:59 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 71680/1000000 | Avg Reward: 1000.00 | Avg Length: 1000.0
+2025-05-18 02:27:59 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0008 | value_loss: 71.0463 | entropy_loss: -0.7598 | approx_kl: 0.0016 | clip_fraction: 0.0160
+2025-05-18 02:27:59 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 12.05ms | critic_pass: 12.77ms | rollout_phase: 106989.99ms | backward_pass: 47.45ms | optimizer_step: 218.77ms | update_phase: 51042.32ms
+2025-05-18 03:23:03 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 81920/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 03:23:03 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0010 | value_loss: 0.2448 | entropy_loss: -0.7927 | approx_kl: -0.0011 | clip_fraction: 0.0314
+2025-05-18 03:23:03 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 12.61ms | critic_pass: 13.42ms | rollout_phase: 111762.41ms | backward_pass: 49.54ms | optimizer_step: 228.42ms | update_phase: 53428.35ms
+2025-05-18 04:18:03 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 92160/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 04:18:03 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0053 | value_loss: 0.3360 | entropy_loss: -0.8008 | approx_kl: 0.0007 | clip_fraction: 0.0600
+2025-05-18 04:18:03 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 12.77ms | critic_pass: 13.37ms | rollout_phase: 111693.37ms | backward_pass: 48.96ms | optimizer_step: 227.88ms | update_phase: 53330.86ms
+2025-05-18 05:12:30 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 102400/1000000 | Avg Reward: 1000.00 | Avg Length: 1000.0
+2025-05-18 05:12:30 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0022 | value_loss: 70.1233 | entropy_loss: -0.9402 | approx_kl: -0.0065 | clip_fraction: 0.0805
+2025-05-18 05:12:30 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 12.48ms | critic_pass: 13.32ms | rollout_phase: 110465.05ms | backward_pass: 49.59ms | optimizer_step: 226.20ms | update_phase: 52879.43ms
+2025-05-18 06:02:56 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 112640/1000000 | Avg Reward: 1000.00 | Avg Length: 1000.0
+2025-05-18 06:02:56 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0068 | value_loss: 71.5898 | entropy_loss: -0.8328 | approx_kl: -0.0016 | clip_fraction: 0.0430
+2025-05-18 06:02:56 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 11.60ms | critic_pass: 12.31ms | rollout_phase: 102957.79ms | backward_pass: 45.92ms | optimizer_step: 207.24ms | update_phase: 48331.28ms
+2025-05-18 06:37:47 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 122880/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 06:37:47 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0019 | value_loss: 0.2239 | entropy_loss: -1.1541 | approx_kl: -0.0049 | clip_fraction: 0.0152
+2025-05-18 06:37:47 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 7.72ms | critic_pass: 7.76ms | rollout_phase: 70955.89ms | backward_pass: 34.14ms | optimizer_step: 144.50ms | update_phase: 33577.73ms
+2025-05-18 07:13:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 133120/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 07:13:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0069 | value_loss: 0.2634 | entropy_loss: -1.0647 | approx_kl: -0.0105 | clip_fraction: 0.0891
+2025-05-18 07:13:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 7.85ms | critic_pass: 7.89ms | rollout_phase: 71947.61ms | backward_pass: 34.48ms | optimizer_step: 147.49ms | update_phase: 34291.61ms
+2025-05-18 07:48:59 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 143360/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 07:48:59 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0021 | value_loss: 0.3369 | entropy_loss: -1.0335 | approx_kl: -0.0020 | clip_fraction: 0.0215
+2025-05-18 07:48:59 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 7.85ms | critic_pass: 7.99ms | rollout_phase: 72341.75ms | backward_pass: 35.55ms | optimizer_step: 149.92ms | update_phase: 35034.15ms
+2025-05-18 08:24:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 153600/1000000 | Avg Reward: 1000.00 | Avg Length: 1000.0
+2025-05-18 08:24:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0022 | value_loss: 69.9105 | entropy_loss: -1.0382 | approx_kl: -0.0033 | clip_fraction: 0.0301
+2025-05-18 08:24:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 7.85ms | critic_pass: 7.87ms | rollout_phase: 71635.76ms | backward_pass: 33.94ms | optimizer_step: 145.46ms | update_phase: 34019.06ms
+2025-05-18 08:59:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 163840/1000000 | Avg Reward: 273.00 | Avg Length: 273.0
+2025-05-18 08:59:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0043 | value_loss: 68.8238 | entropy_loss: -1.2086 | approx_kl: 0.0001 | clip_fraction: 0.0232
+2025-05-18 08:59:12 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 7.81ms | critic_pass: 7.77ms | rollout_phase: 71230.02ms | backward_pass: 33.89ms | optimizer_step: 144.99ms | update_phase: 33740.37ms
+2025-05-18 09:38:41 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 174080/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 09:38:41 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0080 | value_loss: 0.2469 | entropy_loss: -1.2731 | approx_kl: -0.0129 | clip_fraction: 0.0895
+2025-05-18 09:38:41 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 8.81ms | critic_pass: 9.05ms | rollout_phase: 79841.44ms | backward_pass: 37.63ms | optimizer_step: 165.58ms | update_phase: 38643.23ms
+2025-05-18 10:24:19 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Step: 184320/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 10:24:19 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Update Info: policy_loss: -0.0114 | value_loss: 0.3201 | entropy_loss: -1.3400 | approx_kl: -0.0138 | clip_fraction: 0.1076
+2025-05-18 10:24:19 | InvertedPendulum-v4_ppo_seed2_beta | INFO | Timings (avg ms): actor_pass: 10.41ms | critic_pass: 10.91ms | rollout_phase: 92837.10ms | backward_pass: 42.20ms | optimizer_step: 188.83ms | update_phase: 44034.29ms

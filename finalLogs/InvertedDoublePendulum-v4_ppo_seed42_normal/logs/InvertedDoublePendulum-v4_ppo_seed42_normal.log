@@ -1,0 +1,1316 @@
+2025-05-18 15:59:29 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Initializing agent for InvertedDoublePendulum-v4_ppo_seed42_normal on device cpu
+2025-05-18 15:59:29 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Full Config: {
+  "env_id": "InvertedDoublePendulum-v4",
+  "algo": "ppo",
+  "seed": 42,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "finalLogs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      64,
+      64
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": {
+    "distribution_type": "normal",
+    "lam": 0.95,
+    "clip_eps": 0.2,
+    "ppo_epochs": 10,
+    "num_minibatches": 8,
+    "entropy_coef": 0.00001,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": null,
+    "rollout_steps": 512,
+    "lr": 0.0003
+  },
+  "grpo_config": null
+}
+2025-05-18 15:59:29 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Using separate MLP Actor and Critic networks.
+2025-05-18 15:59:29 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | No actor checkpoint found at finalLogs/InvertedDoublePendulum-v4_ppo_seed42_normal/checkpoints/actor.pt, starting fresh.
+2025-05-18 15:59:29 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Starting training from step 0...
+2025-05-18 15:59:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 10240/1000000 | Avg Reward: 153.54 | Avg Length: 16.6
+2025-05-18 15:59:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0079 | value_loss: 1510.1339 | entropy_loss: -0.0527 | approx_kl: -0.0267 | clip_fraction: 0.1258
+2025-05-18 15:59:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 269.04ms | backward_pass: 0.86ms | optimizer_step: 0.86ms | update_phase: 251.46ms
+2025-05-18 15:59:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 20480/1000000 | Avg Reward: 299.69 | Avg Length: 32.3
+2025-05-18 15:59:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0006 | value_loss: 2789.8618 | entropy_loss: -0.8395 | approx_kl: -0.0457 | clip_fraction: 0.2266
+2025-05-18 15:59:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.06ms | backward_pass: 0.86ms | optimizer_step: 0.86ms | update_phase: 250.21ms
+2025-05-18 16:00:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 30720/1000000 | Avg Reward: 266.21 | Avg Length: 28.7
+2025-05-18 16:00:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0135 | value_loss: 1666.0590 | entropy_loss: -1.1997 | approx_kl: -0.0307 | clip_fraction: 0.2195
+2025-05-18 16:00:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.56ms | backward_pass: 0.86ms | optimizer_step: 0.86ms | update_phase: 250.06ms
+2025-05-18 16:00:10 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 40960/1000000 | Avg Reward: 402.09 | Avg Length: 43.2
+2025-05-18 16:00:10 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.1119 | value_loss: 2602.2040 | entropy_loss: -1.6867 | approx_kl: -0.9177 | clip_fraction: 0.4525
+2025-05-18 16:00:10 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.10ms | backward_pass: 0.86ms | optimizer_step: 0.86ms | update_phase: 250.43ms
+2025-05-18 16:00:21 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 51200/1000000 | Avg Reward: 285.46 | Avg Length: 30.8
+2025-05-18 16:00:21 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0042 | value_loss: 1253.3994 | entropy_loss: -1.1724 | approx_kl: -0.0375 | clip_fraction: 0.1895
+2025-05-18 16:00:21 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.59ms | backward_pass: 0.87ms | optimizer_step: 0.87ms | update_phase: 251.95ms
+2025-05-18 16:00:31 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 61440/1000000 | Avg Reward: 293.34 | Avg Length: 31.6
+2025-05-18 16:00:31 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0409 | value_loss: 576.2951 | entropy_loss: -1.1631 | approx_kl: -0.1112 | clip_fraction: 0.3115
+2025-05-18 16:00:31 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.27ms | backward_pass: 0.86ms | optimizer_step: 0.86ms | update_phase: 250.47ms
+2025-05-18 16:00:42 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 71680/1000000 | Avg Reward: 400.82 | Avg Length: 43.1
+2025-05-18 16:00:42 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0231 | value_loss: 1514.7880 | entropy_loss: -1.3377 | approx_kl: -0.0895 | clip_fraction: 0.2400
+2025-05-18 16:00:42 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.53ms | backward_pass: 0.86ms | optimizer_step: 0.87ms | update_phase: 251.45ms
+2025-05-18 16:00:52 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 81920/1000000 | Avg Reward: 427.36 | Avg Length: 45.9
+2025-05-18 16:00:52 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0024 | value_loss: 1043.5298 | entropy_loss: -1.3486 | approx_kl: -0.0271 | clip_fraction: 0.1342
+2025-05-18 16:00:52 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 264.50ms | backward_pass: 0.86ms | optimizer_step: 0.86ms | update_phase: 250.14ms
+2025-05-18 16:01:02 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 92160/1000000 | Avg Reward: 308.83 | Avg Length: 33.3
+2025-05-18 16:01:02 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0021 | value_loss: 627.9551 | entropy_loss: -0.9211 | approx_kl: -0.0223 | clip_fraction: 0.1477
+2025-05-18 16:01:02 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 265.17ms | backward_pass: 0.86ms | optimizer_step: 0.86ms | update_phase: 249.95ms
+2025-05-18 16:01:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 102400/1000000 | Avg Reward: 349.44 | Avg Length: 37.6
+2025-05-18 16:01:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0102 | value_loss: 530.7212 | entropy_loss: -0.9109 | approx_kl: -0.0379 | clip_fraction: 0.1984
+2025-05-18 16:01:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.32ms | backward_pass: 0.87ms | optimizer_step: 0.87ms | update_phase: 253.14ms
+2025-05-18 16:01:23 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 112640/1000000 | Avg Reward: 410.35 | Avg Length: 44.1
+2025-05-18 16:01:23 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0132 | value_loss: 993.9140 | entropy_loss: -1.3550 | approx_kl: -0.0569 | clip_fraction: 0.2127
+2025-05-18 16:01:23 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 266.23ms | backward_pass: 0.87ms | optimizer_step: 0.87ms | update_phase: 252.80ms
+2025-05-18 16:01:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 122880/1000000 | Avg Reward: 1101.45 | Avg Length: 118.0
+2025-05-18 16:01:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0129 | value_loss: 2554.6971 | entropy_loss: -1.4767 | approx_kl: -0.0289 | clip_fraction: 0.2045
+2025-05-18 16:01:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 266.06ms | backward_pass: 0.87ms | optimizer_step: 0.88ms | update_phase: 254.55ms
+2025-05-18 16:01:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 133120/1000000 | Avg Reward: 985.58 | Avg Length: 105.8
+2025-05-18 16:01:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0073 | value_loss: 3232.5108 | entropy_loss: -1.2039 | approx_kl: -0.0095 | clip_fraction: 0.0885
+2025-05-18 16:01:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 265.91ms | backward_pass: 0.87ms | optimizer_step: 0.87ms | update_phase: 253.49ms
+2025-05-18 16:01:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 143360/1000000 | Avg Reward: 171.99 | Avg Length: 18.6
+2025-05-18 16:01:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.3147 | value_loss: 261.2916 | entropy_loss: -0.6292 | approx_kl: -15.9508 | clip_fraction: 0.8605
+2025-05-18 16:01:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.78ms | backward_pass: 0.87ms | optimizer_step: 0.87ms | update_phase: 253.60ms
+2025-05-18 16:02:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 153600/1000000 | Avg Reward: 141.19 | Avg Length: 15.3
+2025-05-18 16:02:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0160 | value_loss: 150.0289 | entropy_loss: -0.2272 | approx_kl: -0.0374 | clip_fraction: 0.1762
+2025-05-18 16:02:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.20ms | backward_pass: 0.87ms | optimizer_step: 0.90ms | update_phase: 254.53ms
+2025-05-18 16:02:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 163840/1000000 | Avg Reward: 184.55 | Avg Length: 20.0
+2025-05-18 16:02:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0059 | value_loss: 552.4604 | entropy_loss: -0.2349 | approx_kl: -0.0222 | clip_fraction: 0.1213
+2025-05-18 16:02:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.61ms | backward_pass: 0.87ms | optimizer_step: 0.92ms | update_phase: 256.76ms
+2025-05-18 16:02:26 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 174080/1000000 | Avg Reward: 306.44 | Avg Length: 33.1
+2025-05-18 16:02:26 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0093 | value_loss: 387.8776 | entropy_loss: -0.6173 | approx_kl: -0.0185 | clip_fraction: 0.1605
+2025-05-18 16:02:26 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.50ms | backward_pass: 0.87ms | optimizer_step: 0.92ms | update_phase: 256.16ms
+2025-05-18 16:02:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 184320/1000000 | Avg Reward: 305.94 | Avg Length: 33.1
+2025-05-18 16:02:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0058 | value_loss: 623.7616 | entropy_loss: -0.6730 | approx_kl: -0.0031 | clip_fraction: 0.0969
+2025-05-18 16:02:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 265.28ms | backward_pass: 0.86ms | optimizer_step: 0.90ms | update_phase: 252.99ms
+2025-05-18 16:02:47 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 194560/1000000 | Avg Reward: 354.49 | Avg Length: 38.2
+2025-05-18 16:02:47 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0008 | value_loss: 218.9667 | entropy_loss: -0.8165 | approx_kl: -0.0110 | clip_fraction: 0.1623
+2025-05-18 16:02:47 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 265.95ms | backward_pass: 0.86ms | optimizer_step: 0.92ms | update_phase: 255.55ms
+2025-05-18 16:02:57 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 204800/1000000 | Avg Reward: 606.32 | Avg Length: 65.1
+2025-05-18 16:02:57 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0088 | value_loss: 817.7099 | entropy_loss: -0.7855 | approx_kl: -0.0447 | clip_fraction: 0.1779
+2025-05-18 16:02:57 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 264.07ms | backward_pass: 0.86ms | optimizer_step: 1.13ms | update_phase: 272.31ms
+2025-05-18 16:03:09 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 215040/1000000 | Avg Reward: 1179.44 | Avg Length: 126.5
+2025-05-18 16:03:09 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0013 | value_loss: 1439.2453 | entropy_loss: -0.9671 | approx_kl: -0.0302 | clip_fraction: 0.1807
+2025-05-18 16:03:09 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 263.24ms | backward_pass: 0.86ms | optimizer_step: 1.63ms | update_phase: 312.69ms
+2025-05-18 16:03:20 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 225280/1000000 | Avg Reward: 1904.21 | Avg Length: 204.3
+2025-05-18 16:03:20 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0034 | value_loss: 2610.3821 | entropy_loss: -0.9331 | approx_kl: -0.0065 | clip_fraction: 0.0688
+2025-05-18 16:03:20 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 262.35ms | backward_pass: 0.86ms | optimizer_step: 1.64ms | update_phase: 312.22ms
+2025-05-18 16:03:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 235520/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 16:03:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0196 | value_loss: 2579.1798 | entropy_loss: -1.2860 | approx_kl: -0.0675 | clip_fraction: 0.2387
+2025-05-18 16:03:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 262.29ms | backward_pass: 0.86ms | optimizer_step: 1.63ms | update_phase: 311.61ms
+2025-05-18 16:03:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 245760/1000000 | Avg Reward: 386.77 | Avg Length: 41.6
+2025-05-18 16:03:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0066 | value_loss: 12.4628 | entropy_loss: -1.3052 | approx_kl: -0.0410 | clip_fraction: 0.2693
+2025-05-18 16:03:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 263.94ms | backward_pass: 0.86ms | optimizer_step: 1.41ms | update_phase: 294.33ms
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 16:03:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Evaluation Complete: Avg Reward = 806.17 (over 3 eps)
+2025-05-18 16:03:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 256000/1000000 | Avg Reward: 1357.39 | Avg Length: 145.3
+2025-05-18 16:03:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0014 | value_loss: 1509.0244 | entropy_loss: -1.9685 | approx_kl: -0.0111 | clip_fraction: 0.1326
+2025-05-18 16:03:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 263.68ms | backward_pass: 0.86ms | optimizer_step: 0.86ms | update_phase: 249.80ms | eval_action_select: 0.42ms | eval_env_interact: 0.11ms
+2025-05-18 20:27:47 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Initializing agent for InvertedDoublePendulum-v4_ppo_seed42_normal on device cpu
+2025-05-18 20:27:47 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Full Config: {
+  "env_id": "InvertedDoublePendulum-v4",
+  "algo": "ppo",
+  "seed": 42,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "finalLogs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      64,
+      64
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": {
+    "distribution_type": "normal",
+    "lam": 0.95,
+    "clip_eps": 0.2,
+    "ppo_epochs": 10,
+    "num_minibatches": 8,
+    "entropy_coef": 0.00001,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": null,
+    "rollout_steps": 512,
+    "lr": 0.0003
+  },
+  "grpo_config": null
+}
+2025-05-18 20:27:47 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Using separate MLP Actor and Critic networks.
+2025-05-18 20:27:47 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Loading checkpoint from finalLogs/InvertedDoublePendulum-v4_ppo_seed42_normal/checkpoints, resuming at step 200704
+2025-05-18 20:27:47 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Starting training from step 200704...
+2025-05-18 20:28:01 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 210432/1000000 | Avg Reward: 484.37 | Avg Length: 52.1
+2025-05-18 20:28:01 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0096 | value_loss: 252.1507 | entropy_loss: -0.5040 | approx_kl: -0.0353 | clip_fraction: 0.1750
+2025-05-18 20:28:01 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.15ms | critic_pass: 0.13ms | rollout_phase: 269.65ms | backward_pass: 1.53ms | optimizer_step: 2.05ms | update_phase: 487.96ms
+2025-05-18 20:28:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 220672/1000000 | Avg Reward: 508.44 | Avg Length: 54.8
+2025-05-18 20:28:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0046 | value_loss: 1203.2097 | entropy_loss: -0.7380 | approx_kl: -0.0087 | clip_fraction: 0.1236
+2025-05-18 20:28:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.66ms | backward_pass: 0.92ms | optimizer_step: 1.78ms | update_phase: 340.40ms
+2025-05-18 20:28:25 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 230912/1000000 | Avg Reward: 554.33 | Avg Length: 59.7
+2025-05-18 20:28:25 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0080 | value_loss: 2048.2592 | entropy_loss: -0.9196 | approx_kl: -0.0398 | clip_fraction: 0.1912
+2025-05-18 20:28:25 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.38ms | backward_pass: 0.93ms | optimizer_step: 1.77ms | update_phase: 341.06ms
+2025-05-18 20:28:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 241152/1000000 | Avg Reward: 1043.78 | Avg Length: 112.2
+2025-05-18 20:28:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0174 | value_loss: 841.1353 | entropy_loss: -1.0641 | approx_kl: -0.0670 | clip_fraction: 0.3205
+2025-05-18 20:28:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 266.87ms | backward_pass: 0.92ms | optimizer_step: 2.07ms | update_phase: 362.76ms
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:28:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Evaluation Complete: Avg Reward = 989.00 (over 3 eps)
+2025-05-18 20:28:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 251392/1000000 | Avg Reward: 1387.30 | Avg Length: 149.0
+2025-05-18 20:28:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0002 | value_loss: 1737.2476 | entropy_loss: -1.1327 | approx_kl: -0.0159 | clip_fraction: 0.1750
+2025-05-18 20:28:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 266.74ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 273.42ms | eval_action_select: 0.42ms | eval_env_interact: 0.11ms
+2025-05-18 20:29:01 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 261632/1000000 | Avg Reward: 121.93 | Avg Length: 13.2
+2025-05-18 20:29:01 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0100 | value_loss: 121.3540 | entropy_loss: -0.4924 | approx_kl: -0.0537 | clip_fraction: 0.2529
+2025-05-18 20:29:01 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.55ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.57ms
+2025-05-18 20:29:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 271872/1000000 | Avg Reward: 155.85 | Avg Length: 16.9
+2025-05-18 20:29:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0062 | value_loss: 106.3335 | entropy_loss: -0.1752 | approx_kl: -0.0201 | clip_fraction: 0.1246
+2025-05-18 20:29:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 269.12ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.90ms
+2025-05-18 20:29:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 282112/1000000 | Avg Reward: 174.30 | Avg Length: 18.9
+2025-05-18 20:29:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0089 | value_loss: 148.1563 | entropy_loss: -0.2949 | approx_kl: -0.0234 | clip_fraction: 0.1570
+2025-05-18 20:29:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 269.03ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.72ms
+2025-05-18 20:29:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 292352/1000000 | Avg Reward: 185.27 | Avg Length: 20.1
+2025-05-18 20:29:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0037 | value_loss: 138.3652 | entropy_loss: -0.4205 | approx_kl: -0.0153 | clip_fraction: 0.1727
+2025-05-18 20:29:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.89ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.00ms
+2025-05-18 20:29:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 302592/1000000 | Avg Reward: 166.63 | Avg Length: 18.1
+2025-05-18 20:29:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0035 | value_loss: 109.3824 | entropy_loss: -0.6635 | approx_kl: -0.0252 | clip_fraction: 0.1818
+2025-05-18 20:29:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 269.71ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.42ms
+2025-05-18 20:29:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 312832/1000000 | Avg Reward: 162.68 | Avg Length: 17.7
+2025-05-18 20:29:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0070 | value_loss: 135.1640 | entropy_loss: -0.5477 | approx_kl: -0.0096 | clip_fraction: 0.1305
+2025-05-18 20:29:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.24ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.95ms
+2025-05-18 20:30:06 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 323072/1000000 | Avg Reward: 178.56 | Avg Length: 19.4
+2025-05-18 20:30:06 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0022 | value_loss: 167.7994 | entropy_loss: -0.4958 | approx_kl: -0.0128 | clip_fraction: 0.1592
+2025-05-18 20:30:06 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.08ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.17ms
+2025-05-18 20:30:17 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 333312/1000000 | Avg Reward: 163.67 | Avg Length: 17.8
+2025-05-18 20:30:17 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0041 | value_loss: 152.7629 | entropy_loss: -0.4503 | approx_kl: -0.0311 | clip_fraction: 0.1291
+2025-05-18 20:30:17 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.45ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.78ms
+2025-05-18 20:30:28 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 343552/1000000 | Avg Reward: 177.79 | Avg Length: 19.3
+2025-05-18 20:30:28 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0066 | value_loss: 162.6689 | entropy_loss: -0.5009 | approx_kl: -0.0267 | clip_fraction: 0.1785
+2025-05-18 20:30:28 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.15ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.36ms
+2025-05-18 20:30:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 353792/1000000 | Avg Reward: 196.04 | Avg Length: 21.3
+2025-05-18 20:30:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0087 | value_loss: 283.7674 | entropy_loss: -0.5570 | approx_kl: -0.0216 | clip_fraction: 0.1832
+2025-05-18 20:30:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.20ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.77ms
+2025-05-18 20:30:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 364032/1000000 | Avg Reward: 183.27 | Avg Length: 19.9
+2025-05-18 20:30:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0042 | value_loss: 211.5493 | entropy_loss: -0.6473 | approx_kl: -0.0256 | clip_fraction: 0.1643
+2025-05-18 20:30:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.40ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.30ms
+2025-05-18 20:31:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 374272/1000000 | Avg Reward: 272.77 | Avg Length: 29.6
+2025-05-18 20:31:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0092 | value_loss: 474.1813 | entropy_loss: -0.7511 | approx_kl: -0.0193 | clip_fraction: 0.1061
+2025-05-18 20:31:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.71ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.65ms
+2025-05-18 20:31:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 384512/1000000 | Avg Reward: 223.24 | Avg Length: 24.2
+2025-05-18 20:31:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0010 | value_loss: 225.2802 | entropy_loss: -0.4826 | approx_kl: -0.0226 | clip_fraction: 0.1543
+2025-05-18 20:31:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.59ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.16ms
+2025-05-18 20:31:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 394752/1000000 | Avg Reward: 269.24 | Avg Length: 29.2
+2025-05-18 20:31:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0047 | value_loss: 693.3223 | entropy_loss: -0.8659 | approx_kl: -0.0307 | clip_fraction: 0.2170
+2025-05-18 20:31:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.51ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 275.28ms
+2025-05-18 20:31:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 404992/1000000 | Avg Reward: 260.51 | Avg Length: 28.3
+2025-05-18 20:31:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0086 | value_loss: 622.8469 | entropy_loss: -0.8090 | approx_kl: -0.0195 | clip_fraction: 0.1453
+2025-05-18 20:31:33 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.78ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.49ms
+2025-05-18 20:31:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 415232/1000000 | Avg Reward: 221.83 | Avg Length: 24.0
+2025-05-18 20:31:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0111 | value_loss: 548.8482 | entropy_loss: -0.9101 | approx_kl: -0.0306 | clip_fraction: 0.1832
+2025-05-18 20:31:44 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.11ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.51ms
+2025-05-18 20:31:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 425472/1000000 | Avg Reward: 251.19 | Avg Length: 27.3
+2025-05-18 20:31:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0039 | value_loss: 482.2648 | entropy_loss: -0.8367 | approx_kl: -0.0354 | clip_fraction: 0.1936
+2025-05-18 20:31:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.01ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.24ms
+2025-05-18 20:32:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 435712/1000000 | Avg Reward: 284.96 | Avg Length: 30.9
+2025-05-18 20:32:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0143 | value_loss: 724.7507 | entropy_loss: -1.0776 | approx_kl: -0.0597 | clip_fraction: 0.2918
+2025-05-18 20:32:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.27ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.53ms
+2025-05-18 20:32:16 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 445952/1000000 | Avg Reward: 285.66 | Avg Length: 30.9
+2025-05-18 20:32:16 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0010 | value_loss: 848.4740 | entropy_loss: -0.9273 | approx_kl: -0.0152 | clip_fraction: 0.1736
+2025-05-18 20:32:16 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.83ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 274.34ms
+2025-05-18 20:32:27 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 456192/1000000 | Avg Reward: 327.26 | Avg Length: 35.4
+2025-05-18 20:32:27 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0041 | value_loss: 724.5701 | entropy_loss: -0.8124 | approx_kl: -0.0209 | clip_fraction: 0.1855
+2025-05-18 20:32:27 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 268.03ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 275.56ms
+2025-05-18 20:32:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 466432/1000000 | Avg Reward: 262.83 | Avg Length: 28.5
+2025-05-18 20:32:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0073 | value_loss: 803.8446 | entropy_loss: -0.6393 | approx_kl: -0.0069 | clip_fraction: 0.1174
+2025-05-18 20:32:38 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 269.18ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 276.23ms
+2025-05-18 20:32:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 476672/1000000 | Avg Reward: 329.26 | Avg Length: 35.6
+2025-05-18 20:32:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0103 | value_loss: 1680.4136 | entropy_loss: -0.7486 | approx_kl: -0.0137 | clip_fraction: 0.1350
+2025-05-18 20:32:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 267.60ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 275.48ms
+2025-05-18 20:33:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 486912/1000000 | Avg Reward: 322.96 | Avg Length: 34.9
+2025-05-18 20:33:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0048 | value_loss: 921.3518 | entropy_loss: -0.7582 | approx_kl: -0.0163 | clip_fraction: 0.2016
+2025-05-18 20:33:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 265.93ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 273.48ms
+2025-05-18 20:33:10 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 497152/1000000 | Avg Reward: 498.27 | Avg Length: 53.8
+2025-05-18 20:33:10 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0063 | value_loss: 1037.7150 | entropy_loss: -1.0428 | approx_kl: -0.0310 | clip_fraction: 0.2018
+2025-05-18 20:33:10 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 265.74ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 273.54ms
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:33:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Evaluation Complete: Avg Reward = 403.05 (over 3 eps)
+2025-05-18 20:33:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 507392/1000000 | Avg Reward: 378.95 | Avg Length: 41.0
+2025-05-18 20:33:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0011 | value_loss: 1112.7032 | entropy_loss: -0.7914 | approx_kl: -0.0202 | clip_fraction: 0.1607
+2025-05-18 20:33:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 265.67ms | backward_pass: 0.92ms | optimizer_step: 0.97ms | update_phase: 274.32ms | eval_action_select: 0.44ms | eval_env_interact: 0.12ms
+2025-05-18 20:33:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 517632/1000000 | Avg Reward: 433.27 | Avg Length: 46.8
+2025-05-18 20:33:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0015 | value_loss: 1169.9817 | entropy_loss: -0.8789 | approx_kl: -0.0292 | clip_fraction: 0.1348
+2025-05-18 20:33:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 264.51ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 272.42ms
+2025-05-18 20:33:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 527872/1000000 | Avg Reward: 373.98 | Avg Length: 40.4
+2025-05-18 20:33:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0012 | value_loss: 1325.3576 | entropy_loss: -0.7778 | approx_kl: -0.0098 | clip_fraction: 0.1076
+2025-05-18 20:33:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 264.52ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 272.47ms
+2025-05-18 20:33:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 538112/1000000 | Avg Reward: 641.40 | Avg Length: 69.1
+2025-05-18 20:33:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0172 | value_loss: 1240.1625 | entropy_loss: -1.3217 | approx_kl: -0.0666 | clip_fraction: 0.2963
+2025-05-18 20:33:54 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 263.86ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 271.75ms
+2025-05-18 20:34:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 548352/1000000 | Avg Reward: 481.13 | Avg Length: 51.9
+2025-05-18 20:34:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0125 | value_loss: 2468.8169 | entropy_loss: -0.9400 | approx_kl: -0.0189 | clip_fraction: 0.1668
+2025-05-18 20:34:05 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 264.15ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 272.22ms
+2025-05-18 20:34:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 558592/1000000 | Avg Reward: 490.27 | Avg Length: 52.9
+2025-05-18 20:34:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0008 | value_loss: 1879.3773 | entropy_loss: -1.0730 | approx_kl: -0.0233 | clip_fraction: 0.1625
+2025-05-18 20:34:15 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 263.99ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 271.95ms
+2025-05-18 20:34:26 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 568832/1000000 | Avg Reward: 787.62 | Avg Length: 84.8
+2025-05-18 20:34:26 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0030 | value_loss: 3487.0824 | entropy_loss: -1.0398 | approx_kl: -0.0106 | clip_fraction: 0.1111
+2025-05-18 20:34:26 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 264.04ms | backward_pass: 0.91ms | optimizer_step: 0.96ms | update_phase: 271.66ms
+2025-05-18 20:34:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 579072/1000000 | Avg Reward: 1214.14 | Avg Length: 130.8
+2025-05-18 20:34:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0059 | value_loss: 2288.4375 | entropy_loss: -1.0782 | approx_kl: -0.0560 | clip_fraction: 0.2535
+2025-05-18 20:34:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 263.53ms | backward_pass: 0.91ms | optimizer_step: 0.96ms | update_phase: 273.79ms
+2025-05-18 20:34:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 589312/1000000 | Avg Reward: 1174.59 | Avg Length: 126.4
+2025-05-18 20:34:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0064 | value_loss: 3549.5909 | entropy_loss: -1.1648 | approx_kl: -0.0261 | clip_fraction: 0.2049
+2025-05-18 20:34:48 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 273.70ms | backward_pass: 0.94ms | optimizer_step: 0.97ms | update_phase: 277.58ms
+2025-05-18 20:34:58 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 599552/1000000 | Avg Reward: 1391.75 | Avg Length: 149.8
+2025-05-18 20:34:58 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0064 | value_loss: 2329.6579 | entropy_loss: -1.0114 | approx_kl: -0.0124 | clip_fraction: 0.1406
+2025-05-18 20:34:58 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 263.60ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 271.40ms
+2025-05-18 20:35:09 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 609792/1000000 | Avg Reward: 970.58 | Avg Length: 104.5
+2025-05-18 20:35:09 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0040 | value_loss: 2911.4883 | entropy_loss: -1.1512 | approx_kl: -0.0124 | clip_fraction: 0.1400
+2025-05-18 20:35:09 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 264.00ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 271.99ms
+2025-05-18 20:35:20 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 620032/1000000 | Avg Reward: 1150.08 | Avg Length: 124.0
+2025-05-18 20:35:20 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0023 | value_loss: 2978.6506 | entropy_loss: -0.8975 | approx_kl: -0.0046 | clip_fraction: 0.0670
+2025-05-18 20:35:20 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 262.75ms | backward_pass: 0.91ms | optimizer_step: 0.96ms | update_phase: 271.52ms
+2025-05-18 20:35:31 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 630272/1000000 | Avg Reward: 1334.81 | Avg Length: 143.8
+2025-05-18 20:35:31 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0198 | value_loss: 3811.0984 | entropy_loss: -1.2468 | approx_kl: -0.0921 | clip_fraction: 0.3250
+2025-05-18 20:35:31 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 262.50ms | backward_pass: 0.91ms | optimizer_step: 0.96ms | update_phase: 271.89ms
+2025-05-18 20:35:41 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 640512/1000000 | Avg Reward: 1228.52 | Avg Length: 132.4
+2025-05-18 20:35:41 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0059 | value_loss: 2860.5425 | entropy_loss: -0.8768 | approx_kl: -0.0146 | clip_fraction: 0.1273
+2025-05-18 20:35:41 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 262.02ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 272.31ms
+2025-05-18 20:35:52 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 650752/1000000 | Avg Reward: 3828.83 | Avg Length: 412.0
+2025-05-18 20:35:52 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.2101 | value_loss: 2230.8241 | entropy_loss: -1.1584 | approx_kl: -92.3447 | clip_fraction: 0.9516
+2025-05-18 20:35:52 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 262.56ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 272.17ms
+2025-05-18 20:36:03 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 660992/1000000 | Avg Reward: 160.18 | Avg Length: 17.4
+2025-05-18 20:36:03 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0046 | value_loss: 174.6688 | entropy_loss: -0.6799 | approx_kl: -0.0285 | clip_fraction: 0.2102
+2025-05-18 20:36:03 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 262.69ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 272.21ms
+2025-05-18 20:36:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 671232/1000000 | Avg Reward: 171.26 | Avg Length: 18.6
+2025-05-18 20:36:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0142 | value_loss: 134.2918 | entropy_loss: -0.8591 | approx_kl: -0.0569 | clip_fraction: 0.2605
+2025-05-18 20:36:13 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 261.85ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 271.52ms
+2025-05-18 20:36:24 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 681472/1000000 | Avg Reward: 187.09 | Avg Length: 20.2
+2025-05-18 20:36:24 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0109 | value_loss: 138.8905 | entropy_loss: -0.7134 | approx_kl: -0.0407 | clip_fraction: 0.2279
+2025-05-18 20:36:24 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 261.69ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.27ms
+2025-05-18 20:36:35 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 691712/1000000 | Avg Reward: 230.32 | Avg Length: 24.9
+2025-05-18 20:36:35 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0063 | value_loss: 494.0861 | entropy_loss: -0.5692 | approx_kl: -0.0138 | clip_fraction: 0.1318
+2025-05-18 20:36:35 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 261.26ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.75ms
+2025-05-18 20:36:45 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 701952/1000000 | Avg Reward: 207.67 | Avg Length: 22.5
+2025-05-18 20:36:45 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0100 | value_loss: 351.1315 | entropy_loss: -0.8351 | approx_kl: -0.0501 | clip_fraction: 0.2322
+2025-05-18 20:36:45 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 261.99ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 271.02ms
+2025-05-18 20:36:56 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 712192/1000000 | Avg Reward: 284.89 | Avg Length: 30.9
+2025-05-18 20:36:56 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0021 | value_loss: 507.2720 | entropy_loss: -0.7067 | approx_kl: -0.0351 | clip_fraction: 0.1492
+2025-05-18 20:36:56 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 261.35ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.48ms
+2025-05-18 20:37:07 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 722432/1000000 | Avg Reward: 284.13 | Avg Length: 30.8
+2025-05-18 20:37:07 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0917 | value_loss: 470.2361 | entropy_loss: -0.8088 | approx_kl: -0.9058 | clip_fraction: 0.3393
+2025-05-18 20:37:07 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 261.19ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.31ms
+2025-05-18 20:37:17 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 732672/1000000 | Avg Reward: 456.18 | Avg Length: 49.3
+2025-05-18 20:37:17 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0081 | value_loss: 1107.5556 | entropy_loss: -1.2191 | approx_kl: -0.0328 | clip_fraction: 0.2000
+2025-05-18 20:37:17 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 260.54ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.26ms
+2025-05-18 20:37:28 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 742912/1000000 | Avg Reward: 318.02 | Avg Length: 34.5
+2025-05-18 20:37:28 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0064 | value_loss: 2200.0516 | entropy_loss: -0.8888 | approx_kl: -0.0127 | clip_fraction: 0.1570
+2025-05-18 20:37:28 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 260.42ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.06ms
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Starting evaluation (3 episodes, deterministic=True)...
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:36 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:37:37 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Evaluation Complete: Avg Reward = 340.53 (over 3 eps)
+2025-05-18 20:37:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 753152/1000000 | Avg Reward: 440.82 | Avg Length: 47.7
+2025-05-18 20:37:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0047 | value_loss: 1958.1106 | entropy_loss: -0.8851 | approx_kl: -0.0207 | clip_fraction: 0.1475
+2025-05-18 20:37:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 260.29ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 270.97ms | eval_action_select: 0.41ms | eval_env_interact: 0.11ms
+2025-05-18 20:37:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 763392/1000000 | Avg Reward: 892.22 | Avg Length: 96.3
+2025-05-18 20:37:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0013 | value_loss: 2099.8664 | entropy_loss: -1.0334 | approx_kl: -0.0365 | clip_fraction: 0.2355
+2025-05-18 20:37:49 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.94ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.22ms
+2025-05-18 20:38:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 773632/1000000 | Avg Reward: 388.15 | Avg Length: 42.0
+2025-05-18 20:38:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0067 | value_loss: 2707.3404 | entropy_loss: -0.6984 | approx_kl: -0.0210 | clip_fraction: 0.1801
+2025-05-18 20:38:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.21ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 269.82ms
+2025-05-18 20:38:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 783872/1000000 | Avg Reward: 530.79 | Avg Length: 57.3
+2025-05-18 20:38:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0010 | value_loss: 3057.2704 | entropy_loss: -1.1172 | approx_kl: -0.0137 | clip_fraction: 0.1367
+2025-05-18 20:38:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.54ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.32ms
+2025-05-18 20:38:21 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 794112/1000000 | Avg Reward: 716.68 | Avg Length: 77.2
+2025-05-18 20:38:21 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0076 | value_loss: 5556.7291 | entropy_loss: -1.0174 | approx_kl: -0.0099 | clip_fraction: 0.0918
+2025-05-18 20:38:21 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 258.75ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.04ms
+2025-05-18 20:38:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 804352/1000000 | Avg Reward: 300.06 | Avg Length: 32.5
+2025-05-18 20:38:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0093 | value_loss: 479.3626 | entropy_loss: -0.4209 | approx_kl: -0.0345 | clip_fraction: 0.2053
+2025-05-18 20:38:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 261.14ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.18ms
+2025-05-18 20:38:42 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 814592/1000000 | Avg Reward: 522.47 | Avg Length: 56.4
+2025-05-18 20:38:42 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0045 | value_loss: 1867.4509 | entropy_loss: -0.9165 | approx_kl: -0.0239 | clip_fraction: 0.1549
+2025-05-18 20:38:42 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 261.06ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.11ms
+2025-05-18 20:38:53 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 824832/1000000 | Avg Reward: 1448.30 | Avg Length: 156.0
+2025-05-18 20:38:53 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0084 | value_loss: 7192.0131 | entropy_loss: -0.8031 | approx_kl: -0.0044 | clip_fraction: 0.0898
+2025-05-18 20:38:53 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.55ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.17ms
+2025-05-18 20:39:04 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 835072/1000000 | Avg Reward: 752.03 | Avg Length: 81.2
+2025-05-18 20:39:04 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0046 | value_loss: 5031.7037 | entropy_loss: -0.9453 | approx_kl: -0.0124 | clip_fraction: 0.1410
+2025-05-18 20:39:04 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.76ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 269.81ms
+2025-05-18 20:39:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 845312/1000000 | Avg Reward: 934.28 | Avg Length: 100.8
+2025-05-18 20:39:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0030 | value_loss: 6430.6417 | entropy_loss: -1.1314 | approx_kl: -0.0280 | clip_fraction: 0.1699
+2025-05-18 20:39:14 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.42ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.43ms
+2025-05-18 20:39:25 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 855552/1000000 | Avg Reward: 750.47 | Avg Length: 81.0
+2025-05-18 20:39:25 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0061 | value_loss: 7808.4303 | entropy_loss: -1.1654 | approx_kl: -0.0086 | clip_fraction: 0.0922
+2025-05-18 20:39:25 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.18ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 269.86ms
+2025-05-18 20:39:35 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 865792/1000000 | Avg Reward: 1420.19 | Avg Length: 153.0
+2025-05-18 20:39:35 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0215 | value_loss: 8085.4839 | entropy_loss: -1.3047 | approx_kl: -0.0707 | clip_fraction: 0.2281
+2025-05-18 20:39:35 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 258.74ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.37ms
+2025-05-18 20:39:46 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 876032/1000000 | Avg Reward: 2000.13 | Avg Length: 215.5
+2025-05-18 20:39:46 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0125 | value_loss: 2862.7727 | entropy_loss: -1.2985 | approx_kl: -0.0446 | clip_fraction: 0.2186
+2025-05-18 20:39:46 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 258.85ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 270.27ms
+2025-05-18 20:39:57 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 886272/1000000 | Avg Reward: 2572.23 | Avg Length: 277.0
+2025-05-18 20:39:57 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0038 | value_loss: 4105.9299 | entropy_loss: -1.1155 | approx_kl: -0.0713 | clip_fraction: 0.2980
+2025-05-18 20:39:57 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 258.98ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 270.92ms
+2025-05-18 20:40:07 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 896512/1000000 | Avg Reward: 271.71 | Avg Length: 29.4
+2025-05-18 20:40:07 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0036 | value_loss: 57.5365 | entropy_loss: -0.9999 | approx_kl: -0.0457 | clip_fraction: 0.2566
+2025-05-18 20:40:07 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 260.34ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.31ms
+2025-05-18 20:40:18 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 906752/1000000 | Avg Reward: 363.77 | Avg Length: 39.2
+2025-05-18 20:40:18 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0155 | value_loss: 116.6036 | entropy_loss: -0.8368 | approx_kl: -0.0070 | clip_fraction: 0.1393
+2025-05-18 20:40:18 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 260.87ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 269.93ms
+2025-05-18 20:40:29 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 916992/1000000 | Avg Reward: 460.50 | Avg Length: 49.5
+2025-05-18 20:40:29 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0022 | value_loss: 355.0965 | entropy_loss: -0.9128 | approx_kl: -0.0129 | clip_fraction: 0.1260
+2025-05-18 20:40:29 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.07ms | rollout_phase: 260.66ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 272.69ms
+2025-05-18 20:40:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 927232/1000000 | Avg Reward: 1565.20 | Avg Length: 168.0
+2025-05-18 20:40:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0070 | value_loss: 1757.1986 | entropy_loss: -1.0845 | approx_kl: -0.0172 | clip_fraction: 0.1225
+2025-05-18 20:40:39 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 260.20ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 270.96ms
+2025-05-18 20:40:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 937472/1000000 | Avg Reward: 571.34 | Avg Length: 61.4
+2025-05-18 20:40:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0032 | value_loss: 224.6385 | entropy_loss: -0.9529 | approx_kl: -0.0285 | clip_fraction: 0.2158
+2025-05-18 20:40:50 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.93ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 270.94ms
+2025-05-18 20:41:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 947712/1000000 | Avg Reward: 1394.99 | Avg Length: 149.7
+2025-05-18 20:41:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0092 | value_loss: 801.6207 | entropy_loss: -0.9364 | approx_kl: -0.0174 | clip_fraction: 0.1566
+2025-05-18 20:41:00 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.72ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 270.45ms
+2025-05-18 20:41:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 957952/1000000 | Avg Reward: nan | Avg Length: nan
+2025-05-18 20:41:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: 0.0548 | value_loss: 242.3912 | entropy_loss: -1.1405 | approx_kl: -0.2540 | clip_fraction: 0.5754
+2025-05-18 20:41:11 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 258.45ms | backward_pass: 0.91ms | optimizer_step: 0.95ms | update_phase: 269.82ms
+2025-05-18 20:41:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 968192/1000000 | Avg Reward: 7085.72 | Avg Length: 760.0
+2025-05-18 20:41:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0063 | value_loss: 867.6398 | entropy_loss: -0.9388 | approx_kl: -0.0073 | clip_fraction: 0.0539
+2025-05-18 20:41:22 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.02ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 270.87ms
+2025-05-18 20:41:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 978432/1000000 | Avg Reward: 3587.81 | Avg Length: 385.0
+2025-05-18 20:41:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0061 | value_loss: 4283.1892 | entropy_loss: -0.7799 | approx_kl: -0.0047 | clip_fraction: 0.0787
+2025-05-18 20:41:32 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.39ms | backward_pass: 0.92ms | optimizer_step: 0.96ms | update_phase: 271.39ms
+2025-05-18 20:41:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 988672/1000000 | Avg Reward: 4032.90 | Avg Length: 433.0
+2025-05-18 20:41:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0086 | value_loss: 3414.1896 | entropy_loss: -0.7221 | approx_kl: -0.0013 | clip_fraction: 0.0412
+2025-05-18 20:41:43 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.08ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 271.19ms
+2025-05-18 20:41:53 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Step: 998912/1000000 | Avg Reward: 3679.32 | Avg Length: 395.0
+2025-05-18 20:41:53 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Update Info: policy_loss: -0.0089 | value_loss: 1864.4963 | entropy_loss: -0.5922 | approx_kl: -0.0044 | clip_fraction: 0.0563
+2025-05-18 20:41:53 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Timings (avg ms): actor_pass: 0.08ms | critic_pass: 0.06ms | rollout_phase: 259.28ms | backward_pass: 0.92ms | optimizer_step: 0.95ms | update_phase: 270.98ms
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Training finished at step 1000448.
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Starting evaluation (1 episodes, deterministic=True)...
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | WARNING | Render error during evaluation: gladLoadGL error
+2025-05-18 20:41:55 | InvertedDoublePendulum-v4_ppo_seed42_normal | INFO | Evaluation Complete: Avg Reward = 892.19 (over 1 eps)

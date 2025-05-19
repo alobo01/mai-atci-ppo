@@ -1,0 +1,170 @@
+[
+    {
+        "run_id": "InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g4",
+        "status": "completed",
+        "duration_s": 2866.496518853819,
+        "final_rewards_window": [
+            5268.447596663628,
+            7310.730161580471,
+            9340.648655075656,
+            9339.971912335812,
+            9051.017591914453,
+            9342.54238203134,
+            8962.720977470479,
+            7859.496123546642,
+            7374.737310586511,
+            6587.325083446642
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g4/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g4",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16",
+        "status": "completed",
+        "duration_s": 2099.4577787239105,
+        "final_rewards_window": [
+            8351.377062743917,
+            6972.77900152596,
+            7261.954863318277,
+            7263.643716528275,
+            6973.7167426148435,
+            7448.911208037034,
+            7509.46001569295,
+            8806.380377528181,
+            6708.325553228753,
+            7105.126084381501
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g16",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g64",
+        "status": "completed",
+        "duration_s": 1489.2196225738153,
+        "final_rewards_window": [
+            3154.5512986581684,
+            3348.450430597777,
+            3823.440173391202,
+            4549.8062585069165,
+            4661.431396359871,
+            5010.953732997714,
+            5543.80034503193,
+            6169.509786427571,
+            6433.58340015179,
+            7127.622564453887
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g64/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed0_ent0.0_lr5e-05_beta_g64",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 64
+        }
+    },
+    {
+        "run_id": "InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g4",
+        "status": "completed",
+        "duration_s": 3150.7306868941523,
+        "final_rewards_window": [
+            7113.992994484879,
+            7518.75034639202,
+            3373.291712663285,
+            5808.577425895453,
+            4836.248226921931,
+            6806.504394959427,
+            8271.914226485897,
+            7956.902595763886,
+            9339.482147387294,
+            7556.64036354096
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g4/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g4",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16",
+        "status": "completed",
+        "duration_s": 2323.6322564168368,
+        "final_rewards_window": [
+            6312.574253149877,
+            6907.367677634222,
+            8545.089321200847,
+            7549.411171217153,
+            7655.305248748882,
+            7460.534254362736,
+            7225.105498672205,
+            8335.99457763514,
+            7139.715335723416,
+            7544.171564054588
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64",
+        "status": "completed",
+        "duration_s": 1490.2475407740567,
+        "final_rewards_window": [
+            2806.207507666918,
+            3351.3857067085282,
+            3684.4573553759556,
+            4625.7909323072045,
+            4683.787942181818,
+            5630.861332146306,
+            4559.642946199434,
+            6193.322932994188,
+            6406.117741810587,
+            6120.05912938744
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta",
+            "group_size": 64
+        }
+    }
+]

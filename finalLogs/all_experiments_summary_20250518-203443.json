@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "Hopper-v4_ppo_seed0_ent1e-05_lr0.0003_beta",
+        "status": "completed",
+        "duration_s": 160.4413223171141,
+        "final_rewards_window": [
+            1371.963850240682,
+            1107.0267133417524,
+            944.4043973369972,
+            881.7106505999012,
+            1224.1195656702669,
+            1156.409854789488,
+            1300.1508941466038,
+            1453.9359980497788,
+            1149.1976920633788,
+            1124.5947780358263
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "Hopper-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "beta"
+        }
+    },
+    {
+        "run_id": "Hopper-v4_ppo_seed42_ent1e-05_lr0.0003_beta",
+        "status": "completed",
+        "duration_s": 1487.3587952970993,
+        "final_rewards_window": [
+            762.5605118628724,
+            1594.5903606962177,
+            2629.821340359588,
+            759.4647321831885,
+            845.6029645129203,
+            890.9750887140484,
+            1803.4412385690518,
+            1429.712781614115,
+            1112.9445877103572,
+            730.1990097843847
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "Hopper-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "beta"
+        }
+    }
+]

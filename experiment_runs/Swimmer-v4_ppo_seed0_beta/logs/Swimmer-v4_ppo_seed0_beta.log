@@ -1,0 +1,70 @@
+2025-05-18 01:17:29 | Swimmer-v4_ppo_seed0_beta | INFO | Initializing agent for Swimmer-v4_ppo_seed0_beta on device cpu
+2025-05-18 01:17:29 | Swimmer-v4_ppo_seed0_beta | INFO | Full Config: {
+  "env_id": "Swimmer-v4",
+  "algo": "ppo",
+  "seed": 0,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "experiment_runs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      128,
+      128
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": {
+    "distribution_type": "beta",
+    "lam": 0.95,
+    "clip_eps": 0.2,
+    "ppo_epochs": 10,
+    "num_minibatches": 32,
+    "entropy_coef": 0.01,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": null,
+    "rollout_steps": 2048,
+    "lr": 0.0002
+  },
+  "grpo_config": null
+}
+2025-05-18 01:17:29 | Swimmer-v4_ppo_seed0_beta | INFO | Using separate MLP Actor and Critic networks.
+2025-05-18 01:17:29 | Swimmer-v4_ppo_seed0_beta | INFO | No actor checkpoint found at experiment_runs/Swimmer-v4_ppo_seed0_beta/checkpoints/actor.pt, starting fresh.
+2025-05-18 01:17:29 | Swimmer-v4_ppo_seed0_beta | INFO | Starting training from step 0...
+2025-05-18 02:09:22 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 10240/1000000 | Avg Reward: 23.91 | Avg Length: 1000.0
+2025-05-18 02:09:22 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0074 | value_loss: 0.6675 | entropy_loss: -0.2912 | approx_kl: -0.0059 | clip_fraction: 0.1028
+2025-05-18 02:09:22 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 12.00ms | critic_pass: 12.51ms | rollout_phase: 416160.59ms | backward_pass: 47.52ms | optimizer_step: 224.71ms | update_phase: 206371.63ms
+2025-05-18 03:03:09 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 20480/1000000 | Avg Reward: 21.65 | Avg Length: 1000.0
+2025-05-18 03:03:09 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0083 | value_loss: 0.2414 | entropy_loss: -0.3865 | approx_kl: -0.0130 | clip_fraction: 0.1070
+2025-05-18 03:03:09 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 12.77ms | critic_pass: 13.20ms | rollout_phase: 435815.24ms | backward_pass: 47.67ms | optimizer_step: 227.55ms | update_phase: 209623.92ms
+2025-05-18 03:55:13 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 30720/1000000 | Avg Reward: 32.98 | Avg Length: 1000.0
+2025-05-18 03:55:13 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0100 | value_loss: 0.0368 | entropy_loss: -0.5106 | approx_kl: -0.0095 | clip_fraction: 0.0810
+2025-05-18 03:55:13 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 12.16ms | critic_pass: 12.75ms | rollout_phase: 422115.35ms | backward_pass: 47.17ms | optimizer_step: 221.49ms | update_phase: 202678.03ms
+2025-05-18 04:48:31 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 40960/1000000 | Avg Reward: 34.89 | Avg Length: 1000.0
+2025-05-18 04:48:31 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0022 | value_loss: 0.0180 | entropy_loss: -0.7073 | approx_kl: -0.0062 | clip_fraction: 0.0590
+2025-05-18 04:48:31 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 12.46ms | critic_pass: 13.01ms | rollout_phase: 431169.53ms | backward_pass: 48.13ms | optimizer_step: 226.46ms | update_phase: 208377.87ms
+2025-05-18 05:43:59 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 51200/1000000 | Avg Reward: 36.21 | Avg Length: 1000.0
+2025-05-18 05:43:59 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0033 | value_loss: 0.0156 | entropy_loss: -0.8220 | approx_kl: -0.0075 | clip_fraction: 0.0792
+2025-05-18 05:43:59 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 13.11ms | critic_pass: 13.61ms | rollout_phase: 451208.77ms | backward_pass: 49.57ms | optimizer_step: 233.71ms | update_phase: 214369.33ms
+2025-05-18 06:28:50 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 61440/1000000 | Avg Reward: 37.24 | Avg Length: 1000.0
+2025-05-18 06:28:50 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0076 | value_loss: 0.0110 | entropy_loss: -0.8409 | approx_kl: -0.0072 | clip_fraction: 0.0993
+2025-05-18 06:28:50 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 10.46ms | critic_pass: 10.62ms | rollout_phase: 363636.99ms | backward_pass: 41.62ms | optimizer_step: 188.40ms | update_phase: 174514.40ms
+2025-05-18 07:22:46 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 71680/1000000 | Avg Reward: 34.76 | Avg Length: 1000.0
+2025-05-18 07:22:46 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0029 | value_loss: 0.0088 | entropy_loss: -0.9588 | approx_kl: -0.0074 | clip_fraction: 0.0719
+2025-05-18 07:22:46 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 12.62ms | critic_pass: 13.21ms | rollout_phase: 439613.19ms | backward_pass: 47.77ms | optimizer_step: 225.60ms | update_phase: 207630.51ms
+2025-05-18 08:20:45 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 81920/1000000 | Avg Reward: 34.49 | Avg Length: 1000.0
+2025-05-18 08:20:45 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0037 | value_loss: 0.0080 | entropy_loss: -1.0202 | approx_kl: -0.0057 | clip_fraction: 0.0563
+2025-05-18 08:20:45 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 13.63ms | critic_pass: 14.04ms | rollout_phase: 468908.27ms | backward_pass: 52.11ms | optimizer_step: 246.52ms | update_phase: 226952.23ms
+2025-05-18 09:14:13 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 92160/1000000 | Avg Reward: 39.45 | Avg Length: 1000.0
+2025-05-18 09:14:13 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0026 | value_loss: 0.0052 | entropy_loss: -1.0334 | approx_kl: -0.0054 | clip_fraction: 0.0736
+2025-05-18 09:14:13 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 12.53ms | critic_pass: 13.03ms | rollout_phase: 436756.26ms | backward_pass: 47.36ms | optimizer_step: 221.67ms | update_phase: 204739.22ms
+2025-05-18 10:05:59 | Swimmer-v4_ppo_seed0_beta | INFO | Step: 102400/1000000 | Avg Reward: 38.92 | Avg Length: 1000.0
+2025-05-18 10:05:59 | Swimmer-v4_ppo_seed0_beta | INFO | Update Info: policy_loss: -0.0052 | value_loss: 0.0035 | entropy_loss: -1.0562 | approx_kl: -0.0069 | clip_fraction: 0.0841
+2025-05-18 10:05:59 | Swimmer-v4_ppo_seed0_beta | INFO | Timings (avg ms): actor_pass: 12.07ms | critic_pass: 12.33ms | rollout_phase: 412827.98ms | backward_pass: 47.77ms | optimizer_step: 225.83ms | update_phase: 208463.88ms

@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "InvertedDoublePendulum-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 5.662825510837138,
+        "final_rewards_window": [
+            9347.501066469258,
+            2738.166768409236,
+            1494.6546242662869,
+            9351.510838450506,
+            5566.653158595055,
+            2159.66061392955,
+            2077.0787325987944,
+            9357.65283986182,
+            4793.257991479968,
+            3383.716498241907
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed0_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed0_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "InvertedDoublePendulum-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 848.6067162838299,
+        "final_rewards_window": [
+            271.7114541884961,
+            363.7746396024902,
+            460.50498175935024,
+            1565.2030880381233,
+            571.3372387886716,
+            1394.9913120308222,
+            7085.721138516438,
+            3587.8064930761843,
+            4032.900889089945,
+            3679.3229104083985
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed42_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed42_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    }
+]

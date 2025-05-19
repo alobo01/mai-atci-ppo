@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "Hopper-v4_ppo_seed0_ent1e-05_lr0.0003_beta",
+        "status": "completed",
+        "duration_s": 1494.0366315480787,
+        "final_rewards_window": [
+            3222.236818093727,
+            1074.5391863904097,
+            2388.640495615125,
+            3284.1307459559275,
+            1499.8119651334923,
+            748.7394019897047,
+            872.8001128563155,
+            1290.3174097901128,
+            950.2847025178573,
+            745.9483975195568
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed0_ent1e-05_lr0.0003_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed0_ent1e-05_lr0.0003_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "Hopper-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "beta"
+        }
+    },
+    {
+        "run_id": "Hopper-v4_ppo_seed42_ent1e-05_lr0.0003_beta",
+        "status": "completed",
+        "duration_s": 1471.8008668629918,
+        "final_rewards_window": [
+            762.5605118628724,
+            1594.5903606962177,
+            2629.821340359588,
+            759.4647321831885,
+            845.6029645129203,
+            890.9750887140484,
+            1803.4412385690518,
+            1429.712781614115,
+            1112.9445877103572,
+            730.1990097843847
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed42_ent1e-05_lr0.0003_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Hopper-v4_ppo_seed42_ent1e-05_lr0.0003_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "Hopper-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "beta"
+        }
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "run_id": "CarRacing-v3_ppo_seed0_ent0.0_lr0.0003_normal",
+        "status": "errored",
+        "error_message": "Calculated padded input size per channel: (96 x 3). Kernel size: (8 x 8). Kernel size can't be greater than actual input size",
+        "duration_s": 1.4700039690360427,
+        "original_config_file": "N/A",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "CarRacing-v3",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "group_size": null,
+            "original_run_name_in_config": null
+        }
+    },
+    {
+        "run_id": "CarRacing-v3_ppo_seed42_ent0.0_lr0.0003_normal",
+        "status": "errored",
+        "error_message": "Calculated padded input size per channel: (96 x 3). Kernel size: (8 x 8). Kernel size can't be greater than actual input size",
+        "duration_s": 0.0502458899281919,
+        "original_config_file": "N/A",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "CarRacing-v3",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "group_size": null,
+            "original_run_name_in_config": null
+        }
+    }
+]

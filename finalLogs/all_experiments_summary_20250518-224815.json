@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta",
+        "status": "completed",
+        "duration_s": 3315.4311528541148,
+        "final_rewards_window": [
+            1613.095101754626,
+            1089.9315104667016,
+            912.381328196072,
+            1089.9911197755666,
+            1674.2910476348725,
+            1463.201816830197,
+            1626.2816303323875,
+            1245.7203890645305,
+            2193.3984665804514,
+            2177.8393307609413
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_ppo_seed0_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_ppo_seed0_beta",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "Walker2d-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta"
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_beta",
+        "status": "completed",
+        "duration_s": 3410.1651721240487,
+        "final_rewards_window": [
+            1141.511897461578,
+            1338.709768003037,
+            1247.3923240111646,
+            1758.577042775245,
+            1687.9265739292453,
+            2179.115952104762,
+            1657.0349956579348,
+            1795.408443872771,
+            3444.0685979762948,
+            2836.0635150644166
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_ppo_seed42_beta/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_ppo_seed42_beta",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "Walker2d-v4",
+            "lr": 0.0003,
+            "entropy_coef": 0.0,
+            "distribution_type": "beta"
+        }
+    }
+]

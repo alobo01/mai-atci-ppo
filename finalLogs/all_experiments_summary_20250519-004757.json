@@ -1,0 +1,56 @@
+[
+    {
+        "run_id": "InvertedDoublePendulum-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1064.6984834109899,
+        "final_rewards_window": [
+            1669.995846545115,
+            4796.90587379914,
+            2652.7885097945023,
+            5645.508556330291,
+            4496.094852943882,
+            253.93612718164673,
+            9356.224887150485,
+            9356.998789336021,
+            9355.440681412336,
+            9355.438973560922
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed0_ent1e-05_lr0.0003_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed0_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 0,
+            "algo": "ppo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    },
+    {
+        "run_id": "InvertedDoublePendulum-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "status": "completed",
+        "duration_s": 1052.6210009790957,
+        "final_rewards_window": [
+            2505.276616561655,
+            9353.124776894547,
+            9356.380420426958,
+            3145.3696909989267,
+            9349.01301979648,
+            9354.207862625955,
+            1511.9198702359354,
+            8553.051962617938,
+            9352.281784845376,
+            9355.532951279978
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed42_ent1e-05_lr0.0003_normal/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/InvertedDoublePendulum-v4_ppo_seed42_ent1e-05_lr0.0003_normal",
+        "config_params": {
+            "seed": 42,
+            "algo": "ppo",
+            "env_id": "InvertedDoublePendulum-v4",
+            "lr": 0.0003,
+            "entropy_coef": 1e-05,
+            "distribution_type": "normal"
+        }
+    }
+]
