@@ -1,0 +1,170 @@
+[
+    {
+        "run_id": "Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g4",
+        "status": "completed",
+        "duration_s": 4208.0911979039665,
+        "final_rewards_window": [
+            277.8163766832844,
+            264.8617370436125,
+            252.10872950112775,
+            304.6395176955491,
+            274.0813385434473,
+            257.28921069087505,
+            308.9437689406871,
+            262.7862269933024,
+            289.780706862598,
+            269.7707803280661
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g4/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g4",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 1774.0067792921327,
+        "final_rewards_window": [
+            720.4581025790158,
+            847.695498782569,
+            847.9913834813412,
+            981.801254495212,
+            946.4787974027245,
+            872.7791966104671,
+            1037.78636725512,
+            798.410153761482,
+            877.1318387303802,
+            990.7994372804999
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g16/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g16",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64",
+        "status": "completed",
+        "duration_s": 1714.7777082819957,
+        "final_rewards_window": [
+            411.6619130423794,
+            410.16435228469436,
+            403.85881111842355,
+            490.9330513913326,
+            456.65501569277967,
+            485.418421327739,
+            516.468797545911,
+            508.32256115040514,
+            602.6654923774222,
+            516.5992863593211
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 64
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g4",
+        "status": "completed",
+        "duration_s": 3888.5033654479776,
+        "final_rewards_window": [
+            338.17653119553466,
+            314.9477594198502,
+            459.4970290700994,
+            363.8450692029979,
+            301.2840126641392,
+            379.7565187767422,
+            536.8370192662492,
+            575.6223915299461,
+            429.55060619705404,
+            654.3029048396097
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g4/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g4",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 2231.332320211921,
+        "final_rewards_window": [
+            612.770792134367,
+            580.3725614978623,
+            657.1914564904505,
+            760.1276786500814,
+            750.618043883307,
+            609.345952130092,
+            793.4267502410391,
+            878.4956513078024,
+            795.4441731194319,
+            715.6054598545152
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g16/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g16",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64",
+        "status": "completed",
+        "duration_s": 1183.2649434760679,
+        "final_rewards_window": [
+            432.6672081421024,
+            441.9898401343319,
+            467.8188956598658,
+            540.3600140041797,
+            540.3393651919969,
+            529.6716026035799,
+            542.8305138255548,
+            618.2756657339087,
+            597.5444141825859,
+            526.2590122676814
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Walker2d-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 64
+        }
+    }
+]

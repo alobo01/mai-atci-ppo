@@ -26,8 +26,15 @@ G_VALUES = ["4", "16", "64"]
 # regex to extract:
 #  env, model (ppo|grpo), seed, ent, lr, dist (normal|beta), optional G
 FOLDER_RE = re.compile(
-    r"^(?P<env>.+)_(?P<model>ppo|grpo)_seed(?P<seed>\d+)_ent(?P<ent>[\d\.]+)"
-    r"_lr(?P<lr>[\deE\.-]+)_(?P<dist>normal|beta)(?:_g(?P<G>\d+))?$"
+    r"^"
+    r"(?P<env>.+)"                             # e.g. Hopper-v4, InvertedDoublePendulum-v4
+    r"_(?P<model>ppo|grpo)"
+    r"_seed(?P<seed>\d+)"
+    r"_ent(?P<ent>[\deE\.-]+)"                 # now allows scientific notation
+    r"_lr(?P<lr>[\deE\.-]+)"                   # likewise for learning‐rate if you ever use sci-notation
+    r"_(?P<dist>normal|beta)"
+    r"(?:_g(?P<G>\d+))?"                       # optional _g<N> for GRPO
+    r"$"
 )
 
 MIN_STEPS = 900_000

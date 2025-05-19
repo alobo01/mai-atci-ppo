@@ -1,0 +1,119 @@
+2025-05-19 19:33:04 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Initializing agent for Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 on device cpu
+2025-05-19 19:33:04 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Full Config (including original run_name='None'): {
+  "env_id": "Walker2d-v4",
+  "algo": "grpo",
+  "seed": 42,
+  "gamma": 0.99,
+  "total_steps": 1000000,
+  "log_interval": 10000,
+  "checkpoint_interval": 100000,
+  "video_interval": 250000,
+  "run_name": null,
+  "base_log_dir": "finalLogs",
+  "verbose": false,
+  "max_episode_steps": 1000,
+  "network_config": {
+    "network_type": "mlp",
+    "mlp_hidden_dims": [
+      128,
+      128
+    ],
+    "cnn_output_features": 256
+  },
+  "ppo_config": null,
+  "grpo_config": {
+    "distribution_type": "beta",
+    "group_size": 16,
+    "update_epochs": 10,
+    "max_grad_norm": 0.5,
+    "entropy_coef": 0.0,
+    "kl_coef": 0.001,
+    "ref_update_interval": 10000,
+    "minibatch_size": 256,
+    "lr": 0.00005,
+    "rollout_steps_per_trajectory": 1000
+  }
+}
+2025-05-19 19:33:04 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Initialized GRPO actor (type: mlp, dist: beta) and reference.
+2025-05-19 19:33:04 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | No actor checkpoint found at finalLogs/Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16/checkpoints/actor.pt, starting fresh.
+2025-05-19 19:33:04 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Starting training from step 0...
+2025-05-19 19:37:00 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10642 steps.
+2025-05-19 19:37:00 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 10642/1000000 | Avg Reward: 38.30 | Avg Length: 67.6
+2025-05-19 19:37:00 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.3578 | kl_loss: 0.1795 | entropy_loss: -0.5705 | total_loss: -0.3576
+2025-05-19 19:37:00 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 5.05ms | rollout_phase: 629.07ms | ref_actor_mlp: 112.82ms | backward_pass: 137.22ms | optimizer_step: 48.29ms | update_phase: 13252.48ms
+2025-05-19 19:40:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10625 steps.
+2025-05-19 19:40:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 21267/1000000 | Avg Reward: 45.79 | Avg Length: 77.1
+2025-05-19 19:40:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2463 | kl_loss: 0.0478 | entropy_loss: -0.6540 | total_loss: -0.2462
+2025-05-19 19:40:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 4.78ms | rollout_phase: 1082.02ms | ref_actor_mlp: 113.96ms | backward_pass: 148.29ms | optimizer_step: 46.84ms | update_phase: 24481.22ms
+2025-05-19 19:43:55 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10517 steps.
+2025-05-19 19:43:55 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 31784/1000000 | Avg Reward: 116.10 | Avg Length: 121.6
+2025-05-19 19:43:55 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2275 | kl_loss: 0.0342 | entropy_loss: -0.6991 | total_loss: -0.2275
+2025-05-19 19:43:55 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.85ms | rollout_phase: 1341.24ms | ref_actor_mlp: 92.18ms | backward_pass: 122.08ms | optimizer_step: 37.88ms | update_phase: 25148.25ms
+2025-05-19 19:46:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11130 steps.
+2025-05-19 19:46:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 42914/1000000 | Avg Reward: 117.18 | Avg Length: 125.6
+2025-05-19 19:46:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1838 | kl_loss: 0.0258 | entropy_loss: -0.7495 | total_loss: -0.1838
+2025-05-19 19:46:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.36ms | rollout_phase: 1807.87ms | ref_actor_mlp: 80.68ms | backward_pass: 110.43ms | optimizer_step: 33.26ms | update_phase: 27349.60ms
+2025-05-19 19:49:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10517 steps.
+2025-05-19 19:49:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 53431/1000000 | Avg Reward: 143.89 | Avg Length: 146.1
+2025-05-19 19:49:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1775 | kl_loss: 0.0299 | entropy_loss: -0.7963 | total_loss: -0.1775
+2025-05-19 19:49:50 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.69ms | rollout_phase: 1846.20ms | ref_actor_mlp: 88.31ms | backward_pass: 119.42ms | optimizer_step: 36.50ms | update_phase: 34069.06ms
+2025-05-19 19:52:19 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10232 steps.
+2025-05-19 19:52:19 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 63663/1000000 | Avg Reward: 192.81 | Avg Length: 161.0
+2025-05-19 19:52:19 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1771 | kl_loss: 0.0247 | entropy_loss: -0.8374 | total_loss: -0.1771
+2025-05-19 19:52:19 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.12ms | rollout_phase: 2303.52ms | ref_actor_mlp: 73.98ms | backward_pass: 101.28ms | optimizer_step: 31.13ms | update_phase: 35053.00ms
+2025-05-19 19:55:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10597 steps.
+2025-05-19 19:55:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 74260/1000000 | Avg Reward: 237.06 | Avg Length: 161.6
+2025-05-19 19:55:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2495 | kl_loss: 0.0167 | entropy_loss: -0.8612 | total_loss: -0.2495
+2025-05-19 19:55:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.85ms | rollout_phase: 2427.60ms | ref_actor_mlp: 93.21ms | backward_pass: 128.13ms | optimizer_step: 38.90ms | update_phase: 45311.85ms
+2025-05-19 19:58:11 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11362 steps.
+2025-05-19 19:58:11 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 85622/1000000 | Avg Reward: 236.34 | Avg Length: 188.8
+2025-05-19 19:58:11 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2151 | kl_loss: 0.0177 | entropy_loss: -0.8870 | total_loss: -0.2151
+2025-05-19 19:58:11 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.03ms | rollout_phase: 2613.18ms | ref_actor_mlp: 72.90ms | backward_pass: 99.63ms | optimizer_step: 30.40ms | update_phase: 37721.81ms
+2025-05-19 20:01:23 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11179 steps.
+2025-05-19 20:01:23 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 96801/1000000 | Avg Reward: 237.27 | Avg Length: 170.7
+2025-05-19 20:01:23 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1078 | kl_loss: 0.0291 | entropy_loss: -0.9279 | total_loss: -0.1078
+2025-05-19 20:01:23 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.69ms | rollout_phase: 2554.18ms | ref_actor_mlp: 92.33ms | backward_pass: 124.47ms | optimizer_step: 37.30ms | update_phase: 45297.19ms
+2025-05-19 20:03:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10993 steps.
+2025-05-19 20:03:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 107794/1000000 | Avg Reward: 262.20 | Avg Length: 164.7
+2025-05-19 20:03:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1632 | kl_loss: 0.0166 | entropy_loss: -0.9340 | total_loss: -0.1632
+2025-05-19 20:03:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 2.45ms | rollout_phase: 2520.20ms | ref_actor_mlp: 58.96ms | backward_pass: 80.67ms | optimizer_step: 24.33ms | update_phase: 29242.78ms
+2025-05-19 20:05:18 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11336 steps.
+2025-05-19 20:05:18 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 119130/1000000 | Avg Reward: 301.00 | Avg Length: 189.6
+2025-05-19 20:05:18 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.4376 | kl_loss: 0.0313 | entropy_loss: -0.9837 | total_loss: -0.4376
+2025-05-19 20:05:18 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 2.00ms | rollout_phase: 2592.84ms | ref_actor_mlp: 47.71ms | backward_pass: 65.90ms | optimizer_step: 19.86ms | update_phase: 24437.30ms
+2025-05-19 20:07:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10303 steps.
+2025-05-19 20:07:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 129433/1000000 | Avg Reward: 255.05 | Avg Length: 162.1
+2025-05-19 20:07:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.0443 | kl_loss: 0.0200 | entropy_loss: -1.0336 | total_loss: -0.0442
+2025-05-19 20:07:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 2.69ms | rollout_phase: 2345.05ms | ref_actor_mlp: 63.57ms | backward_pass: 88.47ms | optimizer_step: 27.02ms | update_phase: 30563.88ms
+2025-05-19 20:10:34 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10518 steps.
+2025-05-19 20:10:34 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 139951/1000000 | Avg Reward: 243.69 | Avg Length: 169.6
+2025-05-19 20:10:34 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.0413 | kl_loss: 0.0306 | entropy_loss: -1.0891 | total_loss: -0.0412
+2025-05-19 20:10:34 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.77ms | rollout_phase: 2384.10ms | ref_actor_mlp: 90.51ms | backward_pass: 123.07ms | optimizer_step: 37.59ms | update_phase: 43670.14ms
+2025-05-19 20:13:57 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10980 steps.
+2025-05-19 20:13:57 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 150931/1000000 | Avg Reward: 302.20 | Avg Length: 181.4
+2025-05-19 20:13:57 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2421 | kl_loss: 0.0189 | entropy_loss: -1.1311 | total_loss: -0.2421
+2025-05-19 20:13:57 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 4.01ms | rollout_phase: 2516.90ms | ref_actor_mlp: 98.41ms | backward_pass: 133.01ms | optimizer_step: 40.32ms | update_phase: 48193.17ms
+2025-05-19 20:15:51 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11977 steps.
+2025-05-19 20:15:51 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 162908/1000000 | Avg Reward: 312.76 | Avg Length: 193.3
+2025-05-19 20:15:51 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.4163 | kl_loss: 0.0143 | entropy_loss: -1.1243 | total_loss: -0.4163
+2025-05-19 20:15:51 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 1.98ms | rollout_phase: 2737.24ms | ref_actor_mlp: 46.93ms | backward_pass: 65.16ms | optimizer_step: 19.27ms | update_phase: 25699.58ms
+2025-05-19 20:18:40 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11816 steps.
+2025-05-19 20:18:40 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 174724/1000000 | Avg Reward: 282.24 | Avg Length: 164.6
+2025-05-19 20:18:40 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2614 | kl_loss: 0.0152 | entropy_loss: -1.1480 | total_loss: -0.2613
+2025-05-19 20:18:40 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.06ms | rollout_phase: 2647.91ms | ref_actor_mlp: 74.61ms | backward_pass: 102.55ms | optimizer_step: 30.76ms | update_phase: 39665.19ms
+2025-05-19 20:21:57 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10991 steps.
+2025-05-19 20:21:57 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 185715/1000000 | Avg Reward: 287.66 | Avg Length: 186.9
+2025-05-19 20:21:57 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1716 | kl_loss: 0.0253 | entropy_loss: -1.1779 | total_loss: -0.1716
+2025-05-19 20:21:57 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 3.84ms | rollout_phase: 2540.88ms | ref_actor_mlp: 93.84ms | backward_pass: 129.22ms | optimizer_step: 39.22ms | update_phase: 46667.29ms
+2025-05-19 20:23:37 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11308 steps.
+2025-05-19 20:23:37 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 197023/1000000 | Avg Reward: 313.77 | Avg Length: 196.9
+2025-05-19 20:23:37 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.4776 | kl_loss: 0.0163 | entropy_loss: -1.1545 | total_loss: -0.4776
+2025-05-19 20:23:37 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 1.85ms | rollout_phase: 2518.02ms | ref_actor_mlp: 43.14ms | backward_pass: 59.42ms | optimizer_step: 17.88ms | update_phase: 22533.24ms
+2025-05-19 20:25:00 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 10994 steps.
+2025-05-19 20:25:00 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 208017/1000000 | Avg Reward: 251.01 | Avg Length: 181.1
+2025-05-19 20:25:00 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.1018 | kl_loss: 0.0159 | entropy_loss: -1.2029 | total_loss: -0.1017
+2025-05-19 20:25:00 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 1.54ms | rollout_phase: 2523.89ms | ref_actor_mlp: 34.84ms | backward_pass: 49.07ms | optimizer_step: 15.10ms | update_phase: 18271.82ms
+2025-05-19 20:27:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Updating GRPO reference policy after 11870 steps.
+2025-05-19 20:27:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Step: 219887/1000000 | Avg Reward: 296.31 | Avg Length: 178.6
+2025-05-19 20:27:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Update Info: policy_loss: -0.2779 | kl_loss: 0.0292 | entropy_loss: -1.2001 | total_loss: -0.2779
+2025-05-19 20:27:30 | Walker2d-v4_grpo_seed42_ent0.0_lr5e-05_beta_g16 | INFO | Timings (avg ms): actor_mlp: 2.69ms | rollout_phase: 2635.97ms | ref_actor_mlp: 65.84ms | backward_pass: 90.46ms | optimizer_step: 26.74ms | update_phase: 34939.16ms

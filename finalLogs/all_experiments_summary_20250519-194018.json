@@ -1,0 +1,170 @@
+[
+    {
+        "run_id": "Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g4",
+        "status": "completed",
+        "duration_s": 5625.536985131912,
+        "final_rewards_window": [
+            231.49230474108006,
+            228.71999966852604,
+            230.55734677756158,
+            222.6891249661889,
+            227.90564404512654,
+            233.51645146338674,
+            229.66597953570013,
+            230.69475827387853,
+            235.97178109751133,
+            235.64765862090707
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g4/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g4",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 5855.332715497818,
+        "final_rewards_window": [
+            191.33551132342404,
+            193.09849112942067,
+            195.5910314211934,
+            191.74098044054244,
+            191.64628881257525,
+            190.04564279030376,
+            198.6513488910275,
+            200.2181741638343,
+            203.55416416539606,
+            213.45599546184854
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g16/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g16",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64",
+        "status": "completed",
+        "duration_s": 5749.620876077097,
+        "final_rewards_window": [
+            41.607063675722074,
+            46.052140765863626,
+            49.52570149620012,
+            55.512058336140896,
+            56.637972003187855,
+            69.86202217483908,
+            68.98934729657293,
+            74.29878882475572,
+            77.97631177273993,
+            85.12355348230889
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed0_ent0.0_lr5e-05_normal_g64",
+        "config_params": {
+            "seed": 0,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 64
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g4",
+        "status": "completed",
+        "duration_s": 4821.988848537207,
+        "final_rewards_window": [
+            79.881403824887,
+            85.7313728979127,
+            89.57422278147466,
+            106.95003483622567,
+            115.27972801570502,
+            104.84802189904077,
+            108.10708663089775,
+            88.27407654577962,
+            94.55701210148557,
+            115.95669477623414
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g4/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g4",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 4
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g16",
+        "status": "completed",
+        "duration_s": 4777.143652375089,
+        "final_rewards_window": [
+            98.60258792709504,
+            99.99209388505392,
+            97.08577493497413,
+            103.64268369626848,
+            104.55539989224452,
+            102.116138458363,
+            102.99255322869334,
+            100.84530452006685,
+            102.84802913347261,
+            100.82846747308521
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g16/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g16",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 16
+        }
+    },
+    {
+        "run_id": "Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64",
+        "status": "completed",
+        "duration_s": 4823.012499291915,
+        "final_rewards_window": [
+            24.312671097322134,
+            30.469050410453505,
+            34.38370818652815,
+            38.11005131708543,
+            45.57034957729713,
+            48.73958619211355,
+            49.472054885837636,
+            51.29506495399786,
+            57.193918973265625,
+            58.303529823888454
+        ],
+        "metrics_file": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64/metrics.json",
+        "log_dir": "/lhome/ext/iiia021/iiia0211/embeddingInspector/antoniorl/finalLogs/Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64",
+        "config_params": {
+            "seed": 42,
+            "algo": "grpo",
+            "env_id": "Swimmer-v4",
+            "lr": 5e-05,
+            "entropy_coef": 0.0,
+            "distribution_type": "normal",
+            "group_size": 64
+        }
+    }
+]
