@@ -1,6 +1,6 @@
-2025-05-19 23:31:25 | InvertedPendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64 | INFO | Initializing agent for InvertedPendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64 on device cpu
-2025-05-19 23:31:25 | InvertedPendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64 | INFO | Full Config (including original run_name='None'): {
-  "env_id": "InvertedPendulum-v4",
+2025-05-19 23:41:46 | Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64 | INFO | Initializing agent for Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64 on device cpu
+2025-05-19 23:41:46 | Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64 | INFO | Full Config (including original run_name='None'): {
+  "env_id": "Swimmer-v4",
   "algo": "grpo",
   "seed": 42,
   "gamma": 0.99,
@@ -22,7 +22,7 @@
   },
   "ppo_config": null,
   "grpo_config": {
-    "distribution_type": "beta",
+    "distribution_type": "normal",
     "group_size": 64,
     "update_epochs": 10,
     "max_grad_norm": 0.5,
@@ -34,10 +34,10 @@
     "rollout_steps_per_trajectory": 1000
   }
 }
-2025-05-19 23:31:25 | InvertedPendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64 | INFO | Initialized GRPO actor (type: mlp, dist: beta) and reference.
-2025-05-19 23:32:09 | InvertedPendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64 | INFO | Initializing agent for InvertedPendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64 on device cpu
-2025-05-19 23:32:09 | InvertedPendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64 | INFO | Full Config (including original run_name='None'): {
-  "env_id": "InvertedPendulum-v4",
+2025-05-19 23:41:46 | Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64 | INFO | Initialized GRPO actor (type: mlp, dist: normal) and reference.
+2025-05-19 23:42:17 | Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64 | INFO | Initializing agent for Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64 on device cpu
+2025-05-19 23:42:17 | Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64 | INFO | Full Config (including original run_name='None'): {
+  "env_id": "Swimmer-v4",
   "algo": "grpo",
   "seed": 42,
   "gamma": 0.99,
@@ -59,7 +59,7 @@
   },
   "ppo_config": null,
   "grpo_config": {
-    "distribution_type": "beta",
+    "distribution_type": "normal",
     "group_size": 64,
     "update_epochs": 10,
     "max_grad_norm": 0.5,
@@ -71,4 +71,4 @@
     "rollout_steps_per_trajectory": 1000
   }
 }
-2025-05-19 23:32:09 | InvertedPendulum-v4_grpo_seed42_ent0.0_lr5e-05_beta_g64 | INFO | Initialized GRPO actor (type: mlp, dist: beta) and reference.
+2025-05-19 23:42:17 | Swimmer-v4_grpo_seed42_ent0.0_lr5e-05_normal_g64 | INFO | Initialized GRPO actor (type: mlp, dist: normal) and reference.

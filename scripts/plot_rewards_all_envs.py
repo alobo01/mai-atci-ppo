@@ -118,14 +118,14 @@ for env in ENVIRONMENTS:
 # --- PLOTTING & SAVING ------------------------------------------------
 
 END_STEP      = 1_000_000    # fixed x‐axis limit
-GRID_POINTS   = 500          # how many x‐samples between 0 and END_STEP
+GRID_POINTS   = 500          # number of x‐samples
 SMOOTH_WINDOW = 5            # moving‐average window size
 
 for env in ENVIRONMENTS:
     plt.figure(figsize=(8, 5))
     any_curve = False
 
-    # build our common x‐axis
+    # common x‐axis
     grid = np.linspace(0, END_STEP, GRID_POINTS)
 
     for (e, model, dist, G), runs in data.items():
@@ -139,15 +139,28 @@ for env in ENVIRONMENTS:
             steps = runs[s]["steps"]
             rews  = runs[s]["rews"]
 
-            # 1) linear interp + carry‐forward last value
-            y = np.interp(grid, steps, rews)
+            # 1) interp with NaNs outside each run’s range
+            y = np.interp(grid,
+                          steps,
+                          rews,
+                          left=np.nan,
+                          right=np.nan)
 
-            # 2) causal smoothing: average over the last SMOOTH_WINDOW points
-            #    pad the front with the first value so we can 'valid'-convolve
-            pad = np.full(SMOOTH_WINDOW-1, y[0])
-            y_padded = np.concatenate((pad, y))
-            kernel   = np.ones(SMOOTH_WINDOW) / SMOOTH_WINDOW
-            y_smooth = np.convolve(y_padded, kernel, mode="valid")
+            # 2) forward‐fill NaNs (carry last known reward forward)
+            #    first fill leading NaNs with first non‐NaN
+            if np.isnan(y[0]):
+                first_valid = np.argmax(~np.isnan(y))
+                y[:first_valid] = y[first_valid]
+            # then fill any interior or trailing NaNs
+            for i in range(1, len(y)):
+                if np.isnan(y[i]):
+                    y[i] = y[i-1]
+
+            # 3) causal smoothing over last SMOOTH_WINDOW points
+            pad       = np.full(SMOOTH_WINDOW-1, y[0])
+            y_padded  = np.concatenate((pad, y))
+            kernel    = np.ones(SMOOTH_WINDOW) / SMOOTH_WINDOW
+            y_smooth  = np.convolve(y_padded, kernel, mode="valid")
 
             mat.append(y_smooth)
 
