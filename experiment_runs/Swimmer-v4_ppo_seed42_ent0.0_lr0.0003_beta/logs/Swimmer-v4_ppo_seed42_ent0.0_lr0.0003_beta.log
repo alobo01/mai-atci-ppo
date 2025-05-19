@@ -1,8 +1,8 @@
-2025-05-19 23:42:53 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Initializing agent for Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta on device cpu
-2025-05-19 23:42:53 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Full Config (including original run_name='None'): {
+2025-05-19 23:45:56 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_beta | INFO | Initializing agent for Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_beta on device cpu
+2025-05-19 23:45:56 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_beta | INFO | Full Config (including original run_name='None'): {
   "env_id": "Swimmer-v4",
   "algo": "ppo",
-  "seed": 0,
+  "seed": 42,
   "gamma": 0.99,
   "total_steps": 1000000,
   "log_interval": 10000,
@@ -35,12 +35,12 @@
   },
   "grpo_config": null
 }
-2025-05-19 23:42:53 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Using separate MLP Actor and Critic networks.
-2025-05-19 23:43:31 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Initializing agent for Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta on device cpu
-2025-05-19 23:43:31 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Full Config (including original run_name='None'): {
+2025-05-19 23:45:56 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_beta | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 23:46:39 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_beta | INFO | Initializing agent for Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_beta on device cpu
+2025-05-19 23:46:39 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_beta | INFO | Full Config (including original run_name='None'): {
   "env_id": "Swimmer-v4",
   "algo": "ppo",
-  "seed": 0,
+  "seed": 42,
   "gamma": 0.99,
   "total_steps": 1000000,
   "log_interval": 10000,
@@ -73,4 +73,4 @@
   },
   "grpo_config": null
 }
-2025-05-19 23:43:31 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 23:46:39 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_beta | INFO | Using separate MLP Actor and Critic networks.

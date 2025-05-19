@@ -1,5 +1,5 @@
-2025-05-19 23:42:53 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Initializing agent for Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta on device cpu
-2025-05-19 23:42:53 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Full Config (including original run_name='None'): {
+2025-05-19 23:44:22 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal | INFO | Initializing agent for Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal on device cpu
+2025-05-19 23:44:22 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
   "env_id": "Swimmer-v4",
   "algo": "ppo",
   "seed": 0,
@@ -21,7 +21,7 @@
     "cnn_output_features": 256
   },
   "ppo_config": {
-    "distribution_type": "beta",
+    "distribution_type": "normal",
     "lam": 0.95,
     "clip_eps": 0.2,
     "ppo_epochs": 10,
@@ -35,9 +35,9 @@
   },
   "grpo_config": null
 }
-2025-05-19 23:42:53 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Using separate MLP Actor and Critic networks.
-2025-05-19 23:43:31 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Initializing agent for Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta on device cpu
-2025-05-19 23:43:31 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Full Config (including original run_name='None'): {
+2025-05-19 23:44:22 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 23:45:14 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal | INFO | Initializing agent for Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal on device cpu
+2025-05-19 23:45:14 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
   "env_id": "Swimmer-v4",
   "algo": "ppo",
   "seed": 0,
@@ -59,7 +59,7 @@
     "cnn_output_features": 256
   },
   "ppo_config": {
-    "distribution_type": "beta",
+    "distribution_type": "normal",
     "lam": 0.95,
     "clip_eps": 0.2,
     "ppo_epochs": 10,
@@ -73,4 +73,4 @@
   },
   "grpo_config": null
 }
-2025-05-19 23:43:31 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 23:45:14 | Swimmer-v4_ppo_seed0_ent0.0_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
