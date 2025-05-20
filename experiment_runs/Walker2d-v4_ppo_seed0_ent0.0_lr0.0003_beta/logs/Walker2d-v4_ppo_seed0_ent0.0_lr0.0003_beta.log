@@ -1,8 +1,8 @@
-2025-05-19 23:47:21 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Initializing agent for Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal on device cpu
-2025-05-19 23:47:21 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
-  "env_id": "Swimmer-v4",
+2025-05-19 23:52:17 | Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Initializing agent for Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta on device cpu
+2025-05-19 23:52:17 | Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Full Config (including original run_name='None'): {
+  "env_id": "Walker2d-v4",
   "algo": "ppo",
-  "seed": 42,
+  "seed": 0,
   "gamma": 0.99,
   "total_steps": 1000000,
   "log_interval": 10000,
@@ -21,7 +21,7 @@
     "cnn_output_features": 256
   },
   "ppo_config": {
-    "distribution_type": "normal",
+    "distribution_type": "beta",
     "lam": 0.95,
     "clip_eps": 0.2,
     "ppo_epochs": 10,
@@ -35,12 +35,12 @@
   },
   "grpo_config": null
 }
-2025-05-19 23:47:21 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
-2025-05-19 23:48:12 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Initializing agent for Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal on device cpu
-2025-05-19 23:48:12 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
-  "env_id": "Swimmer-v4",
+2025-05-19 23:52:17 | Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 23:52:29 | Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Initializing agent for Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta on device cpu
+2025-05-19 23:52:29 | Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Full Config (including original run_name='None'): {
+  "env_id": "Walker2d-v4",
   "algo": "ppo",
-  "seed": 42,
+  "seed": 0,
   "gamma": 0.99,
   "total_steps": 1000000,
   "log_interval": 10000,
@@ -59,7 +59,7 @@
     "cnn_output_features": 256
   },
   "ppo_config": {
-    "distribution_type": "normal",
+    "distribution_type": "beta",
     "lam": 0.95,
     "clip_eps": 0.2,
     "ppo_epochs": 10,
@@ -73,4 +73,4 @@
   },
   "grpo_config": null
 }
-2025-05-19 23:48:12 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 23:52:29 | Walker2d-v4_ppo_seed0_ent0.0_lr0.0003_beta | INFO | Using separate MLP Actor and Critic networks.

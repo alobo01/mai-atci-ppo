@@ -1,6 +1,6 @@
-2025-05-19 23:47:21 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Initializing agent for Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal on device cpu
-2025-05-19 23:47:21 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
-  "env_id": "Swimmer-v4",
+2025-05-19 23:53:39 | Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Initializing agent for Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_normal on device cpu
+2025-05-19 23:53:39 | Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
+  "env_id": "Walker2d-v4",
   "algo": "ppo",
   "seed": 42,
   "gamma": 0.99,
@@ -35,10 +35,10 @@
   },
   "grpo_config": null
 }
-2025-05-19 23:47:21 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
-2025-05-19 23:48:12 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Initializing agent for Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal on device cpu
-2025-05-19 23:48:12 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
-  "env_id": "Swimmer-v4",
+2025-05-19 23:53:39 | Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 23:53:53 | Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Initializing agent for Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_normal on device cpu
+2025-05-19 23:53:53 | Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Full Config (including original run_name='None'): {
+  "env_id": "Walker2d-v4",
   "algo": "ppo",
   "seed": 42,
   "gamma": 0.99,
@@ -73,4 +73,4 @@
   },
   "grpo_config": null
 }
-2025-05-19 23:48:12 | Swimmer-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
+2025-05-19 23:53:53 | Walker2d-v4_ppo_seed42_ent0.0_lr0.0003_normal | INFO | Using separate MLP Actor and Critic networks.
